@@ -17,3 +17,17 @@ export const ContainerBtn = styled.div`
   display: flex;
   gap: 12px;
 `
+export const ContainerPar = styled.div`
+  color: rgb(171, 179, 186);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+`
+export const ContainerInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin: 0 20px 22px;
+`
