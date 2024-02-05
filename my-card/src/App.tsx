@@ -9,6 +9,7 @@ import { GlobalCardStyles } from './styles/CardStyles'
 import { CardImage } from './styles/CardStyles'
 import { ContainerPar } from './styles/ButtonStyled'
 import { ContainerInfo } from './styles/ButtonStyled'
+import { StyledBtnSave } from './styles/ButtonStyled'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     </ContainerPar>
     <ContainerBtn>
     <StyledBtn>See more</StyledBtn>
-    <StyledBtn>Save</StyledBtn>
+    <StyledBtnSave>Save</StyledBtnSave>
     </ContainerBtn>
     </ContainerInfo>
     

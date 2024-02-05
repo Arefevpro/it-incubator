@@ -12,6 +12,11 @@ export const StyledBtn = styled.button`
   width: 86px;
   height: 30px;
 `
+export const StyledBtnSave = styled(StyledBtn)`
+  border: 2px solid rgb(78, 113, 254);
+  background-color: transparent;
+  color: rgb(78, 113, 254);
+`
 
 export const ContainerBtn = styled.div`
   display: flex;
