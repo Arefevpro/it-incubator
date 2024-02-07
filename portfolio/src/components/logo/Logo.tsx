@@ -1,10 +1,11 @@
 import React from "react";
+import { Icon } from "../icon/Icon";
 
 
 export const Logo = () => {
   return (
     <a href=" ">
-      {/* <image src="../../logo.svg" alt="Logo" /> */}
+      <Icon iconId={"logoUnion"} />
     </a>
   );
 };
