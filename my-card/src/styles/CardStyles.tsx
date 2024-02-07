@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import imgBg from "../Images/Rectangle1.png"
 
-export const GlobalCardStyles = styled.div`
+export const Card = styled.div`
   margin: 100px;
   display: flex;
   flex-direction: column;
@@ -13,9 +13,10 @@ export const GlobalCardStyles = styled.div`
   height: 350px;
 `
 
-export const CardImage = styled.div`
-  background-image: url(${imgBg});
-  margin: 10px 10px 0 10px;
+export const CardImage = styled.img`
+  /* background-image: url(${imgBg}); */
+  /* margin: 10px 10px 0 10px; */
   width: 280px;
   height: 170px;
+  border: 1px solid red
 `

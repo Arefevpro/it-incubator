@@ -22,7 +22,7 @@ export const ContainerBtn = styled.div`
   display: flex;
   gap: 12px;
 `
-export const ContainerPar = styled.div`
+export const Text = styled.p`
   color: rgb(171, 179, 186);
   font-size: 12px;
   font-weight: 500;
