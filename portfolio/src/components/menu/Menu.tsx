@@ -6,16 +6,16 @@ export const Menu = () => {
     <StyledMenu>
         <ul>
           <li>
-              <a href="/">#home</a>
+              <a href="/"><span>#</span>home</a>
               </li>
           <li>
-              <a href="/about">#works</a>
+              <a href="/about"><span>#</span>works</a>
               </li>
           <li>
-              <a href="/contact">#about-me</a>
+              <a href="/contact"><span>#</span>about-me</a>
               </li>
           <li>
-              <a href="/contact">#contacts</a>
+              <a href="/contact"><span>#</span>contacts</a>
           </li>
         </ul>
     </StyledMenu>
@@ -28,6 +28,11 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 32px;
     list-style: none;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 
