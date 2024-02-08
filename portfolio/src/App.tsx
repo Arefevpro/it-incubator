@@ -19,4 +19,6 @@ export default App;
 export const StylGlobal = styled.div`
   background-color: #2b2e31;
   color: white;
+  padding-left: 173px;
+  padding-right: 169px;
 `;

@@ -8,19 +8,21 @@ export const Main = ( ) => {
   return (
   <div>
     <FlexWrapper>
-   <div>
-   <h1>Elias is a 
-        <span>web designer</span> 
+   <FlexWrapper direction="column">
+   <MainTitle>Elias is a 
+        <MainTitleAccent>web designer</MainTitleAccent> 
          and 
-        <span>front-end developer</span>
-        </h1>
+        <MainTitleAccent>front-end developer</MainTitleAccent>
+        </MainTitle>
       <p>He crafts responsive websites where technologies meet creativity</p>
       <button>Contact me!!</button>
-      <Photo src={photoP1} alt="" />
+   </FlexWrapper>
+     <FlexWrapper direction="column">
+     <Photo src={photoP1} alt="" />
       <h2>Currently working on 
         <span>Portfolio</span>
       </h2>
-   </div>
+     </FlexWrapper>
     </FlexWrapper>
   </div>
   );
@@ -30,4 +32,13 @@ const Photo = styled.img`
   width: 457px;
   height: 386px;
   object-fit: cover;
+`;
+
+const MainTitle = styled.h1`
+  font-size: 32px;
+`;
+
+const MainTitleAccent = styled.h1`
+  font-size: 32px;
+  color: #C778DD;
 `;
