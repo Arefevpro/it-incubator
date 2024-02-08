@@ -6,15 +6,15 @@ import { FlexWrapper } from "../../components/Flex/FlexWrapper";
 
 export const Header = () => {
   return (
+    <FlexWrapper justify="space-between">
        <StyledHeader>
-      <FlexWrapper justify="space-between">
       <FlexWrapper>
       <Logo />
       <StyledHeaderLogoName>Elias</StyledHeaderLogoName>
       </FlexWrapper>
       <Menu />
-      </FlexWrapper>
     </StyledHeader>
+    </FlexWrapper>
     
   );
 };
