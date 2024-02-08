@@ -6,20 +6,18 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Header = () => {
   return (
-    <FlexWrapper>
        <StyledHeader>
+      <FlexWrapper justify="space-between">
       <Logo />
       <Menu />
+      </FlexWrapper>
     </StyledHeader>
-    </FlexWrapper>
+    
   );
 };
 
 
 const StyledHeader = styled.header`
   width: 100%;
-  height: 100px;
   background-color: #07643b;
-  color: #fff;
-
 `;
