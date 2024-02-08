@@ -1,4 +1,6 @@
 import React from "react";
+import styled from 'styled-components';
+import photoP1 from '../../../../assets/images/Preview1.webp';
 
 
 export const Main = ( ) => {
@@ -12,7 +14,7 @@ export const Main = ( ) => {
         </h1>
       <p>He crafts responsive websites where technologies meet creativity</p>
       <button>Contact me!!</button>
-      <img src="" alt="" />
+      <Photo src={photoP1} alt="" />
       <h2>Currently working on 
         <span>Portfolio</span>
       </h2>
@@ -20,3 +22,9 @@ export const Main = ( ) => {
   </div>
   );
 };
+
+const Photo = styled.img`
+  width: 457px;
+  height: 386px;
+  object-fit: cover;
+`;
