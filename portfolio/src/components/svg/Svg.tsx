@@ -37,6 +37,7 @@ export const IconDecor = () => {
 
   )
 }
+
 const IconStyled = styled.svg`
   width: 63px;        
   height: 63px;

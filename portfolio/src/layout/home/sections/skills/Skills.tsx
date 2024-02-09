@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { FlexWrapper } from "../../../../components/Flex/FlexWrapper";
+import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { IconDecor } from "../../../../components/svg/Svg";
 
 
@@ -8,11 +8,11 @@ export const SkillsSection = ( ) => {
  return (
   <div>
   <StyledSkills>
-   <SecrionTitle>#skills</SecrionTitle>
+   <SecrionTitle>skills</SecrionTitle>
    <IconDecor ></IconDecor>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
-     <SkillsStyledSkills>TypeScript</SkillsStyledSkills>
+     <SkillsStyled>TypeScript</SkillsStyled>
    </FlexWrapper>
  </StyledSkills>
 </div>
@@ -22,7 +22,7 @@ export const SkillsSection = ( ) => {
 
 
 const StyledSkills = styled.section`
-  
+  display: flex;
 `
 const SecrionTitle = styled.h2`
   font-size: 24px;
@@ -34,6 +34,6 @@ const SkillsName = styled.h3`
   gap: 10px;
 `
 
-const SkillsStyledSkills = styled.div`
+const SkillsStyled = styled.div`
   gap: 10px;
 `
