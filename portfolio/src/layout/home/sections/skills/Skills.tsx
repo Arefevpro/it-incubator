@@ -4,6 +4,8 @@ import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { IconDecor } from "../../../../components/svg/SvgDecor";
 import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
+import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
+
 
 export const SkillsSection = ( ) => {
  return (
