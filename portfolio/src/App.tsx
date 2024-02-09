@@ -1,14 +1,16 @@
 import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
-import { Main } from './layout/home/sections/main/Main';
+import { MainSection } from './layout/home/sections/main/Main';
+import { SkillsSection } from './layout/home/sections/skills/Skills';
 
 function App() {
     return (
         <div className="App">
             <StylGlobal>
             <Header />
-            <Main />
+            <MainSection />
+            <SkillsSection />
             </StylGlobal>
         </div>
     );

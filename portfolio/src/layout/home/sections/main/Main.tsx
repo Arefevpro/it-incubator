@@ -4,7 +4,7 @@ import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/Flex/FlexWrapper";
 import { IconDecor } from "../../../../components/svg/Svg";
 
-export const Main = ( ) => {
+export const MainSection = ( ) => {
   return (
   <div>
     <FlexWrapper>

@@ -4,21 +4,20 @@ import { FlexWrapper } from "../../../../components/Flex/FlexWrapper";
 import { IconDecor } from "../../../../components/svg/Svg";
 
 
-export const Skills = ( ) => {
+export const SkillsSection = ( ) => {
+ return (
+  <div>
   <StyledSkills>
-    <SecrionTitle>#skills</SecrionTitle>
-    <IconDecor ></IconDecor>
-    <FlexWrapper>
-      <SkillsName>Languages</SkillsName>
-      <SkillsStyledSkills>TypeScript
-Lua
-Python
-Python
-Python
-JavaScript</SkillsStyledSkills>
-    </FlexWrapper>
-  </StyledSkills>
-}
+   <SecrionTitle>#skills</SecrionTitle>
+   <IconDecor ></IconDecor>
+   <FlexWrapper>
+     <SkillsName>Languages</SkillsName>
+     <SkillsStyledSkills>TypeScript</SkillsStyledSkills>
+   </FlexWrapper>
+ </StyledSkills>
+</div>
+ )
+};
 
 
 
