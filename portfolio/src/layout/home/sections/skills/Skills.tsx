@@ -1,20 +1,22 @@
 import React from "react";
 import styled from 'styled-components';
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
-import { IconDecor } from "../../../../components/svg/Svg";
-
+import { IconDecor } from "../../../../components/svg/SvgDecor";
+import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 
 export const SkillsSection = ( ) => {
  return (
   <div>
+  <GlobalStyledSection>
   <StyledSkills>
-   <SecrionTitle>skills</SecrionTitle>
+   <SecrionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SecrionTitle>
    <IconDecor ></IconDecor>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
      <SkillsStyled>TypeScript</SkillsStyled>
    </FlexWrapper>
  </StyledSkills>
+  </GlobalStyledSection>
 </div>
  )
 };
@@ -36,4 +38,7 @@ const SkillsName = styled.h3`
 
 const SkillsStyled = styled.div`
   gap: 10px;
+`
+const GlobalStyledSection = styled.section`
+  background-color: #2c2968;
 `
