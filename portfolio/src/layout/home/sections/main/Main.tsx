@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/Flex/FlexWrapper";
-import { Icon } from "../../../../components/svg/Svg";
+import { IconDecor } from "../../../../components/svg/Svg";
 
 export const Main = ( ) => {
   return (
@@ -19,7 +19,7 @@ export const Main = ( ) => {
    </FlexWrapper>
      <FlexWrapper direction="column">
      <Photo src={photoP1} alt="" />
-     <Icon />
+     <IconDecor />
       <h2>Currently working on 
         <span>Portfolio</span>
       </h2>

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 
-export const Icon = () => {
+export const IconDecor = () => {
   return (
     <IconStyled width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="2" cy="2" r="2" fill="#ABB2BF"/>
@@ -38,6 +38,6 @@ export const Icon = () => {
   )
 }
 const IconStyled = styled.svg`
-  width: 63px;
+  width: 63px;        
   height: 63px;
 `
