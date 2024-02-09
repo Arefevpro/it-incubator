@@ -25,12 +25,11 @@ export const SkillsSection = ( ) => {
 
 
 const StyledSkills = styled.section`
-  display: flex;
+ 
+
 `
 
-const SkillsName = styled.h3`
-  gap: 10px;
-`
+
 
 const SkillsStyled = styled.div`
   gap: 10px;
