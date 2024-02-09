@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { IconDecor } from "../../../../components/svg/SvgDecor";
 import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
+import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
 
 export const SkillsSection = ( ) => {
  return (
   <div>
   <GlobalStyledSection>
   <StyledSkills>
-   <SecrionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SecrionTitle>
+   <SectionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SectionTitle>
    <IconDecor ></IconDecor>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
@@ -25,11 +26,6 @@ export const SkillsSection = ( ) => {
 
 const StyledSkills = styled.section`
   display: flex;
-`
-const SecrionTitle = styled.h2`
-  font-size: 24px;
-  font-weight: 600;
-  color: #ABB2BF;
 `
 
 const SkillsName = styled.h3`
