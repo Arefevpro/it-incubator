@@ -11,14 +11,11 @@ export const SkillsSection = ( ) => {
  return (
   <div>
   <GlobalStyledSection>
-  <StyledSkills>
    <SectionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SectionTitle>
    <IconDecor ></IconDecor>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
-     <SkillsStyled>TypeScript</SkillsStyled>
    </FlexWrapper>
- </StyledSkills>
   </GlobalStyledSection>
 </div>
  )
@@ -26,16 +23,8 @@ export const SkillsSection = ( ) => {
 
 
 
-const StyledSkills = styled.section`
- 
-
-`
-
-
-
-const SkillsStyled = styled.div`
-  gap: 10px;
-`
 const GlobalStyledSection = styled.section`
   background-color: #2c2968;
+  width: 100%;
+  height: 365px;
 `
