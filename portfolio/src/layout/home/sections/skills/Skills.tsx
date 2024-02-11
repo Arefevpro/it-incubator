@@ -11,7 +11,10 @@ export const SkillsSection = ( ) => {
   <div>
   <GlobalStyledSection>
    <SectionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SectionTitle>
+   <FlexWrapper>
    <DotsDecor ></DotsDecor>
+   <LogoDecor></LogoDecor>
+   </FlexWrapper>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
    </FlexWrapper>

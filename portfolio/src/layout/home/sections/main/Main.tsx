@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { DotsDecor } from "../../../../components/svg/SvgDecor";
+import { LogoDecor } from "../../../../components/svg/SvgDecor";
 
 export const MainSection = ( ) => {
   return (
