@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
-import { IconDecor } from "../../../../components/svg/SvgDecor";
+import { DotsDecor } from "../../../../components/svg/SvgDecor";
 import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
 import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
@@ -12,7 +12,7 @@ export const SkillsSection = ( ) => {
   <div>
   <GlobalStyledSection>
    <SectionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SectionTitle>
-   <IconDecor ></IconDecor>
+   <DotsDecor ></DotsDecor>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
    </FlexWrapper>
