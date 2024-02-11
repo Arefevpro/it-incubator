@@ -23,6 +23,7 @@ export const SkillsSection = ( ) => {
    </FlexWrapper>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
+     Line
    </FlexWrapper>
   </GlobalStyledSection>
 </div>

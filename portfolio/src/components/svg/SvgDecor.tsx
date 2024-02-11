@@ -78,3 +78,22 @@ export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
   );
 };
 
+
+
+type LineDecorPropsType = {
+  size?:string
+ }
+
+export const LineDecor = ({size}: LineDecorPropsType) =>  {
+  return (
+    <svg width={size || "86"} height={size || "86"} viewBox="0 0 86 86">
+    <rect x="0.5" y="0.5" width="85" height="85" stroke="#ABB2BF" stroke-width="1"
+    />
+  </svg>
+  );
+};
+
+
+
+
+
