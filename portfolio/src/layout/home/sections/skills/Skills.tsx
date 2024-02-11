@@ -5,6 +5,10 @@ import { DotsDecor } from "../../../../components/svg/SvgDecor";
 import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
 import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
+import { LogoDecor } from "../../../../components/svg/SvgDecor";
+import { СubeDecor } from "../../../../components/svg/SvgDecor";
+
+
 
 export const SkillsSection = ( ) => {
  return (
@@ -12,8 +16,9 @@ export const SkillsSection = ( ) => {
   <GlobalStyledSection>
    <SectionTitle><HashtagDecor fontSize="32px" >#</HashtagDecor>skills</SectionTitle>
    <FlexWrapper>
-   <DotsDecor ></DotsDecor>
-   <LogoDecor></LogoDecor>
+   <DotsDecor />
+   <LogoDecor />
+   <СubeDecor />
    </FlexWrapper>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
