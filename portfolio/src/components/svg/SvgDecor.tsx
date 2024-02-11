@@ -6,7 +6,6 @@ import styled from 'styled-components';
 // Декоративные точки
 
 type DotsDecorPropsType = {
-
  size?:string
 }
 export const DotsDecor = ({size}: DotsDecorPropsType) => {
@@ -45,7 +44,6 @@ export const DotsDecor = ({size}: DotsDecorPropsType) => {
 //  Декоративный логотип
 
 type LogoDecorPropsType = {
-
   size?: string;
  }
 export const LogoDecor = ({size}: LogoDecorPropsType) => {
@@ -68,13 +66,15 @@ export const LogoDecor = ({size}: LogoDecorPropsType) => {
 // Декоративный куб
 
 type CubeDecorPropsType = {
-
   size?:string
  }
 export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
   return (
-    <svg width={size || "63"} height={size || "63"} viewBox="0 0 63 63" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.9" width="85" height="85" stroke="#ABB2BF"/>
-</svg>
+    <svg width={size || "86"} height={size || "86"} viewBox="0 0 86 86">
+    <rect x="0.5" y="0.5" width="85" height="85"
+      fill="transparent" stroke="#ABB2BF" stroke-width="1"
+    />
+  </svg>
   );
 };
+

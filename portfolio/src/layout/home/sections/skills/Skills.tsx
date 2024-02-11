@@ -19,6 +19,7 @@ export const SkillsSection = ( ) => {
    <DotsDecor />
    <LogoDecor />
    <СubeDecor />
+   <СubeDecor />
    </FlexWrapper>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
