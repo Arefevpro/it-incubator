@@ -79,31 +79,11 @@ export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
 };
 
 
-const Line = styled.hr`
-border-width: 1px;
-border-color: #000;
-border-style: solid;
-width: 100%;
-margin: 10px 0;
-`;
+// const Line = styled.hr`
+// width: 20px;
+//   border-top: 3px solid #32a1ce;
+// `;
 
-export function LineDecor() {
-return <Line />;
-}
-
-
-
-
-
-
-// type LineDecorPropsType = {
-//   size?: string;
-//  }
-
-// export const LineDecor = ({size}: LineDecorPropsType) =>  {
-//   return (
-// <svg >
-// <line x1="0" y1="10%" x2="100%" y2="10%" stroke-width="100%" stroke="#C778DD"/>
-// </svg>
-//   );
-// };
+// export function LineDecor() {
+// return <Line />;
+// }

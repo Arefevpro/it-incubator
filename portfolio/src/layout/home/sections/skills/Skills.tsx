@@ -7,19 +7,19 @@ import { SectionTitle } from "../../../../components/textComponents/SectionTitle
 import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
 import { LogoDecor } from "../../../../components/svg/SvgDecor";
 import { СubeDecor } from "../../../../components/svg/SvgDecor";
-import { LineDecor } from "../../../../components/svg/SvgDecor";
+// import { LineDecor } from "../../../../components/svg/SvgDecor";
 
 
 export const SkillsSection = ( ) => {
  return (
   <div>
   <GlobalStyledSection>
-   <FlexWrapper>
+   <FlexWrapper width="391px" height="42px">
    <HashtagDecor fontSize="32px" >#</HashtagDecor>
    <SectionTitle >skills</SectionTitle>
-   <LineDecor />
-   </FlexWrapper>
-   <FlexWrapper>
+   {/* <LineDecor /> */}
+   </FlexWrapper >
+   <FlexWrapper width="349px" height="282px" background-color="red">
    <DotsDecor />
    <LogoDecor />
    <СubeDecor />
