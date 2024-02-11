@@ -50,7 +50,7 @@ type LogoDecorPropsType = {
  }
 export const LogoDecor = ({size}: LogoDecorPropsType) => {
   return (
-    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size || "63"} height={size || "63"} viewBox="0 0 63 63" xmlns="http://www.w3.org/2000/svg">
 <mask id="path-1-inside-1_1103_3419" fill="white">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14H13H26V27H13V40H26V53H13H0V40V27V14Z"/>
 </mask>
@@ -73,7 +73,7 @@ type CubeDecorPropsType = {
  }
 export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
   return (
-    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size || "63"} height={size || "63"} viewBox="0 0 63 63" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="0.9" width="85" height="85" stroke="#ABB2BF"/>
 </svg>
   );
