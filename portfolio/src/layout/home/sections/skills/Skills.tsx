@@ -17,6 +17,7 @@ export const SkillsSection = ( ) => {
      <SkillsName>Languages</SkillsName>
    </FlexWrapper>
   </GlobalStyledSection>
+  <LogoDecor></LogoDecor>
 </div>
  )
 };
