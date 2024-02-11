@@ -28,5 +28,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   width: ${props => props.width || "auto"};
   height: ${props => props.height || "auto"};
   border: ${props => props.border || "none"};
-  background-color: ${props => props.backgroundcolor || "none"};
+  background-color: ${props => props.color || "transparent"};
 `

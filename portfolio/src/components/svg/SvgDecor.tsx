@@ -79,11 +79,18 @@ export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
 };
 
 
-// const Line = styled.hr`
-// width: 20px;
-//   border-top: 3px solid #32a1ce;
-// `;
+// Декоративная линия
+export const Line = styled.div`
+  position: relative;
+  width: 100%;
 
-// export function LineDecor() {
-// return <Line />;
-// }
+  ::after {
+    content: '';
+    position: absolute;
+    top: 20.5px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #C778DD;
+  }
+`;
