@@ -6,15 +6,12 @@ import styled from 'styled-components';
 // Декоративные точки
 
 type DotsDecorPropsType = {
-  padding?: string;
-  margin?: string;
-  width?: string;
-  height?: string;
-  border?: string;
+
+ size?:string
 }
-export const DotsDecor = () => {
+export const DotsDecor = ({size}: DotsDecorPropsType) => {
   return (
-    <IconStyled width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size || "63"} height={size || "63"} viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="2" cy="2" r="2" fill="#ABB2BF"/>
 <circle cx="16.75" cy="2" r="2" fill="#ABB2BF"/>
 <circle cx="31.5" cy="2" r="2" fill="#ABB2BF"/>
@@ -40,7 +37,7 @@ export const DotsDecor = () => {
 <circle cx="31.5" cy="61" r="2" fill="#ABB2BF"/>
 <circle cx="46.25" cy="61" r="2" fill="#ABB2BF"/>
 <circle cx="61" cy="61" r="2" fill="#ABB2BF"/>
-</IconStyled>
+</svg>
   )
 }
 

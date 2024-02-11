@@ -6,7 +6,6 @@ import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
 import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
 
-
 export const SkillsSection = ( ) => {
  return (
   <div>
@@ -17,7 +16,6 @@ export const SkillsSection = ( ) => {
      <SkillsName>Languages</SkillsName>
    </FlexWrapper>
   </GlobalStyledSection>
-  <LogoDecor></LogoDecor>
 </div>
  )
 };
