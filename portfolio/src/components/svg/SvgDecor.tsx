@@ -82,14 +82,14 @@ export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
 // Декоративная линия
 export const Line = styled.div`
   position: relative;
-  width: 100%;
+  width: 239px;
 
   ::after {
     content: '';
     position: absolute;
     top: 20.5px;
-    right: 0;
-    width: 100%;
+    right: -10px;
+    width: 239px;
     height: 1px;
     background: #C778DD;
   }
