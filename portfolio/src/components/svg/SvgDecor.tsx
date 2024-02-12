@@ -66,17 +66,28 @@ export const LogoDecor = ({size}: LogoDecorPropsType) => {
 // Декоративный куб
 
 type CubeDecorPropsType = {
-  size?:string
- }
-export const СubeDecor = ({size}: CubeDecorPropsType) =>  {
+  size?: string;
+  top?: string;
+  left?: string;
+}
+
+export const CubeDecor = ({size, top, left}: CubeDecorPropsType) =>  {
   return (
-    <svg width={size || "86"} height={size || "86"} viewBox="0 0 86 86">
-    <rect x="0.5" y="0.5" width="85" height="85"
-      fill="transparent" stroke="#ABB2BF" stroke-width="1"
-    />
-  </svg>
+    <PositionedWrapper top={top} left={left}>
+      <svg width={size || "86"} height={size || "86"} viewBox="0 0 86 86">
+        <rect x="0.5" y="0.5" width="85" height="85"
+          fill="transparent" stroke="#ABB2BF" stroke-width="1"
+        />
+      </svg>
+    </PositionedWrapper>
   );
 };
+
+const PositionedWrapper = styled.div<CubeDecorPropsType>`
+  position: absolute;
+  top: ${props => props.top || "0"};
+  left: ${props => props.left || "0"};
+`;
 
 
 // Декоративная линия
@@ -94,3 +105,6 @@ export const Line = styled.div`
     background: #C778DD;
   }
 `;
+
+
+

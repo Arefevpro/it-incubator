@@ -6,7 +6,7 @@ import { HashtagDecor } from "../../../../components/hashtag/Hashtag";
 import { SectionTitle } from "../../../../components/textComponents/SectionTitle";
 import { SkillsName } from "../../../../layout/home/sections/skills/skill/SkillsName";
 import { LogoDecor } from "../../../../components/svg/SvgDecor";
-import { СubeDecor } from "../../../../components/svg/SvgDecor";
+import { CubeDecor } from "../../../../components/svg/SvgDecor";
 import { Line } from "../../../../components/svg/SvgDecor";
 
 
@@ -19,11 +19,11 @@ export const SkillsSection = ( ) => {
    <SectionTitle >skills</SectionTitle>
    <Line />
    </FlexWrapper >
-   <FlexWrapper width="349px" height="282px" color="#373642">
+   <FlexWrapper width="349px" height="282px" color="#373642" margin="32px 12px 10px 29px" >
    <DotsDecor />
    <LogoDecor />
-   <СubeDecor />
-   <СubeDecor />
+   <CubeDecor/>
+   <CubeDecor />
    </FlexWrapper>
    <FlexWrapper>
      <SkillsName>Languages</SkillsName>
