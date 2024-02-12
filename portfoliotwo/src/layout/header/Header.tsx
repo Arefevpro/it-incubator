@@ -1,6 +1,5 @@
 import React from "react";
-// import { Header } from 
-
+import styled from "styled-components"
 
 
 export const Header = () => {
