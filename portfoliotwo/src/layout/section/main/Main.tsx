@@ -1,4 +1,7 @@
 import React from 'react';
+import styled from "styled-components"
+import photo from "../../../assets/images/photo.webp"
+
 
 export const Main = () => {
   return (
@@ -8,7 +11,13 @@ export const Main = () => {
         <h2>I am Svetlana Dyablo</h2>
         <h1>A Web Developer.</h1>
       </div>
+      <img src="" alt="" />
     </div>
   );
 };
 
+
+const Photo = styled.img`
+  width: 350px;
+  height: 430px;
+`
