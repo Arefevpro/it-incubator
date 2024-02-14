@@ -23,6 +23,7 @@ const StyledSkill = styled.div`
   background-color: #a6c9cc;
   box-sizing: border-box;
   border: #ed0ce2 2px solid;
+  width: 33%;
 `
 
 const SkillTitle = styled.h3`
