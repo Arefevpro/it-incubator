@@ -4,17 +4,18 @@ import { Icon } from '../../../../components/icon/Icon';
 
 type SkillPropsType = {
   iconId?: string;
+  title?: string;
   width?: string;
   height?: string;
   viewBox?: string;
 }
 
 
-export const Skill = () => {
+export const Skill = (props: SkillPropsType) => {
   return (
     <StyledSkill>
       <Icon iconId={props.iconId} />
-        <SkillTitle>html5</SkillTitle>
+        <SkillTitle>{props.title}</SkillTitle>
         <SkillText>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
       </SkillText>
     </StyledSkill>
