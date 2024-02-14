@@ -24,5 +24,6 @@ const StyledMenu = styled.nav`
     gap: 30px;
     padding: 0;
     margin: 0;
+    justify-content: center;
   }
 `
