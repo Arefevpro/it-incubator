@@ -22,12 +22,12 @@ export const Skill = (props: SkillPropsType) => {
   );
 };
 const StyledSkill = styled.div`
-  background-color: #28af86;
+  background-color: #a6c9cc;
 `
 
 const SkillTitle = styled.h3`
-  background-color: #2e4b99;
+  background-color: #a6c9cc;
 `
 const SkillText = styled.p`
-  background-color: #6b3b73;
+  background-color: #a6c9cc;
 `

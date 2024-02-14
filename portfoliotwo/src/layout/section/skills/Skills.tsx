@@ -13,16 +13,16 @@ export const Skills = () => {
       <FlexWrapper>
         <Skill iconId={'codeSvg'} title='React'/>
         <Skill iconId={'css3Svg'} title='CSS3'/>
-        <Skill iconId={'reactSvg'}  title='React'/>
+        <Skill iconId={'reactSvg'} title='React'/>
       </FlexWrapper>
     </StyledSkills>
   );
 };
 
 const StyledSkills = styled.section`
-  background-color: #3d9ea3;
+  background-color: #a6c9cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  min-height: 40vh;
 `

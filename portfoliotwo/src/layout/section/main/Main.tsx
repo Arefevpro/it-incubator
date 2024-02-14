@@ -21,8 +21,8 @@ export const Main = () => {
 
 
 const Styledmain = styled.div`
-min-height: 100vh;
-background-color: #133911;
+min-height: 40vh;
+background-color: #a6c9cc;
 `
 
 
