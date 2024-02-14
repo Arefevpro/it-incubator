@@ -5,9 +5,7 @@ import { Icon } from '../../../../components/icon/Icon';
 type SkillPropsType = {
   iconId?: string;
   title?: string;
-  width?: string;
-  height?: string;
-  viewBox?: string;
+  description?: string;
 }
 
 
@@ -16,13 +14,15 @@ export const Skill = (props: SkillPropsType) => {
     <StyledSkill>
       <Icon iconId={props.iconId} />
         <SkillTitle>{props.title}</SkillTitle>
-        <SkillText>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
+        <SkillText>{props.description}
       </SkillText>
     </StyledSkill>
   );
 };
 const StyledSkill = styled.div`
   background-color: #a6c9cc;
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
 `
 
 const SkillTitle = styled.h3`

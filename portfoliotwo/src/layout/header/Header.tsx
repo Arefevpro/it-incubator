@@ -20,4 +20,6 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
 `
