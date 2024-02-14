@@ -2,6 +2,16 @@ import React from 'react';
 import styled from "styled-components"
 import { Icon } from '../../../../components/icon/Icon';
 
+type SkillPropsType = {
+  iconId?: string;
+  width?: string;
+  height?: string;
+  viewBox?: string;
+}
+
+
+
+
 
 export const Skill = () => {
   return (
@@ -13,7 +23,6 @@ export const Skill = () => {
     </StyledSkill>
   );
 };
-
 const StyledSkill = styled.div`
   background-color: #28af86;
 `
