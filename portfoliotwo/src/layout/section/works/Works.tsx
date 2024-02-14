@@ -14,8 +14,12 @@ export const Works = () => {
       <SectionTitle>My Works</SectionTitle>
       <Menu menuItems={worksItems}/>
       <FlexWrapper>
-        <Work />
-        <Work />
+        <Work title={"Social Network"}
+              text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."}
+              src={"https://picsum.photos/200/300"}/>
+        <Work title={"Timer"}
+              text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"}
+              src={"https://picsum.photos/200/300"}/>
       </FlexWrapper>
     </StyledWorks>
   );
