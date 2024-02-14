@@ -12,7 +12,7 @@ type WorkPropstype = {
 export const Work = ( props: WorkPropstype ) => {
   return (
     <StyledWork>
-      <img src={props.src} alt=" " />
+      <Image src={props.src} alt=" " />
       <Title>{props.title}</Title>
       <Text>{props.text}</Text>
       <Link href={"#"}>demo</Link>
@@ -24,12 +24,14 @@ export const Work = ( props: WorkPropstype ) => {
 const StyledWork = styled.div`
 box-sizing: border-box;
 border: #ed0ce2 2px solid;
-min-height: 40vh;
-background-color: #a6c9cc;
+max-width: 540px;
+width: 100%;
 `
 
 const Image = styled.img`
-  
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 `
 
 
