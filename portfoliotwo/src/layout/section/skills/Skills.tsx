@@ -11,9 +11,9 @@ export const Skills = () => {
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
       <FlexWrapper>
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill iconId={'reactSvg'}/>
+        <Skill iconId={'html5Svg'}/>
+        <Skill iconId={'css3Svg'}/>
       </FlexWrapper>
     </StyledSkills>
   );

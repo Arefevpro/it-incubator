@@ -10,13 +10,10 @@ type SkillPropsType = {
 }
 
 
-
-
-
 export const Skill = () => {
   return (
     <StyledSkill>
-      <Icon iconId={'reactSvg'} />
+      <Icon iconId={props.iconId} />
         <SkillTitle>html5</SkillTitle>
         <SkillText>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
       </SkillText>
