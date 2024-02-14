@@ -2,6 +2,7 @@ import './App.css';
 import styled from 'styled-components';
 import { Header} from '../src/layout/header/Header';
 import { Main } from '../src/layout/section/main/Main';
+import { Skills } from './layout/section/skills/Skills';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div className="App">
             <Header />
             <Main />
+            <Skills />
         </div>
     );
 }

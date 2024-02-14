@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components"
 import { FlexWrapper } from '../../../components/Flexwrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
+import { Skill } from '../../../layout/section/skills/skill/Skill';
+
 
 
 export const Skills = () => {
@@ -9,7 +11,9 @@ export const Skills = () => {
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
       <FlexWrapper>
-        
+        <Skill />
+        <Skill />
+        <Skill />
       </FlexWrapper>
     </StyledSkills>
   );
