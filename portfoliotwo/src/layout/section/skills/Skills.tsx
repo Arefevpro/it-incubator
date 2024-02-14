@@ -10,7 +10,7 @@ export const Skills = () => {
   return (
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
-      <FlexWrapper wrap='wrap'>
+      <FlexWrapper wrap='wrap' justifyContent='space-between'>
         <Skill  iconId={'codeSvg'} 
                 title={'React'} 
                 description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}/>
@@ -37,8 +37,5 @@ const StyledSkills = styled.section`
 box-sizing: border-box;
 border: #ed0ce2 2px solid;
 background-color: #a6c9cc;
-display: flex;
-justify-content: space-between;
-align-items: center;
 min-height: 40vh;
 `
