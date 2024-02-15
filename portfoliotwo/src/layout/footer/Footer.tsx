@@ -11,6 +11,7 @@ export const Footer = () => {
           <Icon  iconId={'codeSvg'}/>
         </SocialIconLink>
       </SocialIconsList>
+      <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
     </StyledFooter>
   );
 };
@@ -28,5 +29,9 @@ const SocialIconLink = styled.a`
 `
 
 const Name = styled.span`
+  background-color: #a6c9cc;
+`
+
+const Copyright = styled.span`
   background-color: #a6c9cc;
 `
