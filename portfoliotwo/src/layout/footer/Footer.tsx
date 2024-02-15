@@ -1,33 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../../src/components/icon/Icon';
+import { FlexWrapper } from '../../../src/components/Flexwrapper';
+
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <Name>Svetlana</Name>
+      <FlexWrapper>
       <SocialList>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'instagram'}/>
+            <Icon  iconId={'instagramSvg'}/>
           </SocialLink>
           <SocialItem>
           <SocialLink>
-            <Icon  iconId={'telegram'}/>
+            <Icon  iconId={'telegramSvg'}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'vk'}/>
+            <Icon  iconId={'vkSvg'}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'linkedin'}/>
+            <Icon  iconId={'linkedinSvg'}/>
           </SocialLink>
         </SocialItem>
         </SocialItem>
       </SocialList>
+      </FlexWrapper>
       <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
     </StyledFooter>
   );
@@ -35,6 +39,9 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: #a6c9cc;
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
+  min-height: 40vh;
 `
 
 const SocialList = styled.ul`
