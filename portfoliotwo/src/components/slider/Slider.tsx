@@ -12,7 +12,7 @@ export const Slider = () => {
         <Name>@ivan ivanow</Name>
       </Slide>
       </FlexWrapper>
-      <Pagination>
+        <Pagination>
         <span></span>
         <span></span>
         <span></span>
@@ -26,6 +26,9 @@ const StyledSlider = styled.div`
   border: #ed0ce2 2px solid;
   background-color: #a6c9cc;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Slide = styled.div`
@@ -41,14 +44,22 @@ const Text = styled.p`
   background-color: #a6c9cc;
 `
 
-const Name = styled.span`
+const Name = styled.div`
   box-sizing: border-box;
   border: #ed0ce2 2px solid;
   background-color: #a6c9cc;
 `
 
-const Pagination = styled.span`
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
+const Pagination = styled.div`
+
+
+span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0d00f9;
+  margin: 5px;
+}
+
 `
