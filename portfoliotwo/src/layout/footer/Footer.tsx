@@ -12,21 +12,33 @@ export const Footer = () => {
       <SocialList>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'instagramSvg'}/>
+            <Icon height={'21px'}
+                  width={'21px'} 
+                  viewBox={'0 0 21px 21px'} 
+                  iconId={'instagramSvg'}/>
           </SocialLink>
           <SocialItem>
           <SocialLink>
-            <Icon  iconId={'telegramSvg'}/>
+            <Icon iconId={'telegramSvg'}
+                  height={'21px'}
+                  width={'21px'} 
+                  viewBox={'0 0 21px 21px'}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'vkSvg'}/>
+            <Icon iconId={'vkSvg'}
+                  height={'21px'}
+                  width={'21px'} 
+                  viewBox={'0 0 21px 21px'}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon  iconId={'linkedinSvg'}/>
+            <Icon iconId={'linkedinSvg'}
+                  height={'21px'}
+                  width={'21px'} 
+                  viewBox={'0 0 21px 21px'}/>
           </SocialLink>
         </SocialItem>
         </SocialItem>
@@ -41,11 +53,13 @@ const StyledFooter = styled.footer`
   background-color: #a6c9cc;
   box-sizing: border-box;
   border: #ed0ce2 2px solid;
-  min-height: 40vh;
+  min-height: 30vh;
 `
 
 const SocialList = styled.ul`
-  background-color: #a6c9cc;
+  background-color: #b0a6cc;
+  display: flex;
+  list-style: none;
 `
 
 const SocialItem = styled.li`
