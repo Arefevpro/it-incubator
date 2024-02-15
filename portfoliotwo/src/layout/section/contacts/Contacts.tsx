@@ -6,11 +6,25 @@ export const Contact = () => {
   return (
     <StyledContacts>
       <SectionTitle>Contact</SectionTitle>
+      <StyledForm>
+        <Field />
+        <Field />
+        <Field as={"textarea"}/>
+      </StyledForm>
     </StyledContacts>
   );
 };
 
 const StyledContacts = styled.section `
+  
+
+`
+const StyledForm = styled.form `
+  
+
+`
+
+const Field = styled.input `
   
 
 `
