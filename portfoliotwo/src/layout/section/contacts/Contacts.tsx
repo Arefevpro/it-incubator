@@ -16,15 +16,29 @@ export const Contact = () => {
 };
 
 const StyledContacts = styled.section `
-  
-
+  min-height: 40vh;
+  background-color: #a6c9cc;
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
 `
 const StyledForm = styled.form `
-  
-
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
+  background-color: #a6c9cc;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Field = styled.input `
-  
-
+  box-sizing: border-box;
+  border: #ed0ce2 2px solid;
+  background-color: #a6c9cc;
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
 `
