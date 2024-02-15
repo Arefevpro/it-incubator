@@ -6,11 +6,28 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Name>Svetlana</Name>
-      <SocialIconsList>
-        <SocialIconLink>
-          <Icon  iconId={'codeSvg'}/>
-        </SocialIconLink>
-      </SocialIconsList>
+      <SocialList>
+        <SocialItem>
+          <SocialLink>
+            <Icon  iconId={'instagram'}/>
+          </SocialLink>
+          <SocialItem>
+          <SocialLink>
+            <Icon  iconId={'telegram'}/>
+          </SocialLink>
+        </SocialItem>
+        <SocialItem>
+          <SocialLink>
+            <Icon  iconId={'vk'}/>
+          </SocialLink>
+        </SocialItem>
+        <SocialItem>
+          <SocialLink>
+            <Icon  iconId={'linkedin'}/>
+          </SocialLink>
+        </SocialItem>
+        </SocialItem>
+      </SocialList>
       <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
     </StyledFooter>
   );
@@ -20,11 +37,15 @@ const StyledFooter = styled.footer`
   background-color: #a6c9cc;
 `
 
-const SocialIconsList = styled.ul`
+const SocialList = styled.ul`
   background-color: #a6c9cc;
 `
 
-const SocialIconLink = styled.a`
+const SocialItem = styled.li`
+  background-color: #a6c9cc;
+`
+
+const SocialLink = styled.a`
   background-color: #a6c9cc;
 `
 
@@ -32,6 +53,6 @@ const Name = styled.span`
   background-color: #a6c9cc;
 `
 
-const Copyright = styled.span`
+const Copyright = styled.small`
   background-color: #a6c9cc;
 `
