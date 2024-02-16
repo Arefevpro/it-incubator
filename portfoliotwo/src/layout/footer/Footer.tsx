@@ -17,6 +17,7 @@ export const Footer = () => {
                   viewBox={'0 0 21px 21px'} 
                   iconId={'instagramSvg'}/>
           </SocialLink>
+          </SocialItem>
           <SocialItem>
           <SocialLink>
             <Icon iconId={'telegramSvg'}
@@ -41,7 +42,6 @@ export const Footer = () => {
                   viewBox={'0 0 21px 21px'}/>
           </SocialLink>
         </SocialItem>
-        </SocialItem>
       </SocialList>
       <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
       </FlexWrapper>
@@ -58,6 +58,7 @@ const StyledFooter = styled.footer`
 
 const SocialList = styled.ul`
   background-color: #b0a6cc;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
