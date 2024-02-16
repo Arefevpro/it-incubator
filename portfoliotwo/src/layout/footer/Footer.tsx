@@ -7,8 +7,8 @@ import { FlexWrapper } from '../../../src/components/Flexwrapper';
 export const Footer = () => {
   return (
     <StyledFooter>
-      <Name>Svetlana</Name>
       <FlexWrapper direction={"column"} alignItems={"center"}>
+      <Name>Svetlana</Name>
       <SocialList>
         <SocialItem>
           <SocialLink>
@@ -53,13 +53,14 @@ const StyledFooter = styled.footer`
   background-color: #a6c9cc;
   box-sizing: border-box;
   border: #ed0ce2 2px solid;
-  min-height: 30vh;
+  min-height: 15vh;
 `
 
 const SocialList = styled.ul`
   background-color: #b0a6cc;
-  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 `
 
 const SocialItem = styled.li`
