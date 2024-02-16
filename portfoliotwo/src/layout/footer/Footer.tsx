@@ -59,7 +59,6 @@ const StyledFooter = styled.footer`
 const SocialList = styled.ul`
   background-color: #b0a6cc;
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
 `
