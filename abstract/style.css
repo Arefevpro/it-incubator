@@ -1,0 +1,51 @@
+body {
+  height: 100vh;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  background-color: rgb(99, 91, 91);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+}
+
+button:hover {
+  color: #fd00ad;
+}
+
+button.svg-tag {
+background-color: rgb(189, 202, 215);
+}
+
+button.svg-tag:hover svg {
+  stroke: currentColor;
+}
+
+button.svg-tag svg {
+  stroke: black;
+}
+
+button.img-tag,
+.svg-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

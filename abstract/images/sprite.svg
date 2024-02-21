@@ -1,0 +1,17 @@
+<!--при управлением свойствами stroke в css файле из svg файла stroke нужно удалять!  -->
+
+
+<svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="snow">
+<path d="M12 3V21M16 4L12 8L8.00878 4M8.00878 20L12 16L16 20M3 12H21M4 8L8.00878 12L4 16M20 16L16 12L20 8"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<g id="droplet">
+<path d="M19 13.8C19 17.7764 15.866 21 12 21C8.13401 21 5 17.7764 5 13.8C5 12.8452 5.18069 11.9338 5.50883 11.1C6.54726 8.46135 12 3 12 3C12 3 17.4527 8.46135 18.4912 11.1C18.8193 11.9338 19 12.8452 19 13.8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<g id="cloud">
+<path d="M16 13V20M4 14.7519C3.37037 13.8768 3 12.8059 3 11.6493C3 9.20008 4.8 6.9375 7.5 6.5C8.34694 4.48637 10.3514 3 12.6893 3C15.684 3 18.1317 5.32251 18.3 8.25C19.8893 8.94488 21 10.6503 21 12.4969C21 13.4232 20.7205 14.2842 20.2413 15M12 14V21M8 13V20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+</svg>
