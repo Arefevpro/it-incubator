@@ -6,4 +6,4 @@ export const theme = {
     
     font: "#FFFFFF"
   }
-}
+} 
