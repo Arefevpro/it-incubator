@@ -31,11 +31,18 @@ button:hover {
 }
 
 button.svg-tag {
-background-color: rgb(189, 202, 215);
+background-color: rgb(6, 98, 190);
+fill: none;
+width: 80px;
+height: 80px;
 }
 
 button.svg-tag:hover svg {
   stroke: currentColor;
+}
+
+button.svg-tag:first-child:hover svg {
+ fill: aqua;
 }
 
 button.svg-tag svg {
