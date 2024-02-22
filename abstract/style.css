@@ -97,6 +97,50 @@ align-items: center;
 }
 
 
-.list {
+/* .list {
   list-style: none;
+  list-style-image: url(/images/file-dotted-duotone-svgrepo-com.svg);
+} */
+
+.list {
+  list-style-type: disc;
+  list-style: none;
+  list-style-image: linear-gradient(130deg, red, black);
+  list-style-position: inside;
+  width: 400px;
+}
+
+/* .list-item::marker {
+  color: rgb(197, 6, 227);
+  content: counter(example);
+} */
+
+
+ol {
+  counter-reset: example 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+li {
+  counter-increment: example 2;
+  width: 350px;
+  background-color: rgb(37, 160, 154);
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+li::after {
+  content: counter(example);
+  color: rgba(232, 223, 223, 0.592);
+  font-size: 6rem;
+  position: absolute;
+  right: 10px;
+  top: -15px;
+}
+
+p {
+  font-size: 16px;
 }
