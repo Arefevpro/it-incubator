@@ -1,4 +1,4 @@
-body {
+/* body {
   height: 100vh;
   font-size: 3rem;
   font-weight: 800;
@@ -56,3 +56,26 @@ button.img-tag,
   align-items: center;
 }
 
+
+* {
+  box-sizing: border-box;
+  margin-bottom: 5px
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(99, 91, 91);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+div[contenteditable] {
+  border: 1px solid red;
+  width: 300px;
+  height: 100px;
+  overflow-y: auto;
+} */
