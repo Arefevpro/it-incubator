@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="myDiv">I`m div</div>
-      <img className="myImg" src="./img/Adventure-PNG-Pic.png" alt="" />
+      <img className="myImg" src="./img/Adventure-PNG-Pic.png" alt="">img</img>
       <input className="myInput" type="text" placeholder="i`m input" />
       <p className="myText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
