@@ -1,0 +1,17 @@
+.myDiv {
+  background-color: rgb(63, 109, 147);
+  height: 50px;
+}
+
+.myText {
+  background-color: rgb(24, 160, 172);
+  max-width: 500px;
+}
+
+.mySpan {
+  background-color: rgb(16, 203, 63);
+}
+
+.myImg {
+  height: 150px;
+}
