@@ -22,9 +22,6 @@ export const Slider = () => {
 };
 
 const StyledSlider = styled.div`
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -32,22 +29,13 @@ const StyledSlider = styled.div`
 `
 
 const Slide = styled.div`
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
   text-align: center;
 `
 
 const Text = styled.p`
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
 `
 
 const Name = styled.div`
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
 `
 
 const Pagination = styled.div`

@@ -20,12 +20,9 @@ export const Main = () => {
 };
 
 
-const Styledmain = styled.div`
+const Styledmain = styled.section`
 min-height: 40vh;
-background-color: #a6c9cc;
 `
-
-
 
 const Photo = styled.img`
   width: 350px;
