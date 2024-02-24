@@ -50,9 +50,6 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #a6c9cc;
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
   min-height: 15vh;
 `
 
