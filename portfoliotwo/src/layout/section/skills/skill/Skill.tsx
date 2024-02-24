@@ -20,16 +20,11 @@ export const Skill = (props: SkillPropsType) => {
   );
 };
 const StyledSkill = styled.div`
-  background-color: #a6c9cc;
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
   width: 31%;
   margin: 10px;
 `
 
 const SkillTitle = styled.h3`
-  background-color: #a6c9cc;
 `
 const SkillText = styled.p`
-  background-color: #a6c9cc;
 `

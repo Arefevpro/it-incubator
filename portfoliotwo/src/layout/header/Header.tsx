@@ -17,11 +17,8 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-  background-color: #a6c9cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
 `

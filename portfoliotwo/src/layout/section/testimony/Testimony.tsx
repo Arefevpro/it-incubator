@@ -21,8 +21,4 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
   min-height: 40vh;
-  background-color: #a6c9cc;
-  box-sizing: border-box;
-  border: #ed0ce2 2px solid;
-  background-color: #a6c9cc;
 `

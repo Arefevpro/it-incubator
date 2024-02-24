@@ -22,8 +22,6 @@ export const Work = ( props: WorkPropstype ) => {
 };
 
 const StyledWork = styled.div`
-box-sizing: border-box;
-border: #ed0ce2 2px solid;
 max-width: 540px;
 width: 100%;
 `
@@ -36,13 +34,10 @@ const Image = styled.img`
 
 
 const Title = styled.h3`
-background-color: #a6c9cc;
 `
 
 const Text = styled.p`
-background-color: #a6c9cc;
 `
 
 const Link = styled.a`
-background-color: #a6c9cc;
 `

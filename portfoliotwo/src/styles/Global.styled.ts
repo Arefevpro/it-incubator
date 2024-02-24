@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -31,5 +32,13 @@ export const GlobalStyle = createGlobalStyle`
     background-color: unset;
     border: none;
   }
+
+section:nth-of-type(odd) {
+  background-color: ${theme.colors.primaryBg};
+}
+
+section:nth-of-type(even) {
+  background-color: ${theme.colors.secondaryBg};
+}
 
 `;

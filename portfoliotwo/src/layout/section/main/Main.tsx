@@ -21,8 +21,6 @@ export const Main = () => {
 
 
 const Styledmain = styled.div`
-box-sizing: border-box;
-border: #ed0ce2 2px solid;
 min-height: 40vh;
 background-color: #a6c9cc;
 `
