@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { theme} from "../../../styles/Theme";
 
 
 export const HeaderMenu = (props:  {menuItems: Array<string>} ) => {
@@ -35,7 +36,7 @@ const StyledHeaderMenu = styled.nav`
   }
 `
 const ListItem = styled.li`
-
+  position: relative;
 `
 
 const Link = styled.a`
@@ -49,5 +50,12 @@ const Link = styled.a`
 `
 
 const Mask = styled.span`
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 50%;
+  overflow-y: hidden;
+  outline: 1px solid rgba(117, 114, 213, 1);
+  color: ${theme.colors.accent};
   `
