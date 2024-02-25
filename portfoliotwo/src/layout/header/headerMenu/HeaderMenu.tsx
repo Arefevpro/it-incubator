@@ -45,8 +45,6 @@ const Link = styled.a`
   font-weight: 400;
   line-height: 55px;
   text-align: center;
-  color: rgba(117, 114, 213, 1);
-;
 `
 
 const Mask = styled.span`
@@ -56,6 +54,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  outline: 1px solid rgba(117, 114, 213, 1);
+  outline: 1px solid #a004c3;
   color: ${theme.colors.accent};
   `
