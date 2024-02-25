@@ -37,6 +37,10 @@ const StyledHeaderMenu = styled.nav`
 `
 const ListItem = styled.li`
   position: relative;
+  
+  &:hover {
+    ${Mask}
+}
 `
 
 const Link = styled.a`
@@ -54,6 +58,17 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  outline: 1px solid #a004c3;
+  /* outline: 1px solid #a004c3; */
   color: ${theme.colors.accent};
+
+
+  & + & {
+    top: 50%;
+    span {
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+  }
+
+
   `
