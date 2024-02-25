@@ -78,13 +78,15 @@ position: relative;
   top: 50%;
   left: -10px;
   right: -10px;
-  z-index: ;
+  z-index: 1;
 
 }
 
 &:hover {
   ${Mask} {
     transform: skewX(12deg) translateX(5px);
+    color: ${theme.colors.font};
+    
     & + ${Mask} {
     transform: skewX(12deg) translateX(-5px);
   }
