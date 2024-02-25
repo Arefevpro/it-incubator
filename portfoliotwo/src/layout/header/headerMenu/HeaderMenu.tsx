@@ -35,13 +35,7 @@ const StyledHeaderMenu = styled.nav`
     justify-content: center;
   }
 `
-const ListItem = styled.li`
-  position: relative;
-  
-  &:hover {
-    ${Mask}
-}
-`
+
 
 const Link = styled.a`
   font-family: 'Josefin Sans', sans-serif;
@@ -69,6 +63,14 @@ const Mask = styled.span`
       transform: translateY(-50%);
     }
   }
-
-
   `
+
+const ListItem = styled.li`
+position: relative;
+
+&:hover {
+  ${Mask} {
+    transform: skewX(12deg);
+  }
+}
+`
