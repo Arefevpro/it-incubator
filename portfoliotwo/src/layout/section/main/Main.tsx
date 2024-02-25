@@ -35,10 +35,15 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-  color: #ffffff;
+font-size: 27px;
+font-weight: 400;
+line-height: 41px;
 `
 const Name = styled.h2`
-  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 `
 
 const SmallText = styled.h2`
