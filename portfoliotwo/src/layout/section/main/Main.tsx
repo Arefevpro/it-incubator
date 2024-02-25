@@ -36,11 +36,15 @@ display: flex;
 
 const PotoWrapper = styled.div`
   position: relative;
+  z-index: 1;
 
   &::before {
     content: "";
     display: inline-block;
     position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: -1;
     border: 5px solid ${theme.colors.accent};
     height: 470px;
     width: 360px;
