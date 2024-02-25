@@ -11,7 +11,7 @@ export const Main = () => {
       <Container>
         <FlexWrapper alignItems="center" justifyContent="space-between">
           <div>
-            <span>Hi There</span>
+            <SmallText>Hi There</SmallText>
             <Name>I am Svetlana Dyablo</Name>
             <MainTitle>A Web Developer.</MainTitle>
           </div>
@@ -24,7 +24,8 @@ export const Main = () => {
 
 
 const Styledmain = styled.section`
-min-height: 40vh;
+min-height: 100vh;
+display: flex;
 `
 
 const Photo = styled.img`
@@ -38,4 +39,9 @@ const MainTitle = styled.h1`
 `
 const Name = styled.h2`
   color: #ffffff;
+`
+
+const SmallText = styled.h2`
+  font-size: 14px;
+  font-weight: 400;
 `
