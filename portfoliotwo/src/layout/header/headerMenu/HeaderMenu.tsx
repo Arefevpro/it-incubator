@@ -43,6 +43,7 @@ const Link = styled.a`
   font-weight: 400;
   line-height: 55px;
   text-align: center;
+  color: transparent;
 `
 
 const Mask = styled.span`
@@ -80,13 +81,19 @@ position: relative;
   right: -10px;
   z-index: 1;
 
+
+  transform: scale(0);
 }
 
 &:hover {
+  &::before {
+    transform: scale(1);
+  }
+
   ${Mask} {
     transform: skewX(12deg) translateX(5px);
     color: ${theme.colors.font};
-    
+
     & + ${Mask} {
     transform: skewX(12deg) translateX(-5px);
   }
