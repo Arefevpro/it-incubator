@@ -68,6 +68,20 @@ const Mask = styled.span`
 const ListItem = styled.li`
 position: relative;
 
+&::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: ${theme.colors.accent};
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  right: -10px;
+  z-index: ;
+
+}
+
 &:hover {
   ${Mask} {
     transform: skewX(12deg) translateX(5px);
