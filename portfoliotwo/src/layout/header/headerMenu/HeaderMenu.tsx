@@ -70,7 +70,10 @@ position: relative;
 
 &:hover {
   ${Mask} {
-    transform: skewX(12deg);
+    transform: skewX(12deg) translateX(5px);
+    & + ${Mask} {
+    transform: skewX(12deg) translateX(-5px);
+  }
   }
 }
 `
