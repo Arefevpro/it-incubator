@@ -13,10 +13,15 @@ export const Main = () => {
         <FlexWrapper alignItems="center" justifyContent="space-between">
           <div>
             <SmallText>Hi There</SmallText>
-            <Name>I am <span>Svetlana Dyablo</span></Name>
+            <Name>
+              I am <span>Svetlana Dyablo</span>
+            </Name>
             <MainTitle>A Web Developer.</MainTitle>
           </div>
-          <Photo src={photo} alt="" />
+
+          <PotoWrapper>
+            <Photo src={photo} alt="" />
+          </PotoWrapper>
         </FlexWrapper>
       </Container>
     </Styledmain>
@@ -27,6 +32,19 @@ export const Main = () => {
 const Styledmain = styled.section`
 min-height: 100vh;
 display: flex;
+`
+
+const PotoWrapper = styled.div`
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 5px solid ${theme.colors.accent};
+    height: 470px;
+    width: 360px;
+  }
 `
 
 const Photo = styled.img`
