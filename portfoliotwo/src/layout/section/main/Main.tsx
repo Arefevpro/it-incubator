@@ -48,13 +48,18 @@ const Name = styled.h2`
   margin: 10px 0;
 
   span {
+position: relative;
+z-index: 1;
+
     &::before {
       content: "";
       display: inline-block;
-      /* position: absolute; */
+      position: absolute;
       background-color: ${theme.colors.accent};
       height: 20px;
       width: 100%;
+      bottom: 0;
+      z-index: -1;
     }
   }
 `
