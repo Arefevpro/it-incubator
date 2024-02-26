@@ -8,8 +8,11 @@ export const SectionTitle = styled.h2`
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 5px;
+  margin-bottom: 90px;
 
   position: relative;
+
+// Декоративная линия у заголовков секций
 
   &::before {
     content: '';
@@ -20,6 +23,7 @@ export const SectionTitle = styled.h2`
 
     position: absolute;
     left: 50%;
+    bottom: -30px;
     transform: translateX(-50%);
   }
 
