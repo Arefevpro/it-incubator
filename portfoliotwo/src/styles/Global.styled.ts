@@ -22,6 +22,11 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.2;
   }
 
+  section {
+    padding: 100px 0;
+  }
+
+
   a {
     text-decoration: none;
   }
