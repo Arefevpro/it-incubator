@@ -37,11 +37,13 @@ const IconWrapper = styled.div`
     content: "";
     display: inline-block;
     position: absolute;
+    left: 50%;
+    top: 50%;
     z-index: -1;
     height: 80px;
     width: 80px;
     background-color: rgba(255, 255, 255, 0.1);
-    transform: rotate(45deg);
+    transform: rotate(45deg) translate(-50%, -50%);
   }
 `
 
