@@ -2,10 +2,9 @@ import styled from "styled-components"
 
 
 export const SectionTitle = styled.h2`
-  color: #ffffff;
   text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0;
-`
-
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 5px;
+`;
