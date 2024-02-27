@@ -38,6 +38,7 @@ const Link = styled.a`
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 10px;
+  
 
   &::before {
     content: "";
@@ -45,8 +46,8 @@ const Link = styled.a`
     height: 10px;
     background-color: ${theme.colors.accent};
     position: absolute;
-    bottom: 0;
-    left: -10px;
-    right: -10px;
+    bottom: -6px;
+    left: 0;
+    right: 0;
   }
 `;
