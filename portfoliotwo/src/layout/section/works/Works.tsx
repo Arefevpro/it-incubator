@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
-import { Menu } from '../../../components/menu/Menu';
+import { Menu } from './tabMenu/TabMenu';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { FlexWrapper } from '../../../components/Flexwrapper';
 import { Work } from './work/Work';
@@ -31,5 +31,5 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section `
-  min-height: 40vh;
+
 `
