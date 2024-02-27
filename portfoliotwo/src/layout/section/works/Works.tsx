@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components"
-import { Menu } from './tabMenu/TabMenu';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { FlexWrapper } from '../../../components/Flexwrapper';
 import { Work } from './work/Work';
 import timerImg from '../../../assets/images/0c92c8a2d9105549989393fee63d52d5.webp';
 import socialImg from '../../../assets/images/0f6c9eae25a0122b383d52e1e9a7182e.webp';
 import { Container } from '../../../components/slider/Container';
+import { TabMenu } from '../../section/works/tabMenu/TabMenu';
 
 
 const worksItems = ["All", "landing page", "React", "spa"]
@@ -16,7 +16,7 @@ export const Works = () => {
     <StyledWorks>
      <Container>
      <SectionTitle>My Works</SectionTitle>
-      <Menu menuItems={worksItems}/>
+      <TabMenu menuItems={worksItems}/>
       <FlexWrapper justifyContent='space-between'>
         <Work title={"Social Network"}
               text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."}

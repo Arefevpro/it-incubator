@@ -2,30 +2,22 @@ import React from 'react';
 import styled from "styled-components"
 
 
-export const TabMenu = (props:  {menuItems: Array<string>} ) => {
+export const Menu = (props:  {menuItems: Array<string>} ) => {
   return (
-    <StyledTabMenu>
+    <StyledMenu>
         <ul>
           {props.menuItems.map((item: string, index: number) => {
             return <li key={index}>
-              <Link href="#">{item}</Link>
+              <a href="#">{item}</a>
             </li>
           })}
         </ul>
-      </StyledTabMenu>
+      </StyledMenu>
   );
 };
 
 
-
-
-const listItem =styled.li`
-  
-  
-`
-
-
-const StyledTabMenu = styled.nav`
+const StyledMenu = styled.nav`
   ul {
     list-style: none;
     display: flex;
@@ -34,11 +26,4 @@ const StyledTabMenu = styled.nav`
     margin: 0;
     justify-content: center;
   }
-`
-
-const Link =styled.a`
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 `
