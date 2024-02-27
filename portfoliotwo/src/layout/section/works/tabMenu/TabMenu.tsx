@@ -22,7 +22,7 @@ export const TabMenu = (props:  {menuItems: Array<string>} ) => {
 
 
 const listItem =styled.li`
-  
+  position: relative;
   
 `
 
@@ -44,18 +44,17 @@ const Link =styled.a`
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 10px;
-  position: relative;
-  z-index: 1;
+  
 
   &::before {
     content: "";
     display: inline-block;
+    height: 10px;
+    background-color: ${theme.colors.accent};
+
     position: absolute;
     bottom: 0;
     left: -10px;
     right: -10p;
-    z-index: -1;
-    background-color: ${theme.colors.accent};
-    height: 10px;
   }
 `
