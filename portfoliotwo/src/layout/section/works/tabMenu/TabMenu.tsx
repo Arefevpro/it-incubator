@@ -21,15 +21,17 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledTabMenu = styled.nav`
+margin-bottom: 40px;
   ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
   }
 `;
 
 const ListItem = styled.li`
   position: relative;
+  z-index: 1;
 `;
 
 const Link = styled.a`
@@ -40,14 +42,22 @@ const Link = styled.a`
   padding: 10px;
   
 
+  &:hover {
+    &::before {
+      height: 10px;
+    }
+  }
+
+
   &::before {
     content: "";
     display: inline-block;
-    height: 10px;
     background-color: ${theme.colors.accent};
+
     position: absolute;
     bottom: -6px;
     left: 0;
     right: 0;
+    z-index: -1;
   }
 `;
