@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { Link } from '../../../../components/Link';
 
 
 type WorkPropstype = {
@@ -37,7 +38,4 @@ const Title = styled.h3`
 `
 
 const Text = styled.p`
-`
-
-const Link = styled.a`
 `
