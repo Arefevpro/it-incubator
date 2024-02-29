@@ -25,6 +25,10 @@ export const Work = ( props: WorkPropstype ) => {
 const StyledWork = styled.div`
 max-width: 540px;
 width: 100%;
+
+${Link} {
+  
+}
 `
 
 const Image = styled.img`
