@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../../src/components/icon/Icon';
 import { FlexWrapper } from '../../../src/components/Flexwrapper';
+import { theme } from '../../../src/styles/Theme';
 
 
 export const Footer = () => {
@@ -50,28 +51,39 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  min-height: 15vh;
+background-color: ${theme.colors.primaryBg};
+  padding: 40px 0;
 `
 
 const SocialList = styled.ul`
-  background-color: #b0a6cc;
+
   display: flex;
-  margin: 0;
-  padding: 0;
+  gap: 20px;
+  margin: 30px 0;
+  
 `
 
 const SocialItem = styled.li`
-  background-color: #a6c9cc;
+  
 `
 
 const SocialLink = styled.a`
-  background-color: #a6c9cc;
+background-color: rgba(255, 255, 255, 0.1);
+;
+
 `
 
 const Name = styled.span`
-  background-color: #a6c9cc;
-`
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+`;
 
 const Copyright = styled.small`
-  background-color: #a6c9cc;
-`
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  opacity: 0.5;
+`;
