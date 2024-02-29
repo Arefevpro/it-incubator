@@ -40,10 +40,15 @@ const Field = styled.input`
   border: ${theme.colors.borderColor};
   padding: 7px 15px;
 
-  
-font-size: 12px;
-font-weight: 400;
-letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 
-color: ${theme.colors.font};
+  color: ${theme.colors.font};
+
+  &::placeholder {
+    color: ${theme.colors.placeholderColor};
+    text-transform: capitalize;
+  }
 `;
