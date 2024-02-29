@@ -32,6 +32,10 @@ background-color: ${theme.colors.secondaryBg};
 
 ${Link} {
   padding: 10px 0;
+
+  & + ${Link} {
+  margin-left: 20px;
+}
 }
 `
 
