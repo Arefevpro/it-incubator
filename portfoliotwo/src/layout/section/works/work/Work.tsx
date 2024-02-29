@@ -14,7 +14,10 @@ type WorkPropstype = {
 export const Work = ( props: WorkPropstype ) => {
   return (
     <StyledWork>
-      <Image src={props.src} alt=" " />
+      <ImageWrapper>
+        <Image src={props.src} alt=" " />
+      </ImageWrapper>
+
       <Description>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
@@ -39,6 +42,23 @@ ${Link} {
 }
 `
 
+const ImageWrapper = styled.div`
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter:  blur(4px);
+    z-index: 1;
+  }
+`;
+
 const Image = styled.img`
   width: 100%;
   height: 260px;
@@ -55,3 +75,4 @@ const Title = styled.h3`
 const Text = styled.p`
 margin: 14px 0 10px;
 `
+
