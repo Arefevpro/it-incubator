@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
 import { FlexWrapper } from '../Flexwrapper';
+import { theme } from '../../styles/Theme';
 
 export const Slider = () => {
   return (
@@ -14,7 +15,7 @@ export const Slider = () => {
       </FlexWrapper>
         <Pagination>
         <span></span>
-        <span></span>
+        <span className={'active'}></span>
         <span></span>
       </Pagination>
     </StyledSlider>
@@ -50,11 +51,19 @@ const Pagination = styled.div`
 
 span {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #0d00f9;
-  margin: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  & + span {
+    margin-left: 5px;
+  }
+
+  &.active {
+    background-color: ${theme.colors.accent};
+    width: 20px;
+  }
 }
 
 `
