@@ -58,7 +58,6 @@ const ImageWrapper = styled.div`
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(4px);
-      z-index: 1;
     }
 
     ${Button} {
@@ -72,6 +71,12 @@ const ImageWrapper = styled.div`
     top: 50%;
     left: 50%;                          // для выравнивания по центру
     transform: translate(-50%, -50%);  // для выравнивания по центру
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 
