@@ -45,17 +45,19 @@ ${Link} {
 const ImageWrapper = styled.div`
   position: relative;
 
-  &::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter:  blur(4px);
-    z-index: 1;
+  &:hover {
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      z-index: 1;
+    }
   }
 `;
 
