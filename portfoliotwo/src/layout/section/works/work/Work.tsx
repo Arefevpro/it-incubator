@@ -14,8 +14,8 @@ type WorkPropstype = {
 export const Work = ( props: WorkPropstype ) => {
   return (
     <StyledWork>
+      <Image src={props.src} alt=" " />
       <Description>
-        <Image src={props.src} alt=" " />
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
         <Link href={"#"}>demo</Link>
