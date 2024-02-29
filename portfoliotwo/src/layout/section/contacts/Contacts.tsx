@@ -2,16 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Button } from '../../../components/Button';
+import { Container } from '../../../components/slider/Container';
 
 export const Contact = () => {
   return (
     <StyledContacts>
       <SectionTitle>Contact</SectionTitle>
       <StyledForm>
+        <Container>
         <Field placeholder={"Name"}/>
         <Field placeholder={"Subject"}/>
         <Field placeholder={"Message"} as={"textarea"}/>
         <Button type={"submit"}>Send message</Button>
+        </Container>
       </StyledForm>
     </StyledContacts>
   );
