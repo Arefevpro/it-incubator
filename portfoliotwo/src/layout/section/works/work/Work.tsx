@@ -60,14 +60,18 @@ const ImageWrapper = styled.div`
       backdrop-filter: blur(4px);
       z-index: 1;
     }
+
+    ${Button} {
+      opacity: 1;    // показываем кнопку
+    }
   }
 
   ${Button} {
+    opacity: 0;                          // прячем кнопку
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    left: 50%;                          // для выравнивания по центру
+    transform: translate(-50%, -50%);  // для выравнивания по центру
   }
 `;
 
