@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
 import { Link } from '../../../../components/Link';
+import { theme } from '../../../../styles/Theme';
 
 
 type WorkPropstype = {
@@ -25,6 +26,7 @@ export const Work = ( props: WorkPropstype ) => {
 const StyledWork = styled.div`
 max-width: 540px;
 width: 100%;
+background-color: ${theme.colors.secondaryBg};
 
 ${Link} {
   padding: 10px 0;
