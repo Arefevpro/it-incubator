@@ -14,11 +14,13 @@ type WorkPropstype = {
 export const Work = ( props: WorkPropstype ) => {
   return (
     <StyledWork>
-      <Image src={props.src} alt=" " />
-      <Title>{props.title}</Title>
-      <Text>{props.text}</Text>
-      <Link href={"#"}>demo</Link>
-      <Link href={"#"}>kode</Link>
+      <Description>
+        <Image src={props.src} alt=" " />
+        <Title>{props.title}</Title>
+        <Text>{props.text}</Text>
+        <Link href={"#"}>demo</Link>
+        <Link href={"#"}>kode</Link>
+      </Description>
     </StyledWork>
   );
 };
@@ -37,8 +39,11 @@ const Image = styled.img`
   width: 100%;
   height: 260px;
   object-fit: cover;
-`
 
+`
+const Description = styled.div`
+padding: 25px 20px;
+`
 
 const Title = styled.h3`
 `
