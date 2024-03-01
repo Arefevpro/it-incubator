@@ -18,7 +18,8 @@ label {
   left: 0;
 }
 
-input:focus + label {
+input:focus + label,
+input:not(:placeholder-shown) + label {
   transform: translateY(-1.5rem);
 }
 
