@@ -7,13 +7,13 @@ import { FlexWrapper } from "../../components/flex/FlexWrapper";
 export const Header = () => {
   return (
     <FlexWrapper>
-       <StyledHeader>
-      <FlexWrapper justify="flex-start">
-      <Logo />
-      <StyledHeaderLogoName>Elias</StyledHeaderLogoName>
-      </FlexWrapper>
-      <Menu />
-    </StyledHeader>
+      <StyledHeader>
+        <FlexWrapper justify="flex-start">
+          <Logo />
+          <StyledHeaderLogoName>Elias</StyledHeaderLogoName>
+        </FlexWrapper>
+        <Menu />
+      </StyledHeader>
     </FlexWrapper>
   );
 };
@@ -21,14 +21,9 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   width: 100%;
-  height: 61px;
-  background-color: #9fa6a1;
-  color: #ABB2BF;
 `;
 
 const StyledHeaderLogoName = styled.span`
   display: flex;
   gap: 8px;
-  color: #FFFFFF;
-  font-size: 16px;
 `;

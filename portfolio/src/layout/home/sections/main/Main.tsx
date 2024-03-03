@@ -2,28 +2,32 @@ import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
+import { theme } from "../../../../styles/Theme";
 
 export const MainSection = ( ) => {
   return (
-  <div>
-    <FlexWrapper>
-   <FlexWrapper direction="column">
-   <MainTitle>Elias is a 
-        <MainTitleAccent>web designer</MainTitleAccent> 
-         and 
-        <MainTitleAccent>front-end developer</MainTitleAccent>
-        </MainTitle>
-      <p>He crafts responsive websites where technologies meet creativity</p>
-      <button>Contact me!!</button>
-   </FlexWrapper>
-     <FlexWrapper direction="column">
-     <Photo src={photoP1} alt="" />
-      <h2>Currently working on 
-        <span>Portfolio</span>
-      </h2>
-     </FlexWrapper>
-    </FlexWrapper>
-  </div>
+    <div>
+      <FlexWrapper>
+        <FlexWrapper direction="column">
+          <MainTitle>
+            Elias is a<MainTitleAccent>web designer</MainTitleAccent>
+            and
+            <MainTitleAccent>front-end developer</MainTitleAccent>
+          </MainTitle>
+          <p>
+            He crafts responsive websites where technologies meet creativity
+          </p>
+          <button>Contact me!!</button>
+        </FlexWrapper>
+        <FlexWrapper direction="column">
+          <Photo src={photoP1} alt="" />
+          <h2>
+            Currently working on
+            <span>Portfolio</span>
+          </h2>
+        </FlexWrapper>
+      </FlexWrapper>
+    </div>
   );
 };
 
@@ -39,5 +43,5 @@ const MainTitle = styled.h1`
 
 const MainTitleAccent = styled.h1`
   font-size: 32px;
-  color: #C778DD;
+  color: ${theme.colors.accent};
 `;
