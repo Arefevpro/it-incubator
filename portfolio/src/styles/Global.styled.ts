@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
-  color: #ABB2BF;
+  color: ${theme.colors.colorGray};
   font-size: 16px;
   background-color: ${theme.colors.bgColorDark};
 ;
@@ -32,7 +32,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: ${theme.colors.accentWhite};
+  color: ${theme.colors.colorGray};
 }
 
 `
