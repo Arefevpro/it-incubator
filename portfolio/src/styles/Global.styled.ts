@@ -21,6 +21,7 @@ body {
   line-height: 1.2;
   color: #ABB2BF;
   font-size: 16px;
+  background-color: ${theme.colors.bgColorDark};
 ;
 }
 
