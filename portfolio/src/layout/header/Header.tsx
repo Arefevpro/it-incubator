@@ -22,7 +22,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
   width: 100%;
   height: 61px;
-  background-color: #07643b;
+  background-color: #57d59e;
   color: #ABB2BF;
 `;
 
