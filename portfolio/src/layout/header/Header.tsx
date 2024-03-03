@@ -11,7 +11,7 @@ export const Header = () => {
       <Container>
         <FlexWrapper justify="flex-start">
           <Logo />
-          <StyledHeaderLogoName>Elias</StyledHeaderLogoName>
+          <HeaderLogoName>Elias</HeaderLogoName>
         </FlexWrapper>
         <Menu />
       </Container>
@@ -24,6 +24,6 @@ const StyledHeader = styled.header`
   width: 100%;
 `;
 
-const StyledHeaderLogoName = styled.span`
+const HeaderLogoName = styled.span`
 
 `;
