@@ -6,13 +6,13 @@ import { SkillsSection } from './layout/home/sections/skills/Skills';
 
 function App() {
     return (
-        <div className="App">
-            <StylGlobal>
-            <Header />
-            <MainSection />
-            <SkillsSection />
-            </StylGlobal>
-        </div>
+      <div className="App">
+        <StylGlobal>
+          <Header />
+          <MainSection />
+          <SkillsSection />
+        </StylGlobal>
+      </div>
     );
 }
 
