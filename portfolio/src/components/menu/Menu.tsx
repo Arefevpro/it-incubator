@@ -27,12 +27,7 @@ const StyledMenu = styled.nav`
   ul {
     display: flex;
     gap: 32px;
-    list-style: none;
-    margin: 0;
   }
 
-  a {
-    text-decoration: none;
-  }
 `
 
