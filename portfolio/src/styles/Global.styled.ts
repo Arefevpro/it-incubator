@@ -32,6 +32,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: ${theme.colors.accentWhite};
 }
 
 `
