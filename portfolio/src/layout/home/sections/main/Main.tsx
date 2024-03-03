@@ -43,5 +43,5 @@ const MainTitle = styled.h1`
 
 const MainTitleAccent = styled.h1`
   font-size: 32px;
-  color: ${theme.colors.accent};
+  color: ${theme.colors.accentGreen};
 `;

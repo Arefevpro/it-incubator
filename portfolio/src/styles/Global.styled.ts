@@ -34,6 +34,4 @@ a {
   cursor: pointer;
 }
 
-
-
 `
