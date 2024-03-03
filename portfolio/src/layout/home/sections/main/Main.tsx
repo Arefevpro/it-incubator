@@ -2,8 +2,6 @@ import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
-import { DotsDecor } from "../../../../components/svg/SvgDecor";
-import { LogoDecor } from "../../../../components/svg/SvgDecor";
 
 export const MainSection = ( ) => {
   return (
@@ -20,7 +18,6 @@ export const MainSection = ( ) => {
    </FlexWrapper>
      <FlexWrapper direction="column">
      <Photo src={photoP1} alt="" />
-     <DotsDecor />
       <h2>Currently working on 
         <span>Portfolio</span>
       </h2>
