@@ -1,22 +1,24 @@
 import React from "react";
 import styled from 'styled-components';
 import { Hashtag } from "../hashtag/Hashtag";
+import { theme } from "../../styles/Theme";
 
 export const Menu = () => {
   return (
     <StyledMenu>
         <ul>
           <li>
-              <a href="/"><span>#</span>home</a>
+            
+              <Link href="/"><Hashtag>#</Hashtag>home</Link>
               </li>
           <li>
-              <a href="/about"><span>#</span>works</a>
+              <Link href="/about"><Hashtag>#</Hashtag>works</Link>
               </li>
           <li>
-              <a href="/contact"><span>#</span>about-me</a>
+              <Link href="/contact"><Hashtag>#</Hashtag>about-me</Link>
               </li>
           <li>
-              <a href="/contact"><span>#</span>contacts</a>
+              <Link href="/contact"><Hashtag>#</Hashtag>contacts</Link>
           </li>
         </ul>
     </StyledMenu>
@@ -31,5 +33,17 @@ const StyledMenu = styled.nav`
   }
 
 `
+const Link = styled.a`
+  display: inline-block;
+  
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
 
+  &:active {
+    color: ${theme.colors.accentWhite};
+    font-weight: 500;
+  }
+  
+`
 

@@ -4,6 +4,7 @@ import { Logo } from "../../components/logo/Logo";
 import { Menu } from "../../components/menu/Menu";
 import { FlexWrapper } from "../../components/flex/FlexWrapper";
 import { Container } from "../../components/slider/Container";
+import { theme } from "../../styles/Theme";
 
 export const Header = () => {
   return (
@@ -25,5 +26,6 @@ const StyledHeader = styled.header`
 `;
 
 const HeaderLogoName = styled.span`
-
+  font-weight: 700;
+  color: ${theme.colors.accentWhite}
 `;
