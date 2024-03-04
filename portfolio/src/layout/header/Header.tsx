@@ -12,8 +12,8 @@ export const Header = () => {
       <Container>
         <FlexWrapper justify="flex-start">
           <Logo />
+          <Menu />
         </FlexWrapper>
-        <Menu />
       </Container>
     </StyledHeader>
   );
