@@ -5,6 +5,7 @@ import { Menu } from "../../components/menu/Menu";
 import { FlexWrapper } from "../../components/flex/FlexWrapper";
 import { Container } from "../../components/slider/Container";
 import { theme } from "../../styles/Theme";
+import { Language } from "../../components/Language";
 
 export const Header = () => {
   return (
@@ -13,6 +14,7 @@ export const Header = () => {
         <FlexWrapper justify="space-between">
           <Logo />
           <Menu />
+          <Language />
         </FlexWrapper>
       </Container>
     </StyledHeader>
