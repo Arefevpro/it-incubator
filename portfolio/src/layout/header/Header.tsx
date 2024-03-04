@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <FlexWrapper justify="flex-start">
+        <FlexWrapper justify="space-between">
           <Logo />
           <Menu />
         </FlexWrapper>
@@ -22,4 +22,5 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   width: 100%;
+  padding: 32px 0 8px;
 `;
