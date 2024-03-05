@@ -21,9 +21,10 @@ export const MainSection = ( ) => {
                 He crafts responsive websites where technologies meet creativity
               </MainText>
               <button>Contact me!!</button>
-            </FlexWrapper>
-              <PhotoWrapper>
-                <Photo src={photoP1} alt="" />
+            </FlexWrapper >
+            <FlexWrapper direction="column">
+            <PhotoWrapper>
+                <Photo />
               </PhotoWrapper>
             <SignatureBox>
                 <Signature>
@@ -31,6 +32,8 @@ export const MainSection = ( ) => {
                   <SignatureAccent>Portfolio</SignatureAccent>
                 </Signature>
               </SignatureBox>
+            </FlexWrapper>
+             
           </FlexWrapper>
         </Container>
       </Styledmain>
@@ -49,13 +52,12 @@ const PhotoWrapper = styled.div`
   outline: 1px solid red;
 `;
 
-const Photo = styled.img`
-width: 457px;
+const Photo = styled.div`
+  width: 457px;
   height: 386px;
-  object-fit: cover;
-  background-position: center;
+  background-image: url(${photoP1});
+  background-repeat: no-repeat;
   background-size: cover;
-  background-clip: content-box;
 `;
 
 const MainTitle = styled.h1`
@@ -78,12 +80,13 @@ margin-bottom: 24px;
 `;
 
 const SignatureBox = styled.div`
-  
+  width: 402px;
+  height: 37px;
+  border: 1px solid ${theme.colors.colorGray};
 `
 
 const Signature = styled.p`
   font-weight: 500;
-  padding: 15px;
 `;
 
 const SignatureAccent = styled.span`
