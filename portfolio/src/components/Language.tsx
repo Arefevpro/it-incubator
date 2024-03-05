@@ -5,17 +5,20 @@ import { Icon } from '../components/icon/Icon'
 
 export const Language = () => {
   return (
-    <StyledLanguage>en
-    </StyledLanguage>
-    
+    <LanguageBox >
+      <LogoName>en</LogoName>
+      <Icon iconId={"arrowsDefault"} width='25' height='15'/>
+    </LanguageBox>
   );
 };
 
-const StyledLanguage = styled.span`
-  display: inline-block;
+const LogoName = styled.span`
+display: inline-block;
+  font-weight: 600;
+  color: ${theme.colors.colorGray};
   text-transform: uppercase;
 `
-const ArrowsSvg = styled.div`
-  
-`
+
+const LanguageBox = styled.div`
+`;
 

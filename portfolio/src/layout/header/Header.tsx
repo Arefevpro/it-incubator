@@ -11,8 +11,8 @@ export const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <FlexWrapper justify="space-between">
-          <Logo />
+        <Logo />
+        <FlexWrapper justify="flex-end" gap="32px" padding="0" margin="0">
           <Menu />
           <Language />
         </FlexWrapper>
