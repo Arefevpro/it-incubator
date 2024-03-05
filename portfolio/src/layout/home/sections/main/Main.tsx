@@ -49,7 +49,7 @@ display: flex;
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 1;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   &::before {
     content: "";
@@ -69,7 +69,8 @@ const Photo = styled.div`
   height: 386px;
   background-image: url(${photoP1});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: -130px -80px;
+  background-size: 650px;
 `;
 
 const MainTitle = styled.h1`
