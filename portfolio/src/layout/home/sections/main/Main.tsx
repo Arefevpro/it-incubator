@@ -8,37 +8,44 @@ import { Container } from "../../../../components/slider/Container";
 export const MainSection = ( ) => {
   return (
     <div>
-      <Container>
-      <FlexWrapper>
-        <FlexWrapper direction="column">
-          <MainTitle>
-            Elias is a<MainTitleAccent>web designer</MainTitleAccent>
-            and
-            <MainTitleAccent>front-end developer</MainTitleAccent>
-          </MainTitle>
-          <MainText>
-            He crafts responsive websites where technologies meet creativity
-          </MainText>
-          <button>Contact me!!</button>
-        </FlexWrapper>
-        <FlexWrapper direction="column">
-          <Photo src={photoP1} alt="" />
-          <Signature>
-            Currently working on
-            <SignatureAccent>Portfolio</SignatureAccent>
-          </Signature>
-        </FlexWrapper>
-      </FlexWrapper>
-      </Container>
+      <Styledmain>
+        <Container>
+          <FlexWrapper>
+            <FlexWrapper direction="column">
+              <MainTitle>
+                Elias is a<MainTitleAccent>web designer</MainTitleAccent>
+                and
+                <MainTitleAccent>front-end developer</MainTitleAccent>
+              </MainTitle>
+              <MainText>
+                He crafts responsive websites where technologies meet creativity
+              </MainText>
+              <button>Contact me!!</button>
+            </FlexWrapper>
+            <FlexWrapper direction="column">
+              <Photo src={photoP1} alt="" />
+              <SignatureBox>
+                <Signature>
+                  Currently working on
+                  <SignatureAccent>Portfolio</SignatureAccent>
+                </Signature>
+              </SignatureBox>
+            </FlexWrapper>
+          </FlexWrapper>
+        </Container>
+      </Styledmain>
     </div>
   );
 };
 
-
+const Styledmain = styled.section`
+min-height: 100vh;
+display: flex;
+`;
 
 const Photo = styled.img`
   width: 457px;
-  height: 386px;
+  height: 386px;  
   object-fit: cover;
 `;
 
@@ -60,6 +67,10 @@ const MainTitleAccent = styled.span`
 const MainText = styled.p`
 margin-bottom: 24px;
 `;
+
+const SignatureBox = styled.div`
+  
+`
 
 const Signature = styled.p`
   font-weight: 500;
