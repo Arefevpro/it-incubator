@@ -49,7 +49,7 @@ display: flex;
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 1;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 `;
 
 const Photo = styled.div`
@@ -87,6 +87,16 @@ const SignatureBox = styled.div`
 
 const Signature = styled.p`
   font-weight: 500;
+  padding: 8px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: ${theme.colors.accentGreen};
+    margin-right: 10px;
+  }
 `;
 
 const SignatureAccent = styled.span`
