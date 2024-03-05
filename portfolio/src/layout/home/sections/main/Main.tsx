@@ -49,18 +49,18 @@ display: flex;
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 1;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 
   &::before {
     content: "";
     display: inline-block;
     width: 155px;
     height: 155px;
-    background-image: url(${photoP1});
+    background-image: url("../../../../assets/images/LogoO.svg");
     position: absolute;
-    top: 207;
-    left: 726;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 `;
 
@@ -103,11 +103,10 @@ const Signature = styled.p`
   padding: 8px;
 
   &::before {
-    content: "";
+    content: " ";
     display: inline-block;
     width: 16px;
     height: 16px;
-    /* background-image: url(${photoP1}); */
     background-color: ${theme.colors.accentGreen};
     margin-right: 10px;
   }
