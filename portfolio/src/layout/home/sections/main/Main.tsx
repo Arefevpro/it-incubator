@@ -22,15 +22,15 @@ export const MainSection = ( ) => {
               </MainText>
               <button>Contact me!!</button>
             </FlexWrapper>
-            <FlexWrapper direction="column">
-              <Photo src={photoP1} alt="" />
-              <SignatureBox>
+              <PhotoWrapper>
+                <Photo src={photoP1} alt="" />
+              </PhotoWrapper>
+            <SignatureBox>
                 <Signature>
                   Currently working on
                   <SignatureAccent>Portfolio</SignatureAccent>
                 </Signature>
               </SignatureBox>
-            </FlexWrapper>
           </FlexWrapper>
         </Container>
       </Styledmain>
@@ -39,14 +39,23 @@ export const MainSection = ( ) => {
 };
 
 const Styledmain = styled.section`
-min-height: 100vh;
+min-height: 70vh;
 display: flex;
 `;
 
+const PhotoWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+  outline: 1px solid red;
+`;
+
 const Photo = styled.img`
-  width: 457px;
-  height: 386px;  
+width: 457px;
+  height: 386px;
   object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
 `;
 
 const MainTitle = styled.h1`
