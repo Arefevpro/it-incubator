@@ -20,7 +20,7 @@ export const MainSection = ( ) => {
               <MainText>
                 He crafts responsive websites where technologies meet creativity
               </MainText>
-              <button>Contact me!!</button>
+              <MainButton>Contact me!!</MainButton>
             </FlexWrapper >
             <FlexWrapper direction="column">
             <PhotoWrapper>
@@ -42,14 +42,26 @@ export const MainSection = ( ) => {
 };
 
 const Styledmain = styled.section`
-min-height: 70vh;
+height: 100%;
 display: flex;
 `;
 
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 1;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 155px;
+    height: 155px;
+    background-image: url(${photoP1});
+    position: absolute;
+    top: 207;
+    left: 726;
+    z-index: -1;
+  }
 `;
 
 const Photo = styled.div`
@@ -94,6 +106,7 @@ const Signature = styled.p`
     display: inline-block;
     width: 16px;
     height: 16px;
+    /* background-image: url(${photoP1}); */
     background-color: ${theme.colors.accentGreen};
     margin-right: 10px;
   }
@@ -104,3 +117,11 @@ const SignatureAccent = styled.span`
   padding-left: 10px;
   color: ${theme.colors.accentWhite};
 `
+
+const MainButton = styled.a`
+  display: inline-block;
+  padding: 8px 16px;
+  color: ${theme.colors.accentWhite};
+  border: 1px solid ${theme.colors.accentGreen};
+  font-weight: 500;
+  `
