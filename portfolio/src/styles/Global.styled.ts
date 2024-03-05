@@ -22,7 +22,7 @@ body {
   color: ${theme.colors.colorGray};
   font-size: 16px;
   background-color: ${theme.colors.bgColorDark};
-;
+
 }
 
 ul {
@@ -35,4 +35,17 @@ a {
   color: ${theme.colors.colorGray};
 }
 
+
+&::selection {
+  --color-shadow: #000000;
+  color: ${theme.colors.accentWhite};
+  background-color: ${theme.colors.accentGreen};
+  text-shadow:
+    1px 0 1px var(--color-shadow),
+    0 1px 1px var(--color-shadow),
+    2px 1px 1px var(--color-shadow),
+    1px 2px 1px var(--color-shadow),
+    3px 2px 1px var(--color-shadow),
+    2px 3px 1px var(--color-shadow);
+}
 `

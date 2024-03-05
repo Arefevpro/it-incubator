@@ -16,23 +16,25 @@ export const MainSection = ( ) => {
             and
             <MainTitleAccent>front-end developer</MainTitleAccent>
           </MainTitle>
-          <p>
+          <MainText>
             He crafts responsive websites where technologies meet creativity
-          </p>
+          </MainText>
           <button>Contact me!!</button>
         </FlexWrapper>
         <FlexWrapper direction="column">
           <Photo src={photoP1} alt="" />
-          <h2>
+          <Signature>
             Currently working on
-            <span>Portfolio</span>
-          </h2>
+            <SignatureAccent>Portfolio</SignatureAccent>
+          </Signature>
         </FlexWrapper>
       </FlexWrapper>
       </Container>
     </div>
   );
 };
+
+
 
 const Photo = styled.img`
   width: 457px;
@@ -54,3 +56,18 @@ const MainTitleAccent = styled.span`
     padding-left: 0;
   }
 `;
+
+const MainText = styled.p`
+margin-bottom: 24px;
+`;
+
+const Signature = styled.p`
+  font-weight: 500;
+  padding: 15px;
+`;
+
+const SignatureAccent = styled.span`
+  display: inline-block;
+  padding-left: 10px;
+  color: ${theme.colors.accentWhite};
+`
