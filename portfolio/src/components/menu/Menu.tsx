@@ -30,6 +30,7 @@ const StyledMenu = styled.nav`
   ul {
     display: flex;
     gap: 32px;
+    justify-content: center;
   }
 
 `
