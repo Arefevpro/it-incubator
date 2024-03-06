@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SectionTitle } from '../../../../components/textComponents/SectionTitle';
+import { Container } from '../../../../components/slider/Container';
+import { Hashtag } from '../../../../components/hashtag/Hashtag';
 
 
 
-const Projects = () => {
+
+export const Projects = () => {
   return (
-    <div>
-      
-    </div>
+    <Container>
+      <div>
+        <Hashtag />
+      </div>
+    </Container>
   );
 };
-
-export default Projects;

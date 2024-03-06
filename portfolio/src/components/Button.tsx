@@ -14,7 +14,7 @@ export const Button = styled.button`
   &:hover {
     /* background-color: #00f32d80; */
     color: ${theme.colors.accentWhite};
-    box-shadow: 0 0 -10px ${theme.colors.accentGreen};
+    box-shadow: 0 0 10px ${theme.colors.accentGreen};
   }
 
   &:active {

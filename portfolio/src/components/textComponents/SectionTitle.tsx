@@ -1,14 +1,18 @@
+import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
+import { Hashtag } from '../hashtag/Hashtag';
 
 
 
+export const SectionTitle = () => {
+  return (
+    <Hashtag />
+  );
+};
 
-type SectionTitlePropsType = {
-  size?: string;
-  color?: string;
- }
-
- export const SectionTitle = styled.div<SectionTitlePropsType>`
- font-size: ${props => props.size || "32px"};
- color: ${props => props.color || "#FFFFFF"};
+const Title = styled.h2`
+  font-size: 32px;
+  font-weight: 700;
+  color: ${theme.colors.accentWhite};
 `
