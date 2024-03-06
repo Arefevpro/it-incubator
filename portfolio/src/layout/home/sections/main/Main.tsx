@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
+import LogoO from "../../../../assets/images/LogoO.svg";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { Container } from "../../../../components/slider/Container";
@@ -23,9 +24,7 @@ export const MainSection = ( ) => {
               <MainButton>Contact me!!</MainButton>
             </FlexWrapper >
             <FlexWrapper direction="column">
-            <PhotoWrapper>
-                <Photo />
-              </PhotoWrapper>
+            <Photo />
             <SignatureBox>
                 <Signature>
                   Currently working on
@@ -46,31 +45,26 @@ height: 100%;
 display: flex;
 `;
 
-const PhotoWrapper = styled.div`
-  position: relative;
-  z-index: 1;
-  outline: 1px solid red;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 155px;
-    height: 155px;
-    background-image: url("../../../../assets/images/LogoO.svg");
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-`;
-
 const Photo = styled.div`
   width: 457px;
   height: 386px;
-  background-image: url(${photoP1});
+  background-image: url("${photoP1}");
   background-repeat: no-repeat;
   background-position: -130px -80px;
   background-size: 650px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    width: 155px;
+    height: 155px;
+    background-image: url("${LogoO}");
+    position: absolute;       
+    top: 0;
+    left: -10px;
+    z-index: -3;
+  }
 `;
 
 const MainTitle = styled.h1`
