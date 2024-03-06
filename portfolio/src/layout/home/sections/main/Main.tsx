@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
+import Dots from "./Dots.svg"
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { Container } from "../../../../components/slider/Container";
@@ -24,7 +25,7 @@ export const MainSection = ( ) => {
             </FlexWrapper>
             <FlexWrapper direction="column">
               <PhotoWrapper>
-                {/* <Photo /> */}
+                <Photo />
               </PhotoWrapper>
               <SignatureBox>
                 <Signature>
@@ -48,27 +49,41 @@ display: flex;
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
+  border: 1px solid ${theme.colors.colorGray};
 
-  &::before {
+  &::after{
     content: "";
+    border: 1px solid red;
     width: 155px;
     height: 155px;
-    background-image: url("/src/assets/images/Dots.svg");
+    background-image: url("./Dots.svg");
     position: absolute;       
-    top: 0;
-    left: -10px;
-    z-index: 6;
+    top: 84px;
+    left: -12px;
+    z-index: -1;
+  }
+
+  &::before{
+    content: "";
+    border: 1px solid white;
+    width: 84px;
+    height: 84px;
+    background-image: url("./Dots.svg");
+    position: absolute;
+    right: 16px;
+    bottom: 56px;
+    z-index: 2;
   }
 `
 
-// const Photo = styled.div`
-//   width: 457px;
-//   height: 386px;
-//   background-image: url("${photoP1}");
-//   background-repeat: no-repeat;
-//   background-position: -130px -80px;
-//   background-size: 650px;
-// `;
+const Photo = styled.div`
+  width: 457px;
+  height: 386px;
+  background-image: url("${photoP1}");
+  background-repeat: no-repeat;
+  background-position: -130px -80px;
+  background-size: 650px;
+`;
 
 const MainTitle = styled.h1`
   font-size: 32px;
