@@ -9,7 +9,7 @@ export const QuoteSection = ( ) => {
     
       <Container>
         <StyledQuoteSection>
-      <FlexWrapper direction="column" align="center">
+      <FlexWrapper direction="column" align="flex-end">
         <Quote>With great power comes great electricity bill</Quote>
         <Quote>- Dr. Who</Quote>
       </FlexWrapper>
@@ -24,7 +24,8 @@ export const QuoteSection = ( ) => {
 const StyledQuoteSection = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  align-items: center;
+  padding: 112px 0 74px;
 `;
 
 
@@ -32,5 +33,9 @@ const Quote = styled.p`
 padding: 32px;
   font-size: 24px;
   color: ${theme.colors.accentWhite};
-  border: 1px solid ${theme.colors.accentGreen};
+  border: 1px solid ${theme.colors.colorGray};
+  
+  &:last-child {
+    border-top: none;
+  }
 `
