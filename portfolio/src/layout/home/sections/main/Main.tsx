@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
-import Dots from "./Dots.svg"
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { Container } from "../../../../components/slider/Container";
@@ -49,15 +48,15 @@ display: flex;
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  border: 1px solid ${theme.colors.colorGray};
 
   &::after{
     content: "";
-    border: 1px solid red;
     width: 155px;
     height: 155px;
-    background-image: url("./Dots.svg");
-    position: absolute;       
+    background-image: url("./Logo11.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
     top: 84px;
     left: -12px;
     z-index: -1;
@@ -65,7 +64,6 @@ const PhotoWrapper = styled.div`
 
   &::before{
     content: "";
-    border: 1px solid white;
     width: 84px;
     height: 84px;
     background-image: url("./Dots.svg");
