@@ -12,7 +12,14 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: ${theme.colors.accentGreen};
+    /* background-color: #00f32d80; */
     color: ${theme.colors.accentWhite};
+    box-shadow: 0 0 10px ${theme.colors.accentGreen};
   }
+
+  &:active {
+      background-color: #00f32d80;
+      color: ${theme.colors.accentWhite};
+    }
 `
+
