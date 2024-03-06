@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
-import LogoO from "../../../../assets/images/LogoO.svg";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { Container } from "../../../../components/slider/Container";
@@ -22,17 +21,18 @@ export const MainSection = ( ) => {
                 He crafts responsive websites where technologies meet creativity
               </MainText>
               <MainButton>Contact me!!</MainButton>
-            </FlexWrapper >
+            </FlexWrapper>
             <FlexWrapper direction="column">
-            <Photo />
-            <SignatureBox>
+              <PhotoWrapper>
+                {/* <Photo /> */}
+              </PhotoWrapper>
+              <SignatureBox>
                 <Signature>
                   Currently working on
                   <SignatureAccent>Portfolio</SignatureAccent>
                 </Signature>
               </SignatureBox>
             </FlexWrapper>
-             
           </FlexWrapper>
         </Container>
       </Styledmain>
@@ -45,13 +45,7 @@ height: 100%;
 display: flex;
 `;
 
-const Photo = styled.div`
-  width: 457px;
-  height: 386px;
-  background-image: url("${photoP1}");
-  background-repeat: no-repeat;
-  background-position: -130px -80px;
-  background-size: 650px;
+const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
 
@@ -59,13 +53,22 @@ const Photo = styled.div`
     content: "";
     width: 155px;
     height: 155px;
-    background-image: url("${LogoO}");
+    background-image: url("/src/assets/images/Dots.svg");
     position: absolute;       
     top: 0;
     left: -10px;
-    z-index: -3;
+    z-index: 6;
   }
-`;
+`
+
+// const Photo = styled.div`
+//   width: 457px;
+//   height: 386px;
+//   background-image: url("${photoP1}");
+//   background-repeat: no-repeat;
+//   background-position: -130px -80px;
+//   background-size: 650px;
+// `;
 
 const MainTitle = styled.h1`
   font-size: 32px;
