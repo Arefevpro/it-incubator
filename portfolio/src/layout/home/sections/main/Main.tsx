@@ -4,6 +4,7 @@ import photoP1 from "../../../../assets/images/Preview1.webp";
 import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { Container } from "../../../../components/slider/Container";
+import { Button } from "../../../../components/Button";
 
 export const MainSection = ( ) => {
   return (
@@ -20,7 +21,7 @@ export const MainSection = ( ) => {
               <MainText>
                 He crafts responsive websites where technologies meet creativity
               </MainText>
-              <MainButton>Contact me!!</MainButton>
+              <Button>Contact me!!</Button>
             </FlexWrapper>
             <FlexWrapper direction="column">
               <PhotoWrapper>
@@ -127,11 +128,3 @@ const SignatureAccent = styled.span`
   padding-left: 10px;
   color: ${theme.colors.accentWhite};
 `
-
-const MainButton = styled.a`
-  display: inline-block;
-  padding: 8px 16px;
-  color: ${theme.colors.accentWhite};
-  border: 1px solid ${theme.colors.accentGreen};
-  font-weight: 500;
-  `
