@@ -5,7 +5,7 @@ import { theme } from '../../styles/Theme';
 
 export const Media = () => {
   return (
-    <div>
+    <StyledMedia>
       <MediaList>
         <MediaItem>
           <MedialLink>
@@ -32,11 +32,19 @@ export const Media = () => {
           </MedialLink>
         </MediaItem>
       </MediaList>
-    </div>
+    </StyledMedia>
   );
 };
 
 
+
+
+
+const StyledMedia = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 const MediaList = styled.ul`
   width: 32px;
@@ -45,6 +53,15 @@ const MediaList = styled.ul`
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 191px; 
+    background-color: ${theme.colors.colorGray};
+  }
   `
 
   const MediaItem = styled.li`
@@ -60,7 +77,4 @@ const MediaList = styled.ul`
   justify-content: center;
   align-items: center;
 
-  &:hover {
-    color: ${theme.colors.accentWhite};
-  }
   `

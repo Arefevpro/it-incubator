@@ -12,7 +12,6 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
-        <Hashtag>#</Hashtag>
         <Media />
       </ProjectsWrapper>
     </Container>
