@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { theme } from '../styles/Theme';
 import { Icon } from '../components/icon/Icon'
+import { useState } from 'react';
 
-
-export const Language = () => {
-  return (
+export const Language = () => {return (
     <LanguageBox >
       <LogoName>en</LogoName>
       <Icon iconId={"arrowsDefault"}
