@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import { Hashtag } from "../hashtag/Hashtag";
 import { theme } from "../../styles/Theme";
+import { Hashtag } from '../hashtag/Hashtag';
 
 export const Menu = () => {
   return (
