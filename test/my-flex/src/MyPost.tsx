@@ -1,12 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Post } from './Post';
 
-const MyPost = () => {
+export const MyPost = () => {
   return (
-    <div>
-      
-    </div>
+    <BoxWrapper>
+      <Post massege='Hi, how are you?'/>
+      <Post messege='Hello'/>
+      <Post />
+    </BoxWrapper>
   );
 };
 
-export default MyPost;
+const BoxWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+`
