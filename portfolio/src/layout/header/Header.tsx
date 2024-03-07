@@ -4,7 +4,6 @@ import { Logo } from "../../components/logo/Logo";
 import { Menu } from "../../components/menu/Menu";
 import { FlexWrapper } from "../../components/flex/FlexWrapper";
 import { Container } from "../../components/slider/Container";
-import { theme } from "../../styles/Theme";
 import { Language } from "../../components/Language";
 
 export const Header = () => {
