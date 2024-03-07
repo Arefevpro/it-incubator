@@ -44,6 +44,9 @@ const StyledMedia = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 17px;
 `
 
 const MediaList = styled.ul`

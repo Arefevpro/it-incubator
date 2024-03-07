@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from './Theme';
-
+import { Media } from '../components/media/Media';
 
 export const GlobalStyle = createGlobalStyle`
 *,
@@ -22,8 +22,9 @@ body {
   color: ${theme.colors.colorGray};
   font-size: 16px;
   background-color: ${theme.colors.bgColorDark};
-
 }
+
+
 
 ul {
   list-style: none;
