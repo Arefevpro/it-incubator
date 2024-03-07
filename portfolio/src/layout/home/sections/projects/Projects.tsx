@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../../components/textComponents/SectionTitle';
 import { Container } from '../../../../components/slider/Container';
-import { Hashtag } from '../../../../components/hashtag/Hashtag';
+import {  Project } from './project/Project';
 
 
 
@@ -11,6 +10,9 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
+        <Project />
+        <Project />
+        <Project />
       </ProjectsWrapper>
     </Container>
   );
@@ -19,6 +21,5 @@ export const Projects = () => {
 
 const ProjectsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   height: 100vh;
 `

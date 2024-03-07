@@ -6,6 +6,9 @@ import { QuoteSection } from './layout/quote/Quote';
 import { Projects } from "../src/layout/home/sections/projects/Projects";
 import { Media } from './components/media/Media';
 
+
+
+
 function App() {
     return (
       <div className="App">
@@ -13,7 +16,7 @@ function App() {
           <Media />
           <MainSection />
           <QuoteSection />
-          <Projects /> 
+          <Projects />
       </div>
     );
 }
