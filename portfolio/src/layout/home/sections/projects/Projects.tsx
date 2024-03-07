@@ -10,7 +10,7 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
-        <Project />
+        <Project cached img={Photo1} title='Title' text='Text' tags={['tag1', 'tag2', 'tag3']}/>
         <Project />
         <Project />
       </ProjectsWrapper>
@@ -21,5 +21,6 @@ export const Projects = () => {
 
 const ProjectsWrapper = styled.div`
   display: flex;
+  gap: 16px;
   height: 100vh;
 `

@@ -21,7 +21,7 @@ export const MainSection = ( ) => {
               <MainText>
                 He crafts responsive websites where technologies meet creativity
               </MainText>
-              <Button>Contact me!!</Button>
+              <Button>Contact me !!</Button>
             </FlexWrapper>
             <FlexWrapper direction="column">
               <PhotoWrapper>
