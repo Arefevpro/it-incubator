@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Fcomponent() {
+export function Fcomponent() {
   return (
     <div>
       <h1>function component</h1>
