@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export const Post = (props) => {
+export const Post = () => {
 
   debugger;
 

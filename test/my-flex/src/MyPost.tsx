@@ -5,8 +5,8 @@ import { Post } from './Post';
 export const MyPost = () => {
   return (
     <BoxWrapper>
-      <Post massege='Hi, how are you?'/>
-      <Post messege='Hello'/>
+      <Post />
+      <Post />
       <Post />
     </BoxWrapper>
   );
