@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Post } from './Post';
+import { Card } from './Card';
 import { Fcomponent } from './Fcomponent';
 import { Ccomponent } from './Ccomponent';
 import { Menu } from './Menu'
@@ -9,9 +9,9 @@ export const MyPost = () => {
   return (
     <BoxWrapper>
       <Menu />
-      <Post />
-      <Post />
-      <Post />
+      <Card />
+      <Card />
+      <Card />
     </BoxWrapper>
   );
 };
