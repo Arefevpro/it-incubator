@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Card } from './Card';
-import { Menu } from './Menu'
 
 export const MyPost = () => {
   return (
     <BoxWrapper>
-      <Menu />
-      <Card />
+      <Card name="html, css, js"/>
       <Card />
       <Card />
     </BoxWrapper>
@@ -16,9 +14,7 @@ export const MyPost = () => {
 
 const BoxWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
-  height: 80vh;
+  height: 100vh;
+  border: 1px solid red;
 `
