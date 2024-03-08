@@ -1,11 +1,10 @@
 import React from 'react'
 
-export const Afcomponents = () => {
+export const Menu = (props) => {
   return (
     <div>
-      <h1>Menu</h1>
+      <h1>Menu {props.name}</h1>
     </div>
   )
 }
-
 
