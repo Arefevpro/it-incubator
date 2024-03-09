@@ -2,15 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 type PropsType = {
-  skills?: string[];
-  title?: string;
+  skills: string[];
+  title: string;
   mainButtonTitle?: string; 
   imageSrc?: string;
 }
-
-let grades = [5, 4, 3, 2, 1];
-
-export const Card = ({skills = ['html', 'css styles', 'react', 'redux'], title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
+export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
 
   return (
     <CardWrapper>
@@ -18,7 +15,9 @@ export const Card = ({skills = ['html', 'css styles', 'react', 'redux'], title, 
       <Image src={imageSrc} alt="" />
       </ImageWrapper>
  <SkillsWrapper>
- <Skill></Skill>
+  {skills.map((skill) => (
+    <Skills key={skill}>{skill}</Skills>
+  ))}
  </SkillsWrapper>
       <Description>
         <DescriptionTitle>{title}</DescriptionTitle>
@@ -39,8 +38,7 @@ const CardWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  height: 600px;
-  width: 300px;
+  width: 330px;
   border: 1px solid red;
 `;
 
@@ -50,7 +48,7 @@ const ImageWrapper = styled.div`
   justify-content: center;
   gap: 20px;
   height: 300px;
-  width: 300px;
+  width: 100%;
   border: 1px solid red;
 `;
 
@@ -63,16 +61,14 @@ const Image = styled.img`
 
 const SkillsWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  height: 100px;
-  width: 300px;
+  justify-content: start;
+  width: 100%;
   border: 1px solid red;
 `;
 
-const Skill = styled.p`
-  padding: 5px;
+const Skills = styled.p`
   border: 1px solid red;
+  padding: 8px;
   margin: 0;
 `;
 
@@ -107,8 +103,3 @@ const Button = styled.button`
   border-radius: 4px;
   cursor: pointer;
 `;
-
-
-// {skills.map((skill) => (
-//   <Skills key={skill}>{skill}</Skills>
-// ))}
