@@ -3,14 +3,17 @@ import styled from 'styled-components';
 import { ProjectOne } from './project/ProjectOne';
 import { ProjectTwo } from './project/ProjectTwo';
 import { ProjectThre } from './project/ProjectThre';
+import { Container } from '../../../../components/slider/Container';
 
 export const Projects = () => {
   return (
-    <ProjectsWrapper>
-      <ProjectOne />
-      <ProjectTwo />
-      <ProjectThre />
-    </ProjectsWrapper>
+    <Container>
+      <ProjectsWrapper>
+        <ProjectOne />
+        <ProjectTwo />
+        <ProjectThre />
+      </ProjectsWrapper>
+    </Container>
   );
 };
 
