@@ -21,5 +21,5 @@ export const Projects = () => {
 const ProjectsWrapper = styled.div`
   display: flex;
   gap: 16px;
-  height: 100vh;
+  height: 100%;
 `;

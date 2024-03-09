@@ -16,7 +16,7 @@ export const ProjectOne = () => {
         <SkillName>Flask</SkillName>
       </SkillsWrapper>
       <Description>
-        <DescriptionTitle>Responsive Web Design</DescriptionTitle>
+        <DescriptionTitle>ChertNodes</DescriptionTitle>
         <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
         <ButtonWrapper>
         <Button>Learn More</Button>
@@ -33,14 +33,13 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   width: 330px;
   height: 100%;
-  border: 1px solid red;
+  border: 1px solid ${theme.colors.colorGray};
 `;
 
 const ImgWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
-  border: 1px solid red;
+  height: 200px;
 `;
 
 const Img = styled.img`
@@ -50,34 +49,32 @@ const Img = styled.img`
 
 const SkillsWrapper = styled.div`
   display: flex;
-  border: 1px solid red;
 `;
 
 const SkillName = styled.p`
-  display: flex;
-  border: 1px solid red;
+  padding: 8px;
 `;
 
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border: 1px solid ${theme.colors.colorGray};
+  padding: 16px;
+  gap: 16px;
 `;
 
 
 const DescriptionTitle = styled.h3`
-  display: flex;
-  border: 1px solid red;
+  font-size: 24px;
+  font-weight: 500;
 `;
 
 
 const DescriptionText = styled.p`
   display: flex;
-  border: 1px solid red;
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
-  gap: 8px;
-  border: 1px solid red;
+  gap: 16px;
 `;
