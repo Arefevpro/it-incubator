@@ -48,7 +48,9 @@ const Img = styled.img`
 `;
 
 const SkillsWrapper = styled.div`
-  padding-top: 8px;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
 `;
 
 const SkillName = styled.p`

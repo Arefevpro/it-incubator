@@ -11,17 +11,15 @@ export const ProjectThre = () => {
         <Img src="../../../../../assets/images/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
-        <SkillName>HTML</SkillName>
         <SkillName>CSS</SkillName>
-        <SkillName>Python</SkillName>
-        <SkillName>Flask</SkillName>
+        <SkillName>Express</SkillName>
+        <SkillName>Node.js</SkillName>
       </SkillsWrapper>
       <Description>
-        <DescriptionTitle>ChertNodes</DescriptionTitle>
-        <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
+        <DescriptionTitle>Kahoot Answers Viewer</DescriptionTitle>
+        <DescriptionText>Get answers to your kahoot quiz</DescriptionText>
         <ButtonWrapper>
-        <Button>Learn More</Button>
-        <Button>Learn More</Button>
+        <Button>Live</Button>
         </ButtonWrapper>
       </Description>
     </ProjectWrapper>
@@ -50,10 +48,12 @@ const Img = styled.img`
 
 const SkillsWrapper = styled.div`
   display: flex;
+  padding: 8px;
+  gap: 8px;
 `;
 
 const SkillName = styled.p`
-  padding: 8px;
+
 `;
 
 const Description = styled.div`

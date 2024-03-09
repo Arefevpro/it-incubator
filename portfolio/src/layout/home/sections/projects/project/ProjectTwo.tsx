@@ -54,7 +54,7 @@ const Img = styled.img`
 
 const SkillsWrapper = styled.div`
   display: flex;
-  padding-top: 8px;
+  padding: 8px;
   gap: 8px;
 `;
 
