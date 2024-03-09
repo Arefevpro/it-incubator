@@ -7,7 +7,7 @@ export const ProjectTwo = () => {
   return (
     <ProjectWrapper>
       <ImgWrapper>
-        <Ing src="../../../../../assets/images/Banner1.webp" />
+        <Img src="../../../../../assets/images/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
         <SkillName>HTML</SkillName>
@@ -16,7 +16,7 @@ export const ProjectTwo = () => {
         <SkillName>Flask</SkillName>
       </SkillsWrapper>
       <Description>
-        <DescriptionTitle>Responsive Web Design</DescriptionTitle>
+        <DescriptionTitle>ChertNodes</DescriptionTitle>
         <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
         <ButtonWrapper>
         <Button>Learn More</Button>
@@ -33,51 +33,48 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   width: 330px;
   height: 100%;
-  border: 1px solid red;
+  border: 1px solid ${theme.colors.colorGray};
 `;
 
 const ImgWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
-  border: 1px solid red;
+  height: 200px;
 `;
 
-const Ing = styled.img`
+const Img = styled.img`
   width: 100%;
   height: 100%;
 `;
 
 const SkillsWrapper = styled.div`
   display: flex;
-  border: 1px solid red;
 `;
 
 const SkillName = styled.p`
-  display: flex;
-  border: 1px solid red;
+  padding: 8px;
 `;
 
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  border: 1px solid ${theme.colors.colorGray};
+  padding: 16px;
+  gap: 16px;
 `;
 
 
 const DescriptionTitle = styled.h3`
-  display: flex;
-  border: 1px solid red;
+  font-size: 24px;
+  font-weight: 500;
 `;
 
 
 const DescriptionText = styled.p`
   display: flex;
-  border: 1px solid red;
 `;
 
 const ButtonWrapper = styled.div`
   display: flex;
-  gap: 8px;
-  border: 1px solid red;
+  gap: 16px;
 `;
