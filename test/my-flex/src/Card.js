@@ -16,7 +16,7 @@ export const Card = (props) => {
 <Skills></Skills>
  </SkillsWrapper>
       <Description>
-        <DescriptionTitle>Name</DescriptionTitle>
+        <DescriptionTitle>{props.title}</DescriptionTitle>
         <DescriptionText>Text description</DescriptionText>
         <ButtonWrapper>
           <Button>Button</Button>

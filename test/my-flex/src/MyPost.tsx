@@ -5,7 +5,7 @@ import { Card } from './Card';
 export const MyPost = () => {
   return (
     <BoxWrapper>
-      <Card name="html, css, js"/>
+      <Card name="html" title="ChertNodes"/>
       <Card />
       <Card />
     </BoxWrapper>
