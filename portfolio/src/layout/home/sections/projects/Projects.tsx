@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Project } from './project/Project';
+import { ProjectOne } from './project/ProjectOne';
+import { ProjectTwo } from './project/ProjectTwo';
+import { ProjectThre } from './project/ProjectThre';
 
 export const Projects = () => {
   return (
     <ProjectsWrapper>
-      <Project />
+      <ProjectOne />
+      <ProjectTwo />
+      <ProjectThre />
     </ProjectsWrapper>
   );
 };

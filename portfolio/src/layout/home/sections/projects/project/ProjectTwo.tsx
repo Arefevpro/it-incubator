@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Project = () => {
+export const ProjectTwo = () => {
   return (
     <div>
       
