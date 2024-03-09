@@ -7,7 +7,7 @@ export const ProjectTwo = () => {
   return (
     <ProjectWrapper>
       <ImgWrapper>
-        <Img src="../../../../../assets/images/Banner1.webp" />
+        <Ing src="../../../../../assets/images/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
         <SkillName>HTML</SkillName>
@@ -43,7 +43,7 @@ const ImgWrapper = styled.div`
   border: 1px solid red;
 `;
 
-const Img = styled.img`
+const Ing = styled.img`
   width: 100%;
   height: 100%;
 `;
