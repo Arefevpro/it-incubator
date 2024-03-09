@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { MainSection } from './layout/home/sections/main/Main';
 import { QuoteSection } from './layout/quote/Quote';
-import { Projects } from "./layout/home/sections/projects/ProjectsTest";
+import { Projects } from "./layout/home/sections/projects/Projects";
 import { Media } from './components/media/Media';
 
 
