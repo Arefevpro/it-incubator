@@ -7,11 +7,11 @@ export const MyPost = () => {
     <BoxWrapper>
       <Card
         imageSrc="https://www.svgrepo.com/show/373273/light-node.svg"
-        skills={["html", "css"]}
+        skills={["html"]}
         title="ChertNodes"
       
       />
-      <Card />
+      <Card imageSrc="https://avatars.mds.yandex.net/i?id=496176f00b194ee00d672a0485d4ab56668ece59-12582966-images-thumbs&n=13"/>
       <Card />
     </BoxWrapper>
   );

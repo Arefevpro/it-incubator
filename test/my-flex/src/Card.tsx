@@ -2,14 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 type PropsType = {
-  skills: string[];
-  title: string;
+  skills?: string[];
+  title?: string;
   mainButtonTitle?: string; 
-  imageSrc: string;
+  imageSrc?: string;
 }
-export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
 
-// значение по умолчанию 
+let grades = [5, 4, 3, 2, 1];
+
+export const Card = ({skills = ['html', 'css styles', 'react', 'redux'], title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
 
   return (
     <CardWrapper>
@@ -17,9 +18,7 @@ export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsT
       <Image src={imageSrc} alt="" />
       </ImageWrapper>
  <SkillsWrapper>
-  {skills.map((skill) => (
-    <Skills key={skill}>{skill}</Skills>
-  ))}
+ <Skill></Skill>
  </SkillsWrapper>
       <Description>
         <DescriptionTitle>{title}</DescriptionTitle>
@@ -71,7 +70,7 @@ const SkillsWrapper = styled.div`
   border: 1px solid red;
 `;
 
-const Skills = styled.p`
+const Skill = styled.p`
   padding: 5px;
   border: 1px solid red;
   margin: 0;
@@ -108,3 +107,8 @@ const Button = styled.button`
   border-radius: 4px;
   cursor: pointer;
 `;
+
+
+// {skills.map((skill) => (
+//   <Skills key={skill}>{skill}</Skills>
+// ))}
