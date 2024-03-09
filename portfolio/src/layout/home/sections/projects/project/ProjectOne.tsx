@@ -7,7 +7,7 @@ export const ProjectOne = () => {
   return (
     <ProjectWrapper>
       <ImgWrapper>
-        <Img src="../../../../../assets/images/Banner1.webp" />
+        <Img src="https://i.postimg.cc/8PKJ9PJG/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
         <SkillName>HTML</SkillName>
@@ -40,6 +40,7 @@ const ImgWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 200px;
+  border-bottom: 1px solid ${theme.colors.colorGray};
 `;
 
 const Img = styled.img`
@@ -60,7 +61,7 @@ const SkillName = styled.p`
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid ${theme.colors.colorGray};
+  border-top: 1px solid ${theme.colors.colorGray};
   padding: 16px;
   gap: 16px;
 `;

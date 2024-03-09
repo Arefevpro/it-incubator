@@ -22,4 +22,5 @@ const ProjectsWrapper = styled.div`
   display: flex;
   gap: 16px;
   height: 100%;
+  padding: 16px 0;
 `;
