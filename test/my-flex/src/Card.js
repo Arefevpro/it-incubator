@@ -86,7 +86,7 @@ const DescriptionTitle = styled.div`
 `;
 
 const DescriptionText = styled.div`
-  font-size: 18px;
+  font-size: 16px;
 `;
 
 const ButtonWrapper = styled.div`
