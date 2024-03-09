@@ -7,12 +7,13 @@ export const ProjectOne = () => {
   return (
     <ProjectWrapper>
       <ImgWrapper>
-        <Img src="../../../../assets/images/Banner1.webp" />
+        <Img src="../../../../../assets/images/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
         <SkillName>HTML</SkillName>
         <SkillName>CSS</SkillName>
-        <SkillName>React</SkillName>
+        <SkillName>Python</SkillName>
+        <SkillName>Flask</SkillName>
       </SkillsWrapper>
       <Description>
         <DescriptionTitle>Responsive Web Design</DescriptionTitle>
@@ -47,13 +48,12 @@ const Img = styled.img`
   height: 100%;
 `;
 
-
 const SkillsWrapper = styled.div`
   display: flex;
   border: 1px solid red;
 `;
 
-const SkillName = styled.div`
+const SkillName = styled.p`
   display: flex;
   border: 1px solid red;
 `;
@@ -65,13 +65,13 @@ const Description = styled.div`
 `;
 
 
-const DescriptionTitle = styled.div`
+const DescriptionTitle = styled.h3`
   display: flex;
   border: 1px solid red;
 `;
 
 
-const DescriptionText = styled.div`
+const DescriptionText = styled.p`
   display: flex;
   border: 1px solid red;
 `;
