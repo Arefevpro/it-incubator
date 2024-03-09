@@ -1,26 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
+type PropsType = {
+  skills: string[];
+  title: string;
+  mainButtonTitle?: string; 
+  imageSrc: string;
+}
+export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
 
-export const Card = (props) => {
-
+// значение по умолчанию 
 
   return (
     <CardWrapper>
       <ImageWrapper>
-      <Image src="https://www.svgrepo.com/show/373273/light-node.svg" alt="" />
+      <Image src={imageSrc} alt="" />
       </ImageWrapper>
  <SkillsWrapper>
-<Skills>{props.name}</Skills>
-<Skills></Skills>
-<Skills></Skills>
+  {skills.map((skill) => (
+    <Skills key={skill}>{skill}</Skills>
+  ))}
  </SkillsWrapper>
       <Description>
-        <DescriptionTitle>{props.title}</DescriptionTitle>
+        <DescriptionTitle>{title}</DescriptionTitle>
         <DescriptionText>Text description</DescriptionText>
         <ButtonWrapper>
-          <Button>Button</Button>
-          <Button>Button</Button>
+          <Button>{mainButtonTitle}</Button>
+          <Button>{mainButtonTitle}</Button>
         </ButtonWrapper>
       </Description>
     </CardWrapper>

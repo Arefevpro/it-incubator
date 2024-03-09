@@ -5,7 +5,12 @@ import { Card } from './Card';
 export const MyPost = () => {
   return (
     <BoxWrapper>
-      <Card name="html" title="ChertNodes"/>
+      <Card
+        imageSrc="https://www.svgrepo.com/show/373273/light-node.svg"
+        skills={["html", "css"]}
+        title="ChertNodes"
+      
+      />
       <Card />
       <Card />
     </BoxWrapper>
