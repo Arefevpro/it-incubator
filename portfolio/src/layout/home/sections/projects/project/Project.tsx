@@ -1,6 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Project = () => {
+export const Project = () => {
   return (
     <div>
       

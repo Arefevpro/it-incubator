@@ -12,7 +12,7 @@ type PropsType = {
 };
 
 
-export const Project = ({ img, skillName, descriptiontitle, descriptiontext, buttonTitle}: PropsType) => {
+export const ProjectTest = ({ img, skillName, descriptiontitle, descriptiontext, buttonTitle}: PropsType) => {
   return (
     <StyledProject>
       <ImageWrapper>
