@@ -19,8 +19,8 @@ export const ProjectOne = () => {
         <DescriptionTitle>ChertNodes</DescriptionTitle>
         <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
         <ButtonWrapper>
-        <Button>Learn More</Button>
-        <Button>Learn More</Button>
+        <Button>Live</Button>
+        <Button>Cached</Button>
         </ButtonWrapper>
       </Description>
     </ProjectWrapper>
@@ -48,11 +48,11 @@ const Img = styled.img`
 `;
 
 const SkillsWrapper = styled.div`
-  display: flex;
+  padding-top: 8px;
 `;
 
 const SkillName = styled.p`
-  padding: 8px;
+
 `;
 
 const Description = styled.div`
