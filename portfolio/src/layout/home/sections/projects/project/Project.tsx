@@ -3,29 +3,35 @@ import styled from 'styled-components';
 import { Button } from '../../../../../components/Button';
 import { theme } from '../../../../../styles/Theme';
 
+type PropsType = {
+  img: string;
+  descriptiontitle: string;
+  descriptiontext: string;
+  buttonTitle: string[];
+  skillText: string;
+};
 
 
-
-export const Project = (props) => {
+export const Project = ({ img, skillText, descriptiontitle, descriptiontext, buttonTitle}: PropsType) => {
   return (
     <StyledProject>
       <ImageWrapper>
-        <Image src={props.img} />
+        <Image src={img} />
       </ImageWrapper>
       <SkillsWrapper>
-        <SkillText>{props.tags.map( tag => tag)}</SkillText>
+        <SkillText>{skillText}</SkillText>
       </SkillsWrapper>
       <Description>
-        <Title>{props.title}</Title>
-        <Title>{props.text}</Title>
-        <Button>Live </Button>
-      {props.cached && <Button>Cached</Button>}
+        <DescriptionTitle>{descriptiontitle}</DescriptionTitle>
+        <DescriptionText>{descriptiontext}</DescriptionText>
+        <Button>{buttonTitle}</Button>
+        <Button>{buttonTitle}</Button>
       </Description>
     </StyledProject>
   );
 };
 
-<
+
 
 const StyledProject = styled.div`
   display: flex;
@@ -68,7 +74,11 @@ const Description = styled.div`
   }
 `;
 
-const Title = styled.p`
+const DescriptionTitle = styled.p`
 
 `;
+
+const DescriptionText = styled.p`
+  
+`
 
