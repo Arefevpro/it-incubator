@@ -10,9 +10,26 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
-        <Project cached img={Photo1} title='Title' text='Text' tags={['tag1', 'tag2', 'tag3']}/>
-        <Project />
-        <Project />
+        <Project img="../../../../assets/images/Banner1.webp"
+                skillName={["HTML", "CSS"]}
+                descriptiontitle="Responsive Web Design"
+                descriptiontext="Lorem ipsum dolor sit amet"
+                buttonTitle="Learn More"
+        />
+        <Project 
+        img="../../../../assets/images/Banner1.webp"
+        skillName={["HTML", "CSS"]}
+        descriptiontitle="Responsive Web Design"
+        descriptiontext="Lorem ipsum dolor sit amet"
+        buttonTitle="Learn More"
+        />
+        <Project 
+        img="../../../../assets/images/Banner1.webp"
+        skillName={["HTML", "CSS"]}
+        descriptiontitle="Responsive Web Design"
+        descriptiontext="Lorem ipsum dolor sit amet"
+        buttonTitle="Learn More"
+        />
       </ProjectsWrapper>
     </Container>
   );

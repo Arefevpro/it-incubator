@@ -7,19 +7,19 @@ type PropsType = {
   img: string;
   descriptiontitle: string;
   descriptiontext: string;
-  buttonTitle: string[];
-  skillText: string;
+  buttonTitle: string;
+  skillName: string[];
 };
 
 
-export const Project = ({ img, skillText, descriptiontitle, descriptiontext, buttonTitle}: PropsType) => {
+export const Project = ({ img, skillName, descriptiontitle, descriptiontext, buttonTitle}: PropsType) => {
   return (
     <StyledProject>
       <ImageWrapper>
         <Image src={img} />
       </ImageWrapper>
       <SkillsWrapper>
-        <SkillText>{skillText}</SkillText>
+        <SkillName>{skillName}</SkillName>
       </SkillsWrapper>
       <Description>
         <DescriptionTitle>{descriptiontitle}</DescriptionTitle>
@@ -60,7 +60,7 @@ const SkillsWrapper = styled.div`
   border: 1px solid red;
 `;
 
-const SkillText = styled.p`
+const SkillName = styled.p`
 
 `;
 
