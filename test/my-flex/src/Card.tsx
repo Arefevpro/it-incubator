@@ -6,8 +6,9 @@ type PropsType = {
   title: string;
   mainButtonTitle?: string; 
   imageSrc?: string;
+  text: string;
 }
-export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
+export const Card = ({skills, text, title, mainButtonTitle = 'Live', imageSrc}: PropsType) => {
 
   return (
     <CardWrapper>
@@ -21,7 +22,7 @@ export const Card = ({skills, title, mainButtonTitle = 'Live', imageSrc}: PropsT
  </SkillsWrapper>
       <Description>
         <DescriptionTitle>{title}</DescriptionTitle>
-        <DescriptionText>Text description</DescriptionText>
+        <DescriptionText>{text}</DescriptionText>
         <ButtonWrapper>
           <Button>{mainButtonTitle}</Button>
           <Button>{mainButtonTitle}</Button>
