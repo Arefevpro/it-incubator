@@ -10,8 +10,14 @@ export const ProjectTwo = () => {
         <Img src="../../../../../assets/images/Banner1.webp" />
       </ImgWrapper>
       <SkillsWrapper>
+        <SkillName>React</SkillName>
+        <SkillName>Express</SkillName>
+        <SkillName>Discord.js</SkillName>
+        <SkillName>Node.js</SkillName>
+      </SkillsWrapper>
+      <SkillsWrapper>
         <SkillName>HTML</SkillName>
-        <SkillName>CSS</SkillName>
+        <SkillName>SCSS</SkillName>
         <SkillName>Python</SkillName>
         <SkillName>Flask</SkillName>
       </SkillsWrapper>
