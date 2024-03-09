@@ -17,8 +17,10 @@ export const ProjectTwo = () => {
       <Description>
         <DescriptionTitle>Responsive Web Design</DescriptionTitle>
         <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
+        <ButtonWrapper>
         <Button>Learn More</Button>
         <Button>Learn More</Button>
+        </ButtonWrapper>
       </Description>
     </ProjectWrapper>
   );
@@ -71,5 +73,11 @@ const DescriptionTitle = styled.div`
 
 const DescriptionText = styled.div`
   display: flex;
+  border: 1px solid red;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 8px;
   border: 1px solid red;
 `;
