@@ -8,6 +8,9 @@ import { SectionTitle } from '../../../../components/textComponents/SectionTitle
 import { Hashtag } from '../../../../components/hashtag/Hashtag';
 import img1 from '../../../../assets/images/Banner1.webp'
 import img2 from '../../../../assets/images/Banner2.webp'
+import { theme } from '../../../../styles/Theme';
+
+
 export type ProjectType = {
   img: string,
   skills: string[],
@@ -33,16 +36,17 @@ export const Projects = () => {
     <Container>
       <ProjectsWrapper>
         <TitleWrapper>
-        <Hashtag name='#'/>
-        <SectionTitle title="projects" />
+          <Hashtag name="#" />
+          <SectionTitle title="projects" />
         </TitleWrapper>
         <ProjectWrapper>
-          {porjectsArr.map((project, index)=><ProjectOne project={project} cashed={index===0}/>)}
-        
-        {/* <ProjectTwo />
+          {porjectsArr.map((project, index) => (
+            <ProjectOne project={project} cashed={index === 0} />
+          ))}
+
+          {/* <ProjectTwo />
         <ProjectThre /> */}
         </ProjectWrapper>
-        
       </ProjectsWrapper>
     </Container>
   );
@@ -63,6 +67,15 @@ const TitleWrapper = styled.div`
    span {
     font-size: 32px;
    }
+
+   &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: ${theme.colors.accentGreen};
+    margin-top: 8px;
+  }
   `
 
 
