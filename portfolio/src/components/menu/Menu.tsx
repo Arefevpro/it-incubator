@@ -9,16 +9,16 @@ export const Menu = () => {
         <ul>
           <li>
             
-              <Link href="/"><Hashtag>#</Hashtag>home</Link>
+              <Link href="/"><Hashtag name="#" width="16px" />home</Link>
               </li>
           <li>
-              <Link href="/about"><Hashtag>#</Hashtag>works</Link>
+              <Link href="/about"><Hashtag name="#" width={"16px"}/>works</Link>
               </li>
           <li>
-              <Link href="/contact"><Hashtag>#</Hashtag>about-me</Link>
+              <Link href="/contact"><Hashtag name="#" width={"16px"}/>about-me</Link>
               </li>
           <li>
-              <Link href="/contact"><Hashtag>#</Hashtag>contacts</Link>
+              <Link href="/contact"><Hashtag name="#" width={"16px"}/>contacts</Link>
           </li>
         </ul>
     </StyledMenu>

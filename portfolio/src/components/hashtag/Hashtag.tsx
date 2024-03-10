@@ -2,14 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
 
+type PropsType = {
+  name: string;
+  width: string;
+};
 
 
-
-export const Hashtag = () => {
+export const Hashtag = ({ name, width }: PropsType) => {
   return (
-    <div>
-      
-    </div>
+    <HashtagLink>{ name }{ width }</HashtagLink>
   );
 };
 

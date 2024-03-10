@@ -11,6 +11,7 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
+        <Hashtag name="#" width="32px" />
         <SectionTitle title="Projects" />
         <ProjectOne />
         <ProjectTwo />
