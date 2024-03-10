@@ -56,7 +56,7 @@ export const Projects = () => {
 const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
   height: 100%;
   
 `;
@@ -64,6 +64,7 @@ const ProjectsWrapper = styled.div`
 const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 700px;
    span {
     font-size: 32px;
    }

@@ -11,8 +11,6 @@ type PropsType = {
 export const SectionTitle = ({ title }: PropsType ) => {
   return (
   <Title>{ title }</Title>
-  
-      
   );
 };
 
