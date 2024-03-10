@@ -4,13 +4,12 @@ import { theme } from '../../styles/Theme';
 
 type PropsType = {
   name: string;
-  width: string;
 };
 
 
-export const Hashtag = ({ name, width }: PropsType) => {
+export const Hashtag = ({ name,}: PropsType) => {
   return (
-    <HashtagLink>{ name }{ width }</HashtagLink>
+    <HashtagLink>{ name }</HashtagLink>
   );
 };
 

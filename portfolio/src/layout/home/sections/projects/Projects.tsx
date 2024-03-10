@@ -11,11 +11,16 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
-        <Hashtag name="#" width="32px" />
+        <TitleWrapper>
+        <Hashtag name="#"/>
         <SectionTitle title="Projects" />
+        </TitleWrapper>
+        <ProjectWrapper>
         <ProjectOne />
         <ProjectTwo />
         <ProjectThre />
+        </ProjectWrapper>
+        
       </ProjectsWrapper>
     </Container>
   );
@@ -24,7 +29,19 @@ export const Projects = () => {
 
 const ProjectsWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 16px;
   height: 100%;
   
 `;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  `
+
+
+const ProjectWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+  `
