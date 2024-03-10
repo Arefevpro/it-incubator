@@ -11,11 +11,14 @@ type PropsType = {
 
 export const SectionTitle = ({ title }: PropsType ) => {
   return (
-      <Title>{ title }</Title>
+  <Title>{ title }</Title>
+  
+      
   );
 };
+
 
 const Title = styled.h2`
   font-size: 32px;
   color: ${theme.colors.accentWhite};
-`
+  align-self: end; `

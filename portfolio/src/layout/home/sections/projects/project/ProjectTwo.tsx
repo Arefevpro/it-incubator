@@ -3,7 +3,13 @@ import styled from 'styled-components';
 import { Button } from '../../../../../components/Button';
 import { theme } from '../../../../../styles/Theme';
 
-export const ProjectTwo = () => {
+
+
+
+
+
+
+export const ProjectTwo = ( ) => {
   return (
     <ProjectWrapper>
       <ImgWrapper>

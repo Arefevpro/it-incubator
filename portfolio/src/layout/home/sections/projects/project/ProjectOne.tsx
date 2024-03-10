@@ -2,25 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../../../../../components/Button';
 import { theme } from '../../../../../styles/Theme';
+import { ProjectType } from '../Projects';
+type PropsType = {
+  project: ProjectType,
+  cashed: boolean
+}
+export const ProjectOne = ({project, cashed}: PropsType) => { // orops: PropsType => props.project
+  const skillsLength = project.skills.length;
+  const isShowSecondSkillWrapper = skillsLength>4;
 
-export const ProjectOne = () => {
   return (
     <ProjectWrapper>
       <ImgWrapper>
-        <Img src="https://i.postimg.cc/8PKJ9PJG/Banner1.webp" />
+        <Img src={project.img} />
       </ImgWrapper>
       <SkillsWrapper>
-        <SkillName>HTML</SkillName>
-        <SkillName>CSS</SkillName>
-        <SkillName>Python</SkillName>
-        <SkillName>Flask</SkillName>
+        {project.skills.slice(0,3).map((skill)=><SkillName>{skill}</SkillName>)}
       </SkillsWrapper>
+      {isShowSecondSkillWrapper && 
+        <SkillsWrapper>
+        {project.skills.slice(3).map((skill)=><SkillName>{skill}</SkillName>)}
+      </SkillsWrapper>
+      }
       <Description>
-        <DescriptionTitle>ChertNodes</DescriptionTitle>
-        <DescriptionText>Lorem ipsum dolor sit amet</DescriptionText>
+        <DescriptionTitle>{project.title}</DescriptionTitle>
+        <DescriptionText>{project.description}</DescriptionText>
         <ButtonWrapper>
         <Button>Live</Button>
-        <Button>Cached</Button>
+       {cashed && <Button>Cached</Button>}
         </ButtonWrapper>
       </Description>
     </ProjectWrapper>

@@ -7,7 +7,7 @@ type PropsType = {
 };
 
 
-export const Hashtag = ({ name,}: PropsType) => {
+export const Hashtag = ({ name}: PropsType) => {
   return (
     <HashtagLink>{ name }</HashtagLink>
   );
