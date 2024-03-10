@@ -21,4 +21,6 @@ export const SectionTitle = ({ title }: PropsType ) => {
 const Title = styled.h2`
   font-size: 32px;
   color: ${theme.colors.accentWhite};
-  align-self: end; `
+  align-self: end; 
+  font-weight: 500;
+  `

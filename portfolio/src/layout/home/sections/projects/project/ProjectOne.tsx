@@ -65,6 +65,7 @@ const SkillsWrapper = styled.div`
 
 const SkillName = styled.p`
 
+  font-weight: 500;
 `;
 
 const Description = styled.div`

@@ -5,10 +5,6 @@ import { theme } from '../../../../../styles/Theme';
 
 
 
-
-
-
-
 export const ProjectTwo = ( ) => {
   return (
     <ProjectWrapper>

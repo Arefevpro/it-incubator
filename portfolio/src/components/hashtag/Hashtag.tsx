@@ -13,6 +13,7 @@ export const Hashtag = ({ name}: PropsType) => {
   );
 };
 
-const HashtagLink = styled.a`
-  color: ${theme.colors.accentGreen} ;
+const HashtagLink = styled.span`
+  color: ${theme.colors.accentGreen};
+  display: inline-block;
 `

@@ -34,7 +34,7 @@ export const Projects = () => {
       <ProjectsWrapper>
         <TitleWrapper>
         <Hashtag name='#'/>
-        <SectionTitle title="Projects" />
+        <SectionTitle title="projects" />
         </TitleWrapper>
         <ProjectWrapper>
           {porjectsArr.map((project, index)=><ProjectOne project={project} cashed={index===0}/>)}
@@ -60,9 +60,8 @@ const ProjectsWrapper = styled.div`
 const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
-   a {
+   span {
     font-size: 32px;
-    margin: 9px 0;
    }
   `
 
