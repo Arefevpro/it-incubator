@@ -24,11 +24,6 @@ export const ProjectOne = ({project, cashed}: PropsType) => { // orops: PropsTyp
         {project.skills.slice(3).map((skill)=><SkillName>{skill}</SkillName>)}
       </SkillsWrapper>
       }
-      {isShowSecondSkillWrapper && 
-        <SkillsWrapper>
-        {project.skills.slice(3).map((skill)=><SkillName>{skill}</SkillName>)}
-      </SkillsWrapper>
-      }
       <Description>
         <DescriptionTitle>{project.title}</DescriptionTitle>
         <DescriptionText>{project.description}</DescriptionText>

@@ -5,6 +5,7 @@ import { MainSection } from './layout/home/sections/main/Main';
 import { QuoteSection } from './layout/quote/Quote';
 import { Projects } from "./layout/home/sections/projects/Projects";
 import { Media } from './components/media/Media';
+import { Skills } from './layout/home/sections/skills/Skills';
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <MainSection />
           <QuoteSection />
           <Projects />
+          <Skills />
       </div>
     );
 }
