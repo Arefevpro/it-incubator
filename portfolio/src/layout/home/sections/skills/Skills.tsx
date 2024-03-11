@@ -4,6 +4,7 @@ import { SectionTitle } from '../../../../components/textComponents/SectionTitle
 import { Hashtag } from '../../../../components/hashtag/Hashtag';
 import { theme } from '../../../../styles/Theme';
 import { Container } from '../../../../components/slider/Container';
+import { SkillCard } from './SkillCard';
 
 
 export const Skills = () => {
@@ -19,7 +20,13 @@ export const Skills = () => {
             <CubeDecorOne />
             <CubeDecorTwo />
           </DecorWrapper>
-          <CardWrapper></CardWrapper>
+          <CardWrapper>
+            <SkillCard name='Languages' description='TypeScript Lua Python JavaScript'/>
+            <SkillCard name='Databases' description='SQLite PostgreSQL Mongo'/>
+            <SkillCard name='Tools' description='VSCode Neovim Linux Figma XFCE Arch Git Font Awesome'/>
+            <SkillCard name='Other' description='HTML CSS EJS SCSS REST Jinja'/>
+            <SkillCard name='Frameworks' description='React Vue Disnake Discord.js Flask Express.js'/>
+          </CardWrapper>
         </BoxWrapper>
       </SkillsWrapper>
     </Container>
@@ -127,7 +134,8 @@ bottom: 37px;
 
 const CardWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
   width: 584px;
   border: 1px solid ${theme.colors.colorGray};
 `
