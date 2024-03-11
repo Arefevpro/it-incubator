@@ -21,6 +21,7 @@ export const Skills = () => {
 
 
 const SkillsWrapper = styled.div`
+padding-top: 106px;
   display: flex;
   gap: 59px;
   width: 100%;
@@ -28,9 +29,8 @@ const SkillsWrapper = styled.div`
 `;
 
 const DecorWrapper = styled.div`
-  min-width: 349px;
-  min-height: 282px;
-  width: 100%;
+  width: 349px;
+  height: 282px;
   border: 1px solid ${theme.colors.colorGray};
   `;
 
