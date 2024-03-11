@@ -88,6 +88,7 @@ const BoxWrapper = styled.div`
   `
 
 const DecorWrapper = styled.div`
+  margin-top: 12px;
   width: 350px;
   height: 282px;
   position: relative;
@@ -151,6 +152,7 @@ bottom: 37px;
 
 
 const CardWrapper = styled.div`
+padding-top: 43px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -158,7 +160,6 @@ const CardWrapper = styled.div`
   align-content: flex-start;
   gap: 16px;
   width: 584px;
-  border: 1px solid ${theme.colors.colorGray};
 `
 
 

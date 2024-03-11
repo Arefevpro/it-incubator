@@ -34,5 +34,5 @@ const CardTitle = styled.h3`
 `;
 
 const CardText = styled.p`
-  padding: 7px;
+  padding: 8px;
 `
