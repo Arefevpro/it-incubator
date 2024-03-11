@@ -5,13 +5,14 @@ import { theme } from '../../../../styles/Theme';
 type PropsCardtype = {
   name: string;
   description: string;
+  width?: number;
 };
 
 
 
-export const SkillCard = ( { name, description }: PropsCardtype) => {
+export const SkillCard = ( { name, description, width=178}: PropsCardtype) => {
   return (
-    <CardWrapper>
+    <CardWrapper width={width}>
       <CardTitle>{name}</CardTitle>
       <CardText>{description}</CardText>
     </CardWrapper>
@@ -19,11 +20,11 @@ export const SkillCard = ( { name, description }: PropsCardtype) => {
 };
 
 
-const CardWrapper = styled.div`
+const CardWrapper = styled.div<{width: number}>`
   display: flex;
   flex-direction: column;
-  width: 178px;
   outline: 1px solid ${theme.colors.colorGray};
+  width: ${(props) => `${props.width}px`};
 `;
 
 const CardTitle = styled.h3`

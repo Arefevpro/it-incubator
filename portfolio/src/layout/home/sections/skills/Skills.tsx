@@ -21,11 +21,27 @@ export const Skills = () => {
             <CubeDecorTwo />
           </DecorWrapper>
           <CardWrapper>
-            <SkillCard name='Languages' description='TypeScript Lua Python JavaScript'/>
-            <SkillCard name='Databases' description='SQLite PostgreSQL Mongo'/>
-            <SkillCard name='Tools' description='VSCode Neovim Linux Figma XFCE Arch Git Font Awesome'/>
-            <SkillCard name='Other' description='HTML CSS EJS SCSS REST Jinja'/>
-            <SkillCard name='Frameworks' description='React Vue Disnake Discord.js Flask Express.js'/>
+            <SkillCard
+              name="Languages"
+              description="TypeScript Lua Python JavaScript"
+            />
+            <SkillCard 
+              name="Databases" 
+              description="SQLite PostgreSQL Mongo" />
+            <SkillCard
+              width={196}
+              name="Tools"
+              description="VSCode Neovim Linux Figma XFCE Arch Git Font Awesome"
+            />
+            <SkillCard
+              name="Other"
+              description="HTML CSS EJS SCSS REST Jinja"
+            />
+            <SkillCard
+              width={196}
+              name="Frameworks"
+              description="React Vue Disnake Discord.js Flask Express.js"
+            />
           </CardWrapper>
         </BoxWrapper>
       </SkillsWrapper>
@@ -35,11 +51,10 @@ export const Skills = () => {
 
 
 const SkillsWrapper = styled.div`
-padding-top: 106px;
-padding-bottom: 112px;
-  display: flex;s
+  padding-top: 106px;
+  padding-bottom: 112px;
+  display: flex;
   flex-direction: column;
-  
   gap: 12x;
   width: 100%;
   height: 100%;
@@ -49,11 +64,11 @@ const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 390px;
-   span {
+  span {
     font-size: 32px;
-   }
+  }
 
-   &::after {
+  &::after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -62,7 +77,7 @@ const TitleWrapper = styled.div`
     margin-top: 8px;
     margin-left: 16px;
   }
-  `
+`;
 
 const BoxWrapper = styled.div`
   display: flex;
@@ -138,6 +153,7 @@ bottom: 37px;
 const CardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: flex-start;
   align-content: flex-start;
   gap: 16px;
