@@ -35,13 +35,12 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
-        
         <TitleBox>
-        <TitleWrapper>
-          <Hashtag name="#" />
-          <SectionTitle title="projects" />
-        </TitleWrapper>
-        <Span>View all </Span>
+          <TitleWrapper>
+            <Hashtag name="#" />
+            <SectionTitle title="projects" />
+          </TitleWrapper>
+          <Span>View all </Span>
         </TitleBox>
         <ProjectWrapper>
           {porjectsArr.map((project, index) => (
