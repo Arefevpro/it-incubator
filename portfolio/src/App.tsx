@@ -6,6 +6,7 @@ import { QuoteSection } from './layout/quote/Quote';
 import { Projects } from "./layout/home/sections/projects/Projects";
 import { Media } from './components/media/Media';
 import { Skills } from './layout/home/sections/skills/Skills';
+import { AboutMe } from './layout/home/sections/aboutme/AboutMe';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <QuoteSection />
           <Projects />
           <Skills />
+          <AboutMe />
       </div>
     );
 }
