@@ -13,7 +13,13 @@ export const AboutMe = () => {
     <Container>
       <AboutMeWrapper>
         <DescriptionWrapper>
-          <SectionTitle title="about me" />
+          <TitleWrapper>
+          <Hashtag name="#" />
+          <SectionTitle title="about-me" />
+          </TitleWrapper>
+          <DescriptionTitle>
+          Hello, i’m Elias!
+          </DescriptionTitle>
           <DescriptionText>
             I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
             develop responsive websites from scratch and raise them into modern
@@ -37,18 +43,41 @@ export const AboutMe = () => {
 const AboutMeWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 166px;
   height: 100%;
 `;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 516px;
+  span {
+    font-size: 32px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: ${theme.colors.accentGreen};
+    margin-left: 16px;
+  }
+`
 
 
 const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 700px;
+  gap: 40px;
+  justify-content: space-between;
+ max-width: 515px;
 `;
 
+
+const DescriptionTitle = styled.h3`
+  color: ${theme.colors.accentWhite};
+`
 
 const DescriptionText = styled.p`
   color: ${theme.colors.accentWhite};
@@ -57,8 +86,8 @@ const DescriptionText = styled.p`
 
 const ImgWrapper = styled.div`
   display: flex;
-  width: 700px;
-  height: 400px;
+  width: 343px;
+  height: 508px;
   background-image: url(${imgPreview2});
   background-size: contain;
   background-repeat: no-repeat;
