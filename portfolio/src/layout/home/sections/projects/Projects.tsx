@@ -35,10 +35,14 @@ export const Projects = () => {
   return (
     <Container>
       <ProjectsWrapper>
+        
+        <TitleBox>
         <TitleWrapper>
           <Hashtag name="#" />
           <SectionTitle title="projects" />
         </TitleWrapper>
+        <Span>View all </Span>
+        </TitleBox>
         <ProjectWrapper>
           {porjectsArr.map((project, index) => (
             <ProjectOne project={project} cashed={index === 0} />
@@ -61,6 +65,13 @@ const ProjectsWrapper = styled.div`
   
 `;
 
+const TitleBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  `
+
 const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -76,8 +87,16 @@ const TitleWrapper = styled.div`
     height: 1px;
     background-color: ${theme.colors.accentGreen};
     margin-top: 8px;
+    margin-left: 16px;
   }
   `
+
+const Span = styled.a`
+font-size: 16px;
+color: ${theme.colors.accentWhite};
+cursor: pointer;
+display: inline-block;
+`
 
 
 const ProjectWrapper = styled.div`
