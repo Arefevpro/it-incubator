@@ -65,9 +65,33 @@ const BoxWrapper = styled.div`
 const DecorWrapper = styled.div`
   width: 350px;
   height: 282px;
-  border: 1px solid ${theme.colors.colorGray};
   position: relative;
-  `;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-image: url("./Dots63svg.svg");
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 12;
+  }
+
+  &::after {
+    content: "";
+    width: 113px;
+    height: 113px;
+    background-image: url("./Logo11.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: -1;
+  }
+`;
 
 const CubeDecorOne = styled.div`
 width: 86px;
@@ -76,6 +100,18 @@ border: 1px solid ${theme.colors.colorGray};
 position: absolute;
 top: 0;
 right: 36px;
+
+&::after {
+  content: "";
+  width: 63px;
+  height: 63px;
+  background-image: url("./Dots63svg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 155px;
+  right: 73px;
+}
 `;
 
 
