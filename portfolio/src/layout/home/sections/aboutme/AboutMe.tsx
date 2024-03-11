@@ -15,7 +15,7 @@ export const AboutMe = () => {
         <DescriptionWrapper>
           <TitleWrapper>
           <Hashtag name="#" />
-          <SectionTitle title="about-me" />
+          <SectionTitle title="aboutme" />
           </TitleWrapper>
           <DescriptionTitle>
           Hello, i’m Elias!
@@ -43,7 +43,7 @@ export const AboutMe = () => {
 const AboutMeWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 166px;
+  gap: 165px;
   height: 100%;
 `;
 
@@ -71,7 +71,7 @@ const DescriptionWrapper = styled.div`
   flex-direction: column;
   gap: 40px;
   justify-content: space-between;
- max-width: 515px;
+ max-width: 516px;
 `;
 
 
@@ -98,8 +98,4 @@ const Img = styled.img`
   height: 100%;
 `
 
-const ButtonWrapper = styled.div`
-  display: flex;
-  gap: 16px;
-`
 
