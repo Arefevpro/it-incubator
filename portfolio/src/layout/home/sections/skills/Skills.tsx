@@ -36,11 +36,13 @@ export const Skills = () => {
 
 const SkillsWrapper = styled.div`
 padding-top: 106px;
-  display: flex;
+padding-bottom: 112px;
+  display: flex;s
   flex-direction: column;
+  
   gap: 12x;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 const TitleWrapper = styled.div`
@@ -64,6 +66,7 @@ const TitleWrapper = styled.div`
 
 const BoxWrapper = styled.div`
   display: flex;
+  justify-content: flex-end;
   gap: 58px;
   width: 100%;
   height: 100%;
@@ -135,6 +138,8 @@ bottom: 37px;
 const CardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
   gap: 16px;
   width: 584px;
   border: 1px solid ${theme.colors.colorGray};
