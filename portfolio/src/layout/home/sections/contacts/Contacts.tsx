@@ -26,7 +26,7 @@ export const Contacts = () => {
         <ContactsWrapper>
           <ContactsTitle>Message me here</ContactsTitle>
           <IconWrapper>
-
+            
           </IconWrapper>
         </ContactsWrapper>
       </SectionWrapper>
@@ -41,7 +41,6 @@ const SectionWrapper = styled.div`
   gap: 314px;
   width: 100%;
   padding-bottom: 145px;
-  border: 1px solid green;
 `;
 
 const MessageWrapper = styled.div`
@@ -93,7 +92,7 @@ const ContactsTitle = styled.p`
   color: ${theme.colors.accentWhite};
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
