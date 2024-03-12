@@ -8,6 +8,7 @@ import { Media } from './components/media/Media';
 import { Skills } from './layout/home/sections/skills/Skills';
 import { AboutMe } from './layout/home/sections/aboutme/AboutMe';
 import { Contacts } from './layout/home/sections/contacts/Contacts';
+import { Footer } from './layout/footer/Footer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Skills />
           <AboutMe />
           <Contacts />
+          <Footer />
       </div>
     );
 }

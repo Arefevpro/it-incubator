@@ -31,7 +31,7 @@ export const AboutMe = () => {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.{" "}
           </DescriptionText>
-            <Button>Read more</Button> 
+            <Button>Read more --- </Button> 
         </DescriptionWrapper>
         <ImgWrapper></ImgWrapper>
       </AboutMeWrapper>
