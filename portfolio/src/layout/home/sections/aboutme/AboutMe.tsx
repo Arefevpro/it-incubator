@@ -31,7 +31,7 @@ export const AboutMe = () => {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.{" "}
           </DescriptionText>
-            <Button>Contact me</Button>
+            <Button>Read more</Button> 
         </DescriptionWrapper>
         <ImgWrapper></ImgWrapper>
       </AboutMeWrapper>
@@ -79,10 +79,11 @@ const DescriptionWrapper = styled.div`
 
 const DescriptionTitle = styled.h3`
   color: ${theme.colors.colorGray};
+  font-weight: 500;
 `
 
 const DescriptionText = styled.p`
-  color: ${theme.colors.colorGray};
+  color: currentColor;
 `
 
 
