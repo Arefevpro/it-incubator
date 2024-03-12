@@ -15,21 +15,53 @@ export const Contacts = () => {
     <Container>
       <SectionWrapper>
         <TitleWrapper>
+          <Hashtag name="#" />
           <SectionTitle title="contacts" />
         </TitleWrapper>
         <Message>
         I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
         </Message>
-      </SectionWrapper>
-      <ContactsWrapper>
+        <ContactsWrapper>
         <ContactsTitle>
         Message me here
         </ContactsTitle>
       </ContactsWrapper>
+      </SectionWrapper>
     </Container>
   );
 };
 
+
+
+const SectionWrapper = styled.div`
+  display: flex;
+  gap: 45px;
+  width: 100%;
+  padding-bottom: 47px;
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 506px;
+  span {
+    font-size: 32px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: ${theme.colors.accentGreen};
+    margin-left: 16px;
+  }
+`;
+
+const Message = styled.p`
+  
+`
 
 const ContactsWrapper = styled.div`
   display: flex;
@@ -38,7 +70,6 @@ const ContactsWrapper = styled.div`
   width: 100%;
 `;
 
-
 const ContactsTitle = styled.div`
   display: flex;
   align-items: center;
@@ -46,23 +77,4 @@ const ContactsTitle = styled.div`
   width: 100%;
   font-size: 32px;
   color: ${theme.colors.accentWhite};
-`;
-
-const Message = styled.p`
-  
-`
-
-const SectionWrapper = styled.div`
-  padding-top: 106px;
-  padding-bottom: 112px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-`;
-
-const TitleWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 390px;
 `;
