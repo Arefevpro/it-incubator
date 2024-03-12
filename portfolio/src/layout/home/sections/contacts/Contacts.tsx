@@ -4,6 +4,7 @@ import { theme } from '../../../../styles/Theme';
 import { Container } from '../../../../components/slider/Container';
 import { SectionTitle } from '../../../../components/textComponents/SectionTitle';
 import { Hashtag } from '../../../../components/hashtag/Hashtag';
+import { Icon } from '../../../../components/icon/Icon';
 
 
 
@@ -25,9 +26,25 @@ export const Contacts = () => {
         </MessageWrapper>
         <ContactsWrapper>
           <ContactsTitle>Message me here</ContactsTitle>
-          <IconWrapper>
-            
-          </IconWrapper>
+          
+      <MediaList>
+        <MediaItem>
+          <MedialLink>
+            <Icon iconId={"github"} 
+                  width={'32px'} 
+                  height={'32px'}
+                  viewbox={'0 0 32 32'}/>
+          </MedialLink>
+        </MediaItem>
+        <MediaItem>
+          <MedialLink>
+          <Icon iconId={"dribble"} 
+                  width={'32px'} 
+                  height={'32px'}
+                  viewbox={'0 0 32 32'}/>
+          </MedialLink>
+        </MediaItem>
+      </MediaList>
         </ContactsWrapper>
       </SectionWrapper>
     </Container>
@@ -92,11 +109,27 @@ const ContactsTitle = styled.p`
   color: ${theme.colors.accentWhite};
 `;
 
-const IconWrapper = styled.ul`
+
+const MediaList = styled.ul`
+  width: 32px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
-  width: 172px;
-  height: 72px;
-  outline: 1px solid ${theme.colors.colorGray};
+  align-items: center;
+  `
+
+  const MediaItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  `
+
+  const MedialLink = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   `
