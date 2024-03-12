@@ -31,7 +31,7 @@ export const AboutMe = () => {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.{" "}
           </DescriptionText>
-          <Button title="Learn More" />
+            <Button>Contact me</Button>
         </DescriptionWrapper>
         <ImgWrapper></ImgWrapper>
       </AboutMeWrapper>
@@ -45,6 +45,7 @@ const AboutMeWrapper = styled.div`
   align-items: center;
   gap: 165px;
   height: 100%;
+  padding-bottom: 112px;
 `;
 
 const TitleWrapper = styled.div`
