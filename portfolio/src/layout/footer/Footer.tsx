@@ -12,64 +12,80 @@ import { Icon } from '../../components/icon/Icon';
 
 export const Footer = () => {
   return (
-    
-      <Container>
+    <Container>
+       <StyledFooterWrapper>
       <StyledFooter>
         <SignatureWrapper>
-        <LogoWrapper>
-        <Logo />
-          <Email>
-            elias@elias-dev.ml
-          </Email>
-        </LogoWrapper>
-        <Signature>
-        Web designer and front-end developer
-        </Signature>
+          <LogoWrapper>
+            <Logo />
+            <Email>elias@elias-dev.ml</Email>
+          </LogoWrapper>
+          <Signature>Web designer and front-end developer</Signature>
         </SignatureWrapper>
-        
+
         <StyledMedia>
           <MediaTitle>Media</MediaTitle>
-      <MediaList>
-        <MediaItem>
-          <MedialLink>
-            <Icon iconId={"github"} 
-                  width={'32px'} 
-                  height={'32px'}
-                  viewbox={'0 0 32 32'}/>
-          </MedialLink>
-        </MediaItem>
-        <MediaItem>
-          <MedialLink>
-          <Icon iconId={"dribble"} 
-                  width={'32px'} 
-                  height={'32px'}
-                  viewbox={'0 0 32 32'}/>
-          </MedialLink>
-        </MediaItem>
-        <MediaItem>
-          <MedialLink>
-          <Icon iconId={"figma"} 
-                  width={'32px'} 
-                  height={'32px'}
-                  viewbox={'0 0 32 32'}/>
-          </MedialLink>
-        </MediaItem>
-      </MediaList>
-    </StyledMedia>
-    </StyledFooter>
-      </Container>
-    
+          <MediaList>
+            <MediaItem>
+              <MedialLink>
+                <Icon
+                  iconId={"github"}
+                  width={"32px"}
+                  height={"32px"}
+                  viewbox={"0 0 32 32"}
+                />
+              </MedialLink>
+            </MediaItem>
+            <MediaItem>
+              <MedialLink>
+                <Icon
+                  iconId={"dribble"}
+                  width={"32px"}
+                  height={"32px"}
+                  viewbox={"0 0 32 32"}
+                />
+              </MedialLink>
+            </MediaItem>
+            <MediaItem>
+              <MedialLink>
+                <Icon
+                  iconId={"figma"}
+                  width={"32px"}
+                  height={"32px"}
+                  viewbox={"0 0 32 32"}
+                />
+              </MedialLink>
+            </MediaItem>
+          </MediaList>
+        </StyledMedia>
+        
+       
+      </StyledFooter>
+      <Copyright>© Copyright 2022. Made by Elias</Copyright>
+      </StyledFooterWrapper>
+    </Container>
   );
 };
+
+
+const StyledFooterWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 48px;
+padding-bottom: 32px;
+`
 
 
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 32px;
+  
   color: ${theme.colors.colorGray};
   `
+
+
 
   const SignatureWrapper = styled.div`
   display: flex;
@@ -124,4 +140,9 @@ const MediaList = styled.ul`
   const MedialLink = styled.a`
   display: flex;
 
+  `
+
+  const Copyright = styled.p`
+  display: inline-block;
+  color: ${theme.colors.colorGray};
   `
