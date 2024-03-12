@@ -72,6 +72,7 @@ const DescriptionWrapper = styled.div`
   flex-direction: column;
   gap: 40px;
   justify-content: space-between;
+  align-items: flex-start;
  max-width: 516px;
 `;
 
@@ -92,6 +93,36 @@ const ImgWrapper = styled.div`
   background-image: url(${imgPreview2});
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+
+
+  &::before {
+    content: "";
+    width: 84px;
+    height: 84px;
+    background-image: url("./Dots84.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 59px;
+    left: -4px;
+    z-index: 1;
+  }
+  
+
+  &::after {
+    content: "";
+    width: 104px;
+    height: 56px;
+    background-image: url("./Dots104.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 16px;
+    bottom: 172px;
+    z-index: 1;
+  }
 `
 
 const Img = styled.img`
