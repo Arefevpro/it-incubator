@@ -77,11 +77,11 @@ const DescriptionWrapper = styled.div`
 
 
 const DescriptionTitle = styled.h3`
-  color: ${theme.colors.accentWhite};
+  color: ${theme.colors.colorGray};
 `
 
 const DescriptionText = styled.p`
-  color: ${theme.colors.accentWhite};
+  color: ${theme.colors.colorGray};
 `
 
 
