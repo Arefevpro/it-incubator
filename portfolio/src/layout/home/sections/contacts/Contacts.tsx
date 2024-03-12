@@ -52,9 +52,8 @@ const MessageWrapper = styled.div`
 
 const TitleWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 506px;
+  width: 317px;
   span {
     font-size: 32px;
   }
