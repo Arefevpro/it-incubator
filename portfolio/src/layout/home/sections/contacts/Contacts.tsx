@@ -14,6 +14,7 @@ export const Contacts = () => {
   return (
     <Container>
       <SectionWrapper>
+        <MessageWrapper>
         <TitleWrapper>
           <Hashtag name="#" />
           <SectionTitle title="contacts" />
@@ -21,6 +22,8 @@ export const Contacts = () => {
         <Message>
         I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
         </Message>
+        </MessageWrapper>
+       
         <ContactsWrapper>
         <ContactsTitle>
         Message me here
@@ -37,8 +40,15 @@ const SectionWrapper = styled.div`
   display: flex;
   gap: 45px;
   width: 100%;
-  padding-bottom: 47px;
+  padding-bottom: 145px;
 `;
+
+const MessageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+`;
+
 
 const TitleWrapper = styled.div`
   display: flex;
