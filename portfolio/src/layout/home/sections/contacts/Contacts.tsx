@@ -4,7 +4,6 @@ import { theme } from '../../../../styles/Theme';
 import { Container } from '../../../../components/slider/Container';
 import { SectionTitle } from '../../../../components/textComponents/SectionTitle';
 import { Hashtag } from '../../../../components/hashtag/Hashtag';
-import { Button } from '../../../../components/Button';
 
 
 
@@ -15,20 +14,21 @@ export const Contacts = () => {
     <Container>
       <SectionWrapper>
         <MessageWrapper>
-        <TitleWrapper>
-          <Hashtag name="#" />
-          <SectionTitle title="contacts" />
-        </TitleWrapper>
-        <Message>
-        I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
-        </Message>
+          <TitleWrapper>
+            <Hashtag name="#" />
+            <SectionTitle title="contacts" />
+          </TitleWrapper>
+          <Message>
+            I’m interested in freelance opportunities. However, if you have
+            other request or question, don’t hesitate to contact me
+          </Message>
         </MessageWrapper>
-       
         <ContactsWrapper>
-        <ContactsTitle>
-        Message me here
-        </ContactsTitle>
-      </ContactsWrapper>
+          <ContactsTitle>Message me here</ContactsTitle>
+          <IconWrapper>
+
+          </IconWrapper>
+        </ContactsWrapper>
       </SectionWrapper>
     </Container>
   );
@@ -38,14 +38,16 @@ export const Contacts = () => {
 
 const SectionWrapper = styled.div`
   display: flex;
-  gap: 45px;
+  gap: 314px;
   width: 100%;
   padding-bottom: 145px;
+  border: 1px solid green;
 `;
 
 const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 505px;
   gap: 45px;
 `;
 
@@ -75,15 +77,27 @@ const Message = styled.p`
 const ContactsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
-  width: 100%;
+  width: 204px;
+  height: 140px;
+  outline: 1px solid ${theme.colors.colorGray};
+  margin-top: 87px;
 `;
 
-const ContactsTitle = styled.div`
+const ContactsTitle = styled.p`
+  display: inline-block;
+  justify-content: center;
+  font-weight: 600;
+  color: ${theme.colors.accentWhite};
+`;
+
+const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  font-size: 32px;
-  color: ${theme.colors.accentWhite};
-`;
+  width: 172px;
+  height: 72px;
+  outline: 1px solid ${theme.colors.colorGray};
+  `
