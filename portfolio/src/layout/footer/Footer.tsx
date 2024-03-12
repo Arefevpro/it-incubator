@@ -12,9 +12,9 @@ import { Icon } from '../../components/icon/Icon';
 
 export const Footer = () => {
   return (
-    <StyledFooter>
+    
       <Container>
-      
+      <StyledFooter>
         <SignatureWrapper>
         <LogoWrapper>
         <Logo />
@@ -28,6 +28,7 @@ export const Footer = () => {
         </SignatureWrapper>
         
         <StyledMedia>
+          <MediaTitle>Media</MediaTitle>
       <MediaList>
         <MediaItem>
           <MedialLink>
@@ -55,8 +56,9 @@ export const Footer = () => {
         </MediaItem>
       </MediaList>
     </StyledMedia>
-      </Container>
     </StyledFooter>
+      </Container>
+    
   );
 };
 
@@ -64,8 +66,6 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-  padding: 32px 0 8px;
-  align-items: center;
   width: 100%;
   margin-bottom: 32px;
   color: ${theme.colors.colorGray};
@@ -73,8 +73,10 @@ const StyledFooter = styled.footer`
 
   const SignatureWrapper = styled.div`
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 346px;
   `
 
   const LogoWrapper = styled.div`
@@ -89,36 +91,37 @@ const StyledFooter = styled.footer`
 
   const Signature = styled.p`
   font-size: 16px;
+  color: ${theme.colors.accentWhite};
   `
 
   const StyledMedia = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
+  align-items: flex-start;
+  gap: 12px;
+  width: 112px;
+  height: 75px;
   `
 
 const MediaList = styled.ul`
-  width: 32px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+`;
+
+  const MediaTitle = styled.p`
+  display: inline-block;
   align-items: center;
+  color: ${theme.colors.accentWhite};
+  font-size: 24px;
+  font-weight: 500;
   `
 
   const MediaItem = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
 
   `
 
   const MedialLink = styled.a`
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   `
