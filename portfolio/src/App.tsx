@@ -1,13 +1,13 @@
 import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
-import { MainSection } from './layout/home/sections/main/Main';
+import { MainSection } from './pages/home/sections/main/Main';
 import { QuoteSection } from './layout/quote/Quote';
-import { Projects } from "./layout/home/sections/projects/Projects";
+import { Projects } from "./pages/home/sections/projects/Projects";
 import { Media } from './components/media/Media';
-import { Skills } from './layout/home/sections/skills/Skills';
-import { AboutMe } from './layout/home/sections/aboutme/AboutMe';
-import { Contacts } from './layout/home/sections/contacts/Contacts';
+import { Skills } from './pages/home/sections/skills/Skills';
+import { AboutMe } from './pages/home/sections/aboutme/AboutMe';
+import { Contacts } from './pages/home/sections/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
 
 
