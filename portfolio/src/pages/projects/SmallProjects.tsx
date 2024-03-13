@@ -14,6 +14,13 @@ export const SmallProjects = () => {
     <Container>
       <SmallProjectsWrapper>
       <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
       </SmallProjectsWrapper>
       
     </Container>
@@ -23,10 +30,7 @@ export const SmallProjects = () => {
 
 const SmallProjectsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  gap: 32px;
-  padding-bottom: 145px;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
   `

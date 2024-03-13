@@ -29,7 +29,6 @@ export const SkillCard = ( { name, list, description, width=331}: PropsCardtype)
 const CardWrapperMain = styled.div<{width: number}>`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   outline: 1px solid ${theme.colors.colorGray};
   width: ${(props) => `${props.width}px`};
 `;
@@ -42,12 +41,15 @@ const TechnologyList = styled.span`
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border-top: 1px solid ${theme.colors.colorGray};
 `;
 
 const CardTitle = styled.h3`
   padding: 8px;
   color: ${theme.colors.accentWhite};
-  border-bottom: 1px solid ${theme.colors.colorGray};
+ 
 `;
 
 const CardText = styled.p`
