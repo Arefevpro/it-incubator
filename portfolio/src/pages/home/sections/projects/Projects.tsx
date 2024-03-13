@@ -95,6 +95,11 @@ font-size: 16px;
 color: ${theme.colors.accentWhite};
 cursor: pointer;
 display: inline-block;
+
+&:hover {
+    color: ${theme.colors.accentWhite};
+    font-weight: 600;
+  }
 `
 
 

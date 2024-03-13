@@ -16,6 +16,7 @@ export const Button = styled.button`
   &:hover {
     color: ${theme.colors.accentWhite};
     outline: 2px solid ${theme.colors.accentGreen};
+    font-weight: 800;
   }
 
   &:active {
