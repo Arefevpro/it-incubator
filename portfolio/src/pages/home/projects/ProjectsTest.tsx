@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../../../../components/slider/Container';
+import { Container } from '../../../components/slider/Container';
 import {  ProjectTest } from './project/ProjectTest';
 
 

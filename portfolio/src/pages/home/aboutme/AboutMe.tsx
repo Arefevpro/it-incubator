@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../../../../styles/Theme';
-import { Container } from '../../../../components/slider/Container';
-import { SectionTitle } from '../../../../components/textComponents/SectionTitle';
-import { Hashtag } from '../../../../components/hashtag/Hashtag';
-import { Button } from '../../../../components/Button';
+import { theme } from '../../../styles/Theme';
+import { Container } from '../../../components/slider/Container';
+import { SectionTitle } from '../../../components/textComponents/SectionTitle';
+import { Hashtag } from '../../../components/hashtag/Hashtag';
+import { Button } from '../../../components/Button';
 import imgPreview2 from '../../../../assets/images/Preview2.webp';
 
 

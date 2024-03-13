@@ -1,10 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
-import { FlexWrapper } from "../../components/flex/FlexWrapper";
-import { Container } from "../../components/slider/Container";
-import { Language } from "../../components/Language";
+import { Logo } from "../logo/Logo";
+import { Menu } from "../menu/Menu";
+import { FlexWrapper } from "../flex/FlexWrapper";
+import { Container } from "../slider/Container";
+import { Language } from "../Language";
 
 export const Header = () => {
   return (

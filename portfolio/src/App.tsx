@@ -1,14 +1,14 @@
 import './App.css';
 import styled from 'styled-components';
-import { Header } from './layout/header/Header';
-import { MainSection } from './pages/home/sections/main/Main';
+import { Header } from './components/header/Header';
+import { MainSection } from './pages/home/main/Main';
 import { QuoteSection } from './components/quote/Quote';
-import { Projects } from "./pages/home/sections/projects/Projects";
+import { Projects } from "./pages/home/projects/Projects";
 import { Media } from './components/media/Media';
-import { Skills } from './pages/home/sections/skills/Skills';
-import { AboutMe } from './pages/home/sections/aboutme/AboutMe';
-import { Contacts } from './pages/home/sections/contacts/Contacts';
-import { Footer } from './layout/footer/Footer';
+import { Skills } from './pages/home/skills/Skills';
+import { AboutMe } from './pages/home/aboutme/AboutMe';
+import { Contacts } from './pages/home/contacts/Contacts';
+import { Footer } from './components/footer/Footer';
 
 
 

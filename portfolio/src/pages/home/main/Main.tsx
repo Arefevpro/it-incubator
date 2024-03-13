@@ -1,10 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
 import photoP1 from "../../../../assets/images/Preview1.webp";
-import { FlexWrapper } from "../../../../components/flex/FlexWrapper";
-import { theme } from "../../../../styles/Theme";
-import { Container } from "../../../../components/slider/Container";
-import { Button } from "../../../../components/Button";
+import { FlexWrapper } from "../../../components/flex/FlexWrapper";
+import { theme } from "../../../styles/Theme";
+import { Container } from "../../../components/slider/Container";
+import { Button } from "../../../components/Button";
 
 export const MainSection = ( ) => {
   return (

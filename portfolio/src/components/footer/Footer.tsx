@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
-import { Container } from '../../components/slider/Container';
-import { SectionTitle } from '../../components/textComponents/SectionTitle';
-import { Hashtag } from '../../components/hashtag/Hashtag';
-import { Logo } from '../../components/logo/Logo';
-import { Icon } from '../../components/icon/Icon';
+import { Container } from '../slider/Container';
+import { SectionTitle } from '../textComponents/SectionTitle';
+import { Hashtag } from '../hashtag/Hashtag';
+import { Logo } from '../logo/Logo';
+import { Icon } from '../icon/Icon';
 
 
 
