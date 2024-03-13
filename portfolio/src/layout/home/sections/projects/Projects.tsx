@@ -40,7 +40,7 @@ export const Projects = () => {
             <Hashtag name="#" />
             <SectionTitle title="projects" />
           </TitleWrapper>
-          <Span>View all </Span>
+          <Span>View all ~~&gt;</Span>
         </TitleBox>
         <ProjectWrapper>
           {porjectsArr.map((project, index) => (

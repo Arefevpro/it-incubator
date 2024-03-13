@@ -101,6 +101,7 @@ const MainTitleAccent = styled.span`
 
 const MainText = styled.p`
 margin-bottom: 24px;
+width: 463px;
 `;
 
 const SignatureBox = styled.div`
