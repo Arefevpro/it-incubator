@@ -16,7 +16,7 @@ import { Footer } from './components/footer/Footer';
 function App() {
     return (
       <div className="App">
-        <HomePage>
+        {/* <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -26,8 +26,11 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage>
-        <ProjectsPage></ProjectsPage>
+        </HomePage> */}
+        <ProjectsPage>
+          <Header />
+          <Media />
+        </ProjectsPage>
         <AboutPage></AboutPage>
         <ContactsPage></ContactsPage>
       </div>

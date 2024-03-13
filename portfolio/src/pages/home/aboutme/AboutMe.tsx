@@ -5,7 +5,7 @@ import { Container } from '../../../components/slider/Container';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
 import { Hashtag } from '../../../components/hashtag/Hashtag';
 import { Button } from '../../../components/Button';
-import imgPreview2 from '../../../../assets/images/Preview2.webp';
+import imgPreview2 from '../../../assets/images/Preview2.webp';
 
 
 export const AboutMe = () => {

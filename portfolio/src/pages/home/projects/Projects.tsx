@@ -6,8 +6,9 @@ import { ProjectThre } from './project/ProjectThre';
 import { Container } from '../../../components/slider/Container';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
 import { Hashtag } from '../../../components/hashtag/Hashtag';
-import img1 from '../../../../assets/images/Banner1.webp'
-import img2 from '../../../../assets/images/Banner2.webp'
+import img1 from '../../../assets/images/Banner1.webp'
+import img2 from '../../../assets/images/Banner2.webp'
+import img3 from '../../../assets/images/Banner3.webp'
 import { theme } from '../../../styles/Theme';
 
 
