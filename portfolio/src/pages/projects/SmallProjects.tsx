@@ -11,12 +11,11 @@ export const SmallProjects = () => {
   return (
     <Container>
       <SkillsWrapper>
-        <TitleWrapper>
+          <CardWrapper>
+          <TitleWrapper>
           <Hashtag name="#" />
           <SectionTitle title="skills" />
         </TitleWrapper>
-        <BoxWrapper>
-          <CardWrapper>
             <SkillCard
               name="Languages"
               description="TypeScript Lua Python JavaScript"
@@ -39,7 +38,6 @@ export const SmallProjects = () => {
               description="React Vue Disnake Discord.js Flask Express.js"
             />
           </CardWrapper>
-        </BoxWrapper>
       </SkillsWrapper>
     </Container>
   );
@@ -75,14 +73,6 @@ const TitleWrapper = styled.div`
   }
 `;
 
-const BoxWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  gap: 58px;
-  width: 100%;
-  height: 100%;
-  `
-
 
 const CardWrapper = styled.div`
 padding-top: 43px;
@@ -92,6 +82,6 @@ padding-top: 43px;
   align-items: flex-start;
   align-content: flex-start;
   gap: 16px;
-  width: 584px;
+  width: 100%;
 `
 
