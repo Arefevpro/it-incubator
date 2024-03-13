@@ -13,7 +13,7 @@ export const SmallProjects = () => {
   return (
     <Container>
       <SmallProjectsWrapper>
-      <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
+      <SkillCard list='Discord.js TS JS' name='Bot boilerplate' description='Start creating scalable discord.js bot with typescript in seconds'/>
       <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
       <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
       <SkillCard list='TypeScript' name='TypeScript' description='TypeScript'/>
@@ -32,5 +32,4 @@ const SmallProjectsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  padding: 16px;
   `

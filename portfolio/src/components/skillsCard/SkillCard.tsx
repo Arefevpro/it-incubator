@@ -12,7 +12,7 @@ type PropsCardtype = {
 
 
 
-export const SkillCard = ( { name, list, description, width=331}: PropsCardtype) => {
+export const SkillCard = ( { name, list, description, width=330}: PropsCardtype) => {
   return (
     <CardWrapperMain width={width}>
       <TechnologyList>{list}</TechnologyList>
