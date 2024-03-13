@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { FlexWrapper } from '../../components/flex/FlexWrapper';
+import { FlexWrapper } from '../flex/FlexWrapper';
 import { theme } from '../../styles/Theme';
-import { Container } from '../../components/slider/Container';
+import { Container } from '../slider/Container';
 
 
 export const QuoteSection = ( ) => {
