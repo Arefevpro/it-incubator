@@ -9,6 +9,7 @@ import { Skills } from './pages/home/skills/Skills';
 import { AboutMe } from './pages/home/aboutme/AboutMe';
 import { Contacts } from './pages/home/contacts/Contacts';
 import { Footer } from './components/footer/Footer';
+import { SmallProjects } from './pages/projects/SmallProjects'
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <ProjectsPage>
           <Header />
           <Media />
+          <SmallProjects />
         </ProjectsPage>
         <AboutPage></AboutPage>
         <ContactsPage></ContactsPage>
