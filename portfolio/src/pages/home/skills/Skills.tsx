@@ -4,7 +4,7 @@ import { SectionTitle } from '../../../components/textComponents/SectionTitle';
 import { Hashtag } from '../../../components/hashtag/Hashtag';
 import { theme } from '../../../styles/Theme';
 import { Container } from '../../../components/slider/Container';
-import { SkillCard } from '../../../components/skillsCard/SkillCard';
+import { SkillCardHome } from './SkillCardHome';
 
 
 export const Skills = () => {
@@ -21,23 +21,23 @@ export const Skills = () => {
             <CubeDecorTwo />
           </DecorWrapper>
           <CardWrapper>
-            <SkillCard
+            <SkillCardHome
               name="Languages"
               description="TypeScript Lua Python JavaScript"
             />
-            <SkillCard 
+            <SkillCardHome
               name="Databases" 
               description="SQLite PostgreSQL Mongo" />
-            <SkillCard
+            <SkillCardHome
               width={196}
               name="Tools"
               description="VSCode Neovim Linux Figma XFCE Arch Git Font Awesome"
             />
-            <SkillCard
+            <SkillCardHome
               name="Other"
               description="HTML CSS EJS SCSS REST Jinja"
             />
-            <SkillCard
+            <SkillCardHome
               width={196}
               name="Frameworks"
               description="React Vue Disnake Discord.js Flask Express.js"

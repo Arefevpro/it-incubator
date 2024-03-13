@@ -1,30 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
+import { Button } from '../Button';
 
 type PropsCardtype = {
   name: string;
   description: string;
   width?: number;
+  list?: string;
 };
 
 
 
-export const SkillCard = ( { name, description, width=178}: PropsCardtype) => {
+export const SkillCard = ( { name, list, description, width=331}: PropsCardtype) => {
   return (
-    <CardWrapper width={width}>
-      <CardTitle>{name}</CardTitle>
-      <CardText>{description}</CardText>
-    </CardWrapper>
+    <CardWrapperMain width={width}>
+      <TechnologyList>{list}</TechnologyList>
+      <CardWrapper>
+        <CardTitle>{name}</CardTitle>
+        <CardText>{description}</CardText>
+        <Button>Read more -&gt; </Button>
+      </CardWrapper>
+    </CardWrapperMain>
   );
 };
 
 
-const CardWrapper = styled.div<{width: number}>`
+const CardWrapperMain = styled.div<{width: number}>`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   outline: 1px solid ${theme.colors.colorGray};
   width: ${(props) => `${props.width}px`};
+`;
+
+const TechnologyList = styled.span`
+  padding: 8px;
+`
+
+
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const CardTitle = styled.h3`
