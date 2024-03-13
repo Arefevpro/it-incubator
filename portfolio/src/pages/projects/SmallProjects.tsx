@@ -11,11 +11,12 @@ export const SmallProjects = () => {
   return (
     <Container>
       <SkillsWrapper>
-          <CardWrapper>
-          <TitleWrapper>
+      <TitleWrapper>
           <Hashtag name="#" />
           <SectionTitle title="skills" />
         </TitleWrapper>
+          <CardWrapper>
+         
             <SkillCard
               name="Languages"
               description="TypeScript Lua Python JavaScript"
