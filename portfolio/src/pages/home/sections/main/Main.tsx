@@ -82,6 +82,7 @@ const Photo = styled.div`
   background-repeat: no-repeat;
   background-position: -130px -80px;
   background-size: 650px;
+
 `;
 
 const MainTitle = styled.h1`
