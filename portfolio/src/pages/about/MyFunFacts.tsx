@@ -51,19 +51,30 @@ const FactsItem = styled.p`
 const DecoreWraper = styled.div`
 width: 178px;
 height: 169px;
-outline: 1px solid ${theme.colors.colorGray};
+position: relative;
+
 
 &::before {
     content: "";
+    width: 16px;
+    height: 64px;
     background-image: url(${Imgots});
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
     content: "";
+    width: 113px;
+    height: 113px;
     background-image: url(${ImgLogo});
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
  `

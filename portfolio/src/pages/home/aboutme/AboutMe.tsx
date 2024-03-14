@@ -7,10 +7,11 @@ import { Button } from '../../../components/Button';
 import imgPreview2 from '../../../assets/images/Preview2.webp';
 
 type AboutMeProps = {
-  isShowTitle?: boolean
+  isShowTitle?: boolean;
+  button?: boolean;
 }
 
-export const AboutMe = ({isShowTitle = true}: AboutMeProps) => {
+export const AboutMe = ({isShowTitle, button = true}: AboutMeProps) => {
   return (
     <Container>
       <AboutMeWrapper>
@@ -31,7 +32,8 @@ export const AboutMe = ({isShowTitle = true}: AboutMeProps) => {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.{" "}
           </DescriptionText>
-            <Button>Read more -&gt; </Button> 
+          {button && <Button>Read more -&gt; </Button>}
+             
         </DescriptionWrapper>
         <ImgWrapper></ImgWrapper>
       </AboutMeWrapper>
@@ -93,6 +95,7 @@ const ImgWrapper = styled.div`
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
+  border-bottom: 1px solid ${theme.colors.accentGreen};
 
 
   &::before {
@@ -123,9 +126,6 @@ const ImgWrapper = styled.div`
   }
 `
 
-const Img = styled.img`
-  width: 100%;
-  height: 100%;
-`
+
 
 

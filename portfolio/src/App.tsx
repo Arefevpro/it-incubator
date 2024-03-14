@@ -40,7 +40,7 @@ function App() {
         <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
-          <AboutMe isShowTitle={false}/>
+          <AboutMe isShowTitle button={false}/>
           <Media />
           <SkillsAboutPage />
           <MyFunFacts />
