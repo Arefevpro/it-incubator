@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../../components/slider/Container';
 import { SectionTitle } from '../../components/textComponents/SectionTitle';
+import { theme } from '../../styles/Theme';
 
 export const MyFunFacts = () => {
   return (
@@ -26,19 +27,18 @@ export const MyFunFacts = () => {
 
 const FactsSectionWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 939px;
 `;
 
 const FactsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 605px;
 `;
 
 const FactsItem = styled.p`
-  align-items: center;
   padding-top: 8px;
+  outline: 1px solid ${theme.colors.colorGray};
 `;
 
 
