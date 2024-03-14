@@ -31,9 +31,10 @@ function App() {
         </HomePage> */}
         <ProjectsPage>
           <Header />
-          <PageTitle name="projects" description="List of my projects"/>
+          <PageTitle name="projects" description="List of my projects" />
           <Media />
           <SmallProjects />
+          <Footer />
         </ProjectsPage>
         <AboutPage></AboutPage>
         <ContactsPage></ContactsPage>

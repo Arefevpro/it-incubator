@@ -27,5 +27,4 @@ const StyledHeader = styled.header`
   padding: 32px 0 8px;
   align-items: center;
   width: 100%;
-  margin-bottom: 32px;
 `;

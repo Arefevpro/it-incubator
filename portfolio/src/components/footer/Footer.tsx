@@ -73,6 +73,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 48px;
+padding-top: 32px;
 padding-bottom: 32px;
 `
 
