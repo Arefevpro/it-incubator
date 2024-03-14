@@ -20,4 +20,11 @@ const Title = styled.h2`
   color: ${theme.colors.accentWhite};
   align-self: end; 
   font-weight: 500;
+  
+
+  &::before {
+    content: "#";
+    color: ${theme.colors.accentGreen};
+  }
+
   `

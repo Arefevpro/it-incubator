@@ -12,7 +12,7 @@ import { Footer } from './components/footer/Footer';
 import { SmallProjects } from './pages/projects/SmallProjects'
 import { theme } from './styles/Theme';
 import { PageTitle } from './components/pageTitle/PageTitle';
-
+import { SkillsAboutPage } from './pages/projects/SkillsAboutPage';
 
 
 function App() {
@@ -37,10 +37,11 @@ function App() {
           <Footer />
         </ProjectsPage> */}
         <AboutPage>
-        <Header />
-        <PageTitle name="about-me" description="Who am i?" />
-        <AboutMe />
+          <Header />
+          <PageTitle name="about-me" description="Who am i?" />
+          <AboutMe />
           <Media />
+          <SkillsAboutPage />
           <Footer />
         </AboutPage>
         <ContactsPage></ContactsPage>

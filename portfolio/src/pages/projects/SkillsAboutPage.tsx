@@ -9,7 +9,6 @@ import { Hashtag } from '../../components/hashtag/Hashtag';
 export const SkillsAboutPage = () => {
   return (
     <Container>
-      <Hashtag name="#"/>
       <SectionTitle title="skills" />
     </Container>
   );
