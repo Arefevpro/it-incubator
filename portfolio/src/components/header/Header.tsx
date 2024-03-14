@@ -5,6 +5,7 @@ import { Menu } from "../menu/Menu";
 import { FlexWrapper } from "../flex/FlexWrapper";
 import { Container } from "../slider/Container";
 import { Language } from "../Language";
+import { theme } from "../../styles/Theme";
 
 export const Header = () => {
   return (

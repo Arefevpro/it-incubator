@@ -12,61 +12,67 @@ import { Icon } from '../icon/Icon';
 
 export const Footer = () => {
   return (
-    <Container>
-       <StyledFooterWrapper>
-      <StyledFooter>
-        <SignatureWrapper>
-          <LogoWrapper>
-            <Logo />
-            <Email>elias@elias-dev.ml</Email>
-          </LogoWrapper>
-          <Signature>Web designer and front-end developer</Signature>
-        </SignatureWrapper>
+    <DecorWrapper>
 
-        <StyledMedia>
-          <MediaTitle>Media</MediaTitle>
-          <MediaList>
-            <MediaItem>
-              <MedialLink>
-                <Icon
-                  iconId={"github"}
-                  width={"32px"}
-                  height={"32px"}
-                  viewbox={"0 0 32 32"}
-                />
-              </MedialLink>
-            </MediaItem>
-            <MediaItem>
-              <MedialLink>
-                <Icon
-                  iconId={"dribble"}
-                  width={"32px"}
-                  height={"32px"}
-                  viewbox={"0 0 32 32"}
-                />
-              </MedialLink>
-            </MediaItem>
-            <MediaItem>
-              <MedialLink>
-                <Icon
-                  iconId={"figma"}
-                  width={"32px"}
-                  height={"32px"}
-                  viewbox={"0 0 32 32"}
-                />
-              </MedialLink>
-            </MediaItem>
-          </MediaList>
-        </StyledMedia>
-        
-       
-      </StyledFooter>
-      <Copyright>© Copyright 2022. Made by Elias</Copyright>
+   
+    <Container>
+      <StyledFooterWrapper>
+        <StyledFooter>
+          <SignatureWrapper>
+            <LogoWrapper>
+              <Logo />
+              <Email>elias@elias-dev.ml</Email>
+            </LogoWrapper>
+            <Signature>Web designer and front-end developer</Signature>
+          </SignatureWrapper>
+
+          <StyledMedia>
+            <MediaTitle>Media</MediaTitle>
+            <MediaList>
+              <MediaItem>
+                <MedialLink>
+                  <Icon
+                    iconId={"github"}
+                    width={"32px"}
+                    height={"32px"}
+                    viewbox={"0 0 32 32"}
+                  />
+                </MedialLink>
+              </MediaItem>
+              <MediaItem>
+                <MedialLink>
+                  <Icon
+                    iconId={"dribble"}
+                    width={"32px"}
+                    height={"32px"}
+                    viewbox={"0 0 32 32"}
+                  />
+                </MedialLink>
+              </MediaItem>
+              <MediaItem>
+                <MedialLink>
+                  <Icon
+                    iconId={"figma"}
+                    width={"32px"}
+                    height={"32px"}
+                    viewbox={"0 0 32 32"}
+                  />
+                </MedialLink>
+              </MediaItem>
+            </MediaList>
+          </StyledMedia>
+        </StyledFooter>
+        <Copyright>© Copyright 2022. Made by Elias</Copyright>
       </StyledFooterWrapper>
     </Container>
+    </DecorWrapper>
   );
 };
 
+
+const  DecorWrapper = styled.div`
+border-top: 1px solid ${theme.colors.colorGray};
+`
 
 const StyledFooterWrapper = styled.div`
 display: flex;
@@ -82,11 +88,8 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
   color: ${theme.colors.colorGray};
   `
-
-
 
   const SignatureWrapper = styled.div`
   display: flex;
