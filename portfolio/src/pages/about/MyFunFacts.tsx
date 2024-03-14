@@ -9,13 +9,13 @@ export const MyFunFacts = () => {
       <SectionTitle title="my-fun-facts" />
       <FactsSectionWrapper>
         <FactsWrapper>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
-          <FactsItem></FactsItem>
+          <FactsItem>I like winter more than summer</FactsItem>
+          <FactsItem>I often bike with my friends</FactsItem>
+          <FactsItem>I like pizza and pasta</FactsItem>
+          <FactsItem>I was in Egypt, Poland and Turkey</FactsItem>
+          <FactsItem>My favorite movie is The Green Mile</FactsItem>
+          <FactsItem>I am still in school</FactsItem>
+          <FactsItem>I don’t have any siblings</FactsItem>
         </FactsWrapper>
         <DecoreWraper></DecoreWraper>
       </FactsSectionWrapper>
@@ -37,10 +37,8 @@ const FactsWrapper = styled.div`
 `;
 
 const FactsItem = styled.p`
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  padding-top: 8px;
 `;
 
 
