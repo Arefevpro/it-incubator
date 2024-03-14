@@ -12,7 +12,6 @@ import { SkillCard } from '../../components/skillsCard/SkillCard';
 export const SmallProjects = () => {
   return (
     <Container>
-      <ProjectsTitle>projects</ProjectsTitle>
       <SectionTitleWrapper>
       <Hashtag name='#' />
       <SectionTitle title="small-projects" />
@@ -64,10 +63,6 @@ const SmallProjectsWrapper = styled.div`
   padding-top: 48px;
   padding-bottom: 40px;
   `
-const ProjectsTitle = styled.h3`
-  font-size: 64px;
-  color: ${theme.colors.accentWhite};
-`
 
 const SectionTitleWrapper = styled.div`
   display: flex;

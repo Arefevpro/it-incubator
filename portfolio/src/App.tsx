@@ -10,6 +10,7 @@ import { AboutMe } from './pages/home/aboutme/AboutMe';
 import { Contacts } from './pages/home/contacts/Contacts';
 import { Footer } from './components/footer/Footer';
 import { SmallProjects } from './pages/projects/SmallProjects'
+import { theme } from './styles/Theme';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Footer />
         </HomePage> */}
         <ProjectsPage>
+          <PageTitle />
           <Header />
           <Media />
           <SmallProjects />
@@ -40,6 +42,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 const HomePage = styled.div`
