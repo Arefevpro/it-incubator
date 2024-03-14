@@ -29,14 +29,19 @@ function App() {
           <Contacts />
           <Footer />
         </HomePage> */}
-        <ProjectsPage>
+        {/* <ProjectsPage>
           <Header />
           <PageTitle name="projects" description="List of my projects" />
           <Media />
           <SmallProjects />
           <Footer />
-        </ProjectsPage>
-        <AboutPage></AboutPage>
+        </ProjectsPage> */}
+        <AboutPage>
+        <Header />
+        <PageTitle name="about-me" description="Who am i?" />
+          <Media />
+          <Footer />
+        </AboutPage>
         <ContactsPage></ContactsPage>
       </div>
     );
