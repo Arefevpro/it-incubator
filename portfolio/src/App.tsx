@@ -40,7 +40,7 @@ function App() {
         <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
-          <AboutMe />
+          <AboutMe isShowTitle={false}/>
           <Media />
           <SkillsAboutPage />
           <MyFunFacts />
@@ -71,3 +71,23 @@ const HomePage = styled.div`
   const ContactsPage = styled.div`
 
   `
+
+  // const Section = ({children}: { children: ReactNode}) => {
+  //   return (
+  //     <div>
+
+  //       {children}
+  //     </div>
+  //   );
+  // }
+
+  // const ParentComponent = () => {
+  //   return (
+  //     <div>
+  //       <Section>
+  //         <PageTitle name="projects" description="List of my projects" />
+  //         <Media />
+  //       </Section>
+  //     </div>
+  //   );
+  // }

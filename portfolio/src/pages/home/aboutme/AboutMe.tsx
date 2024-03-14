@@ -6,15 +6,17 @@ import { SectionTitle } from '../../../components/textComponents/SectionTitle';
 import { Button } from '../../../components/Button';
 import imgPreview2 from '../../../assets/images/Preview2.webp';
 
+type AboutMeProps = {
+  isShowTitle?: boolean
+}
 
-export const AboutMe = () => {
+export const AboutMe = ({isShowTitle = true}: AboutMeProps) => {
   return (
     <Container>
       <AboutMeWrapper>
         <DescriptionWrapper>
-          <TitleWrapper>
-          <SectionTitle title="aboutme" />
-          </TitleWrapper>
+          {isShowTitle && <SectionTitle title="aboutme" />}
+        
           <DescriptionTitle>
           Hello, i’m Elias!
           </DescriptionTitle>

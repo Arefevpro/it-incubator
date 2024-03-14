@@ -51,12 +51,10 @@ const FactsItem = styled.p`
 const DecoreWraper = styled.div`
 width: 178px;
 height: 169px;
-
+outline: 1px solid ${theme.colors.colorGray};
 
 &::before {
     content: "";
-    width: 16px;
-    height: 64px;
     background-image: url(${Imgots});
     background-size: contain;
     background-repeat: no-repeat;
@@ -64,7 +62,6 @@ height: 169px;
 
   &::after {
     content: "";
-    width: 113px;
     background-image: url(${ImgLogo});
     background-size: contain;
     background-repeat: no-repeat;
