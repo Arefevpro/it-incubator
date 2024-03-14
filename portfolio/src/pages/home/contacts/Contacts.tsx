@@ -24,9 +24,6 @@ export const Contacts = () => {
             other request or question, don’t hesitate to contact me
           </Message>
         </MessageWrapper>
-        <ContactsWrapper>
-          <ContactsTitle>Message me here</ContactsTitle>
-        </ContactsWrapper>
       </SectionWrapper>
     </Container>
   );
@@ -70,26 +67,3 @@ const TitleWrapper = styled.div`
 const Message = styled.p`
   
 `
-
-const ContactsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  width: 204px;
-  height: 140px;
-  outline: 1px solid ${theme.colors.colorGray};
-  margin-top: 87px;
-  padding: 16px;
-`;
-
-const ContactsTitle = styled.p`
-  display: inline-block;
-  align-self: flex-start;
-  font-weight: 600;
-  color: ${theme.colors.accentWhite};
-`;
-
-
-

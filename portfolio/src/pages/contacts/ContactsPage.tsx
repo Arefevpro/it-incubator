@@ -20,7 +20,14 @@ export const ContactsPage = () => {
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me
           </Message>
-          <MediaBox />
+
+          <MediaWrapper>
+            <SupportWrapper>
+              <SupportTitle>Support me here</SupportTitle>
+              <Card>4149500120690030</Card>
+            </SupportWrapper>
+            <MediaBox />
+          </MediaWrapper>
         </ContactWrapper>
       </Container>
       <Media />
@@ -32,14 +39,35 @@ export const ContactsPage = () => {
 
 const ContactWrapper = styled.div`
   display: flex;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  justify-content: space-between;
 `;
-
-
 
 const Message = styled.p`
   line-height: 26px;
   width: 500px;
 `;
+
+
+const MediaWrapper = styled.div`
+  display: flex;
+  gap: 11px;
+`;
+
+const SupportWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 82px;
+  outline: 1px solid ${theme.colors.colorGray};
+  padding: 16px;
+  gap: 8px;
+`;
+
+const SupportTitle = styled.p`
+  font-weight: 500;
+  color: ${theme.colors.accentWhite};
+`;
+
+const Card = styled.p`
+
+  `
