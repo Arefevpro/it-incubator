@@ -39,6 +39,7 @@ function App() {
         <AboutPage>
         <Header />
         <PageTitle name="about-me" description="Who am i?" />
+        <AboutMe />
           <Media />
           <Footer />
         </AboutPage>
