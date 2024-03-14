@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Container } from '../../components/slider/Container';
 import { SectionTitle } from '../../components/textComponents/SectionTitle';
 import { theme } from '../../styles/Theme';
+import Imgots from '../../assets/images/Dots37.svg';
+import ImgLogo from '../../assets/images/logo113.svg';
 
 export const MyFunFacts = () => {
   return (
@@ -49,4 +51,22 @@ const FactsItem = styled.p`
 const DecoreWraper = styled.div`
 width: 178px;
 height: 169px;
+
+
+&::before {
+    content: "";
+    width: 16px;
+    height: 64px;
+    background-image: url(${Imgots});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    width: 113px;
+    background-image: url(${ImgLogo});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
  `
