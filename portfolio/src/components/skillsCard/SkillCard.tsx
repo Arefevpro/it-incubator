@@ -29,6 +29,7 @@ export const SkillCard = ( { name, list, description, width=330}: PropsCardtype)
 const CardWrapperMain = styled.div<{width: number}>`
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   outline: 1px solid ${theme.colors.colorGray};
   width: ${(props) => `${props.width}px`};
 `;
@@ -42,16 +43,17 @@ const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 16px;
   width: 100%;
   border-top: 1px solid ${theme.colors.colorGray};
+  padding: 16px;
 `;
 
 const CardTitle = styled.h3`
-  padding: 8px;
+font-size: 24px;
   color: ${theme.colors.accentWhite};
  
 `;
 
 const CardText = styled.p`
-  padding: 8px;
 `
