@@ -43,7 +43,7 @@ const CardWrapper = styled.div`
   padding-top: 48px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
   gap: 16px;

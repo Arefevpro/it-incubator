@@ -13,6 +13,7 @@ import { SmallProjects } from './pages/projects/SmallProjects'
 import { theme } from './styles/Theme';
 import { PageTitle } from './components/pageTitle/PageTitle';
 import { SkillsAboutPage } from './pages/projects/SkillsAboutPage';
+import { MyFunFacts } from './pages/about/MyFunFacts';
 
 
 function App() {
@@ -53,7 +54,9 @@ export default App;
 
 
 
+const AboutPage = styled.div`
 
+  `
 
 const HomePage = styled.div`
 
@@ -63,9 +66,6 @@ const HomePage = styled.div`
 
   `
 
-  const AboutPage = styled.div`
-
-  `
 
   const ContactsPage = styled.div`
 
