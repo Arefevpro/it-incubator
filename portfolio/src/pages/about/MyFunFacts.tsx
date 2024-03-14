@@ -47,7 +47,6 @@ const FactsItem = styled.p`
 
 
 const DecoreWraper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+width: 178px;
+height: 169px;
  `
