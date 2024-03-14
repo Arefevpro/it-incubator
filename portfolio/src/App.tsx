@@ -43,6 +43,7 @@ function App() {
           <AboutMe />
           <Media />
           <SkillsAboutPage />
+          <MyFunFacts />
           <Footer />
         </AboutPage>
         <ContactsPage></ContactsPage>

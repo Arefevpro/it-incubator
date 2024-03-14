@@ -5,7 +5,7 @@ import { SectionTitle } from '../../components/textComponents/SectionTitle';
 export const MyFunFacts = () => {
   return (
     <Container>
-      
+      <SectionTitle title="my-fun-facts" />
     </Container>
   );
 };
