@@ -26,6 +26,8 @@ export const MyFunFacts = () => {
 
 
 const FactsSectionWrapper = styled.div`
+padding-top: 83px;
+padding-bottom: 162px;
   display: flex;
   justify-content: space-between;
   width: 939px;
@@ -33,11 +35,13 @@ const FactsSectionWrapper = styled.div`
 
 const FactsWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   width: 605px;
 `;
 
 const FactsItem = styled.p`
-  padding-top: 8px;
+  padding: 8px;
   outline: 1px solid ${theme.colors.colorGray};
 `;
 
