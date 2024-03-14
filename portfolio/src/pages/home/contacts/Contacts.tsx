@@ -26,31 +26,6 @@ export const Contacts = () => {
         </MessageWrapper>
         <ContactsWrapper>
           <ContactsTitle>Message me here</ContactsTitle>
-
-          <MediaList>
-            <MediaItem>
-              <MedialLink>
-                <Icon
-                  iconId={"github"}
-                  width={"32px"}
-                  height={"32px"}
-                  viewbox={"0 0 32 32"}
-                />
-                <ContactName>!Elias#3519</ContactName>
-              </MedialLink>
-            </MediaItem>
-            <MediaItem>
-              <MedialLink>
-                <Icon
-                  iconId={"dribble"}
-                  width={"32px"}
-                  height={"32px"}
-                  viewbox={"0 0 32 32"}
-                />
-                <ContactName>elias@elias.me</ContactName>
-              </MedialLink>
-            </MediaItem>
-          </MediaList>
         </ContactsWrapper>
       </SectionWrapper>
     </Container>
@@ -118,26 +93,3 @@ const ContactsTitle = styled.p`
 
 
 
-
-const MediaList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  `
-
-  const MediaItem = styled.li`
-  display: flex;
-  align-items: center;
-  `
-
-  const MedialLink = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  `
-
-  const ContactName = styled.p`
-  display: inline-block;
-  font-weight: 600;
-  color: ${theme.colors.colorGray};
-  `

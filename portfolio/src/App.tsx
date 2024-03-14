@@ -14,6 +14,7 @@ import { theme } from './styles/Theme';
 import { PageTitle } from './components/pageTitle/PageTitle';
 import { SkillsAboutPage } from './pages/projects/SkillsAboutPage';
 import { MyFunFacts } from './pages/about/MyFunFacts';
+import { ContactsPage } from './pages/contacts/ContactsPage';
 
 
 function App() {
@@ -37,16 +38,16 @@ function App() {
           <SmallProjects />
           <Footer />
         </ProjectsPage> */}
-        <AboutPage>
+        {/* <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
-          <AboutMe isShowTitle button={false}/>
+          <AboutMe isShowTitle={false} button={false}/>
           <Media />
           <SkillsAboutPage />
           <MyFunFacts />
           <Footer />
-        </AboutPage>
-        <ContactsPage></ContactsPage>
+        </AboutPage> */}
+        <ContactsPage />
       </div>
     );
 }
@@ -55,22 +56,7 @@ export default App;
 
 
 
-const AboutPage = styled.div`
 
-  `
-
-const HomePage = styled.div`
-
-  `
-
-  const ProjectsPage = styled.div`
-
-  `
-
-
-  const ContactsPage = styled.div`
-
-  `
 
   // const Section = ({children}: { children: ReactNode}) => {
   //   return (
