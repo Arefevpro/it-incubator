@@ -11,7 +11,7 @@ import { Contacts } from './pages/home/contacts/Contacts';
 import { Footer } from './components/footer/Footer';
 import { SmallProjects } from './pages/projects/SmallProjects'
 import { theme } from './styles/Theme';
-
+import { PageTitle } from './components/pageTitle/PageTitle';
 
 
 
@@ -30,8 +30,8 @@ function App() {
           <Footer />
         </HomePage> */}
         <ProjectsPage>
-          <PageTitle />
           <Header />
+          <PageTitle />
           <Media />
           <SmallProjects />
         </ProjectsPage>
