@@ -31,7 +31,7 @@ function App() {
         </HomePage> */}
         <ProjectsPage>
           <Header />
-          <PageTitle />
+          <PageTitle name="projects" description="List of my projects"/>
           <Media />
           <SmallProjects />
         </ProjectsPage>

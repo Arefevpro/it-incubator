@@ -5,16 +5,32 @@ import { Button } from '../Button';
 import { Container } from '../slider/Container';
 
 
+type PropsTitletype = {
+  name: string;
+  description: string;
+};
 
-export const PageTitle = () => {
+
+export const PageTitle = ({ name, description}: PropsTitletype) => {
   return (
     <Container>
-      <ProjectsTitle></ProjectsTitle>
+      <Wrapper>
+      <ProjectsTitle>{name}</ProjectsTitle>
+      <Description>{description}</Description>
+      </Wrapper>
+      
     </Container>
   );
 };
 
 
+const Wrapper = styled.div`
+ padding-top: 53px;
+  padding-bottom: 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+`;
 
 const ProjectsTitle = styled.h3`
   font-size: 32px;
@@ -23,6 +39,11 @@ const ProjectsTitle = styled.h3`
   &::before {
     content: "/";
     display: inline-block;
-    color: ${theme.colors.accentGreen}
+    color: ${theme.colors.accentGreen};
   }
+`;
+
+
+const Description = styled.p`
+
 `
