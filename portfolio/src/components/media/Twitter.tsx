@@ -7,15 +7,21 @@ import { Icon } from '../icon/Icon';
 export const Twitter = () => {
   return (
     <Container>
-      <Icon iconId={"logoUnion"} />
-      <LogoName>Elias</LogoName>
+      <LogoWrapper>
+      <Icon iconId={"twitter"}  width='32px' height='32px' viewbox='0 0 32 32'/>
+      <LogoName>@elias</LogoName>
+      </LogoWrapper>
     </Container>
   );
 };
 
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`
 
 const LogoName = styled.a`
-  font-weight: 700;
-  padding-left: 8px;
   color: ${theme.colors.accentWhite};
 `
+
