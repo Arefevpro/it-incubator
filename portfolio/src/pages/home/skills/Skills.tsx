@@ -12,7 +12,6 @@ export const Skills = () => {
     <Container>
       <SkillsWrapper>
         <TitleWrapper>
-          <Hashtag name="#" />
           <SectionTitle title="skills" />
         </TitleWrapper>
         <BoxWrapper>

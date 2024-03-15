@@ -38,7 +38,6 @@ export const Projects = () => {
       <ProjectsWrapper>
         <TitleBox>
           <TitleWrapper>
-            <Hashtag name="#" />
             <SectionTitle title="projects" />
           </TitleWrapper>
           <Span>View all ~~&gt;</Span>

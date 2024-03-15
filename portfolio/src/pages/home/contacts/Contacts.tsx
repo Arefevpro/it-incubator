@@ -16,7 +16,6 @@ export const Contacts = () => {
       <SectionWrapper>
         <MessageWrapper>
           <TitleWrapper>
-            <Hashtag name="#" />
             <SectionTitle title="contacts" />
           </TitleWrapper>
           <Message>

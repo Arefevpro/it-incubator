@@ -13,7 +13,6 @@ export const SmallProjects = () => {
   return (
     <Container>
       <SectionTitleWrapper>
-      <Hashtag name='#' />
       <SectionTitle title="small-projects" />
       </SectionTitleWrapper>
       <SmallProjectsWrapper>

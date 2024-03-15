@@ -20,7 +20,7 @@ import { ContactsPage } from './pages/contacts/ContactsPage';
 function App() {
     return (
       <div className="App">
-        {/* <HomePage>
+        <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -30,15 +30,15 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage> */}
-        {/* <ProjectsPage>
+        </HomePage>
+        <ProjectsPage>
           <Header />
           <PageTitle name="projects" description="List of my projects" />
           <Media />
           <SmallProjects />
           <Footer />
-        </ProjectsPage> */}
-        {/* <AboutPage>
+        </ProjectsPage>
+        <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
           <AboutMe isShowTitle={false} button={false}/>
@@ -46,11 +46,33 @@ function App() {
           <SkillsAboutPage />
           <MyFunFacts />
           <Footer />
-        </AboutPage> */}
+        </AboutPage>
         <ContactsPage />
       </div>
     );
 }
+
+
+
+const HomePage = styled.div`
+
+`
+
+
+const AboutPage = styled.div`
+
+`
+
+const ProjectsPage = styled.div`
+
+`
+
+
+
+
+
+
+
 
 export default App;
 
