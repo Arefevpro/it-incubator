@@ -4,7 +4,6 @@ import { Header } from '../../components/header/Header';
 import { Media } from '../../components/media/Media';
 import { Footer } from '../../components/footer/Footer';
 import { PageTitle } from '../../components/pageTitle/PageTitle';
-import { SectionTitle } from '../../components/textComponents/SectionTitle';
 import { Container } from '../../components/slider/Container';
 import { theme } from '../../styles/Theme'; 
 import { MediaBox } from '../../components/media/MediaBox';
