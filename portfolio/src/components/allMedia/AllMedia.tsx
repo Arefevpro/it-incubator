@@ -1,11 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
+import { Container } from '../slider/Container';
 
-const AllMedia = () => {
+export const AllMedia = () => {
   return (
-    <div>
-      
-    </div>
+    <Container>
+      <AllMediaWrapper>
+        
+      </AllMediaWrapper>
+    </Container>
   );
 };
 
-export default AllMedia;
