@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { theme } from '../../styles/Theme';
 import { Container } from '../slider/Container';
 import { Twitter } from'../media/Twitter';
+import { SectionTitle } from '../textComponents/SectionTitle';
 
 export const AllMedia = () => {
   return (
     <Container>
       <AllMediaWrapper>
+        <SectionTitle title={"All Media"} />
         <Twitter />
         <Twitter />
       </AllMediaWrapper>

@@ -7,6 +7,7 @@ import { PageTitle } from '../../components/pageTitle/PageTitle';
 import { Container } from '../../components/slider/Container';
 import { theme } from '../../styles/Theme'; 
 import { MediaBox } from '../../components/media/MediaBox';
+import { AllMedia } from '../../components/allMedia/AllMedia';
 
 export const ContactsPage = () => {
   return (
@@ -19,7 +20,6 @@ export const ContactsPage = () => {
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me
           </Message>
-
           <MediaWrapper>
             <SupportWrapper>
               <SupportTitle>Support me here</SupportTitle>
@@ -30,6 +30,7 @@ export const ContactsPage = () => {
         </ContactWrapper>
       </Container>
       <Media />
+      <AllMedia />
       <Footer />
     </div>
   );
