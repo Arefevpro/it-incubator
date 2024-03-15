@@ -9,9 +9,12 @@ export const AllMedia = () => {
   return (
     <Container>
       <AllMediaWrapper>
-        <SectionTitle title={"All Media"} />
+        <SectionTitle title={"all-media"} />
+        <TwitterWrapper>
         <Twitter />
         <Twitter />
+        </TwitterWrapper>
+        
       </AllMediaWrapper>
     </Container>
   );
@@ -26,3 +29,10 @@ const AllMediaWrapper = styled.div`
   margin: 0 auto;
   /* outline: 1px solid ${theme.colors.accentGreen}; */
 `;
+
+
+const TwitterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`

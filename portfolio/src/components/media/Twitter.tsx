@@ -18,10 +18,11 @@ export const Twitter = () => {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 `
 
-const LogoName = styled.a`
+const LogoName = styled.span`
+  display: inline-block;
   color: ${theme.colors.accentWhite};
-`
+`;
 
