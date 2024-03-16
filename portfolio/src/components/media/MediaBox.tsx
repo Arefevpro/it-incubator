@@ -11,7 +11,7 @@ export const MediaBox = () => {
           <MediaItem>
             <MedialLink>
               <Icon
-                iconId={"github"}
+                iconId={"discord"}
                 width={"32px"}
                 height={"32px"}
                 viewbox={"0 0 32 32"}
@@ -22,7 +22,7 @@ export const MediaBox = () => {
           <MediaItem>
             <MedialLink>
               <Icon
-                iconId={"dribble"}
+                iconId={"email"}
                 width={"32px"}
                 height={"32px"}
                 viewbox={"0 0 32 32"}

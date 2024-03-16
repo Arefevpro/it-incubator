@@ -63,9 +63,6 @@ const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 390px;
-  span {
-    font-size: 32px;
-  }
 
   &::after {
     content: "";
@@ -73,7 +70,6 @@ const TitleWrapper = styled.div`
     width: 100%;
     height: 1px;
     background-color: ${theme.colors.accentGreen};
-    margin-top: 8px;
     margin-left: 16px;
   }
 `;

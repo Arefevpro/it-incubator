@@ -21,7 +21,7 @@ export const AboutMe = ({isShowTitle = true, button = true}: AboutMeProps) => {
       <AboutMeWrapper>
         <DescriptionWrapper>
         <TitleWrapper>
-        {isShowTitle && <SectionTitle title="aboutme" />}
+        {isShowTitle && <SectionTitle title="about-me" />}
         </TitleWrapper>
           <DescriptionTitle>
           Hello, i’m Elias!
@@ -53,21 +53,15 @@ const AboutMeWrapper = styled.div`
   gap: 165px;
   height: 100%;
   padding-bottom: 112px;
+
+  
 `;
 
 const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 516px;
-
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: ${theme.colors.accentGreen};
-    margin-left: 16px;
-  }
+  
 `
 
 
