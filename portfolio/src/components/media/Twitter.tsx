@@ -16,6 +16,10 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const LogoName = styled.span`
