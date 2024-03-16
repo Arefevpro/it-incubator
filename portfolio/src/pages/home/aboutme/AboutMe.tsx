@@ -5,19 +5,24 @@ import { Container } from '../../../components/slider/Container';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
 import { Button } from '../../../components/Button';
 import imgPreview2 from '../../../assets/images/Preview2.webp';
+import Gif from '../../../assets/images/gifgivecom.gif';
+
+
+
 
 type AboutMeProps = {
   isShowTitle?: boolean;
   button?: boolean;
 }
 
-export const AboutMe = ({isShowTitle, button = true}: AboutMeProps) => {
+export const AboutMe = ({isShowTitle = true, button = true}: AboutMeProps) => {
   return (
     <Container>
       <AboutMeWrapper>
         <DescriptionWrapper>
-          {isShowTitle && <SectionTitle title="aboutme" />}
-        
+        <TitleWrapper>
+        {isShowTitle && <SectionTitle title="aboutme" />}
+        </TitleWrapper>
           <DescriptionTitle>
           Hello, i’m Elias!
           </DescriptionTitle>
@@ -35,7 +40,7 @@ export const AboutMe = ({isShowTitle, button = true}: AboutMeProps) => {
           {button && <Button>Read more -&gt; </Button>}
              
         </DescriptionWrapper>
-        <ImgWrapper></ImgWrapper>
+        <ImgWrapper><div className="fire"></div></ImgWrapper>
       </AboutMeWrapper>
     </Container>
   );
@@ -97,7 +102,23 @@ const ImgWrapper = styled.div`
   z-index: 0;
   border-bottom: 1px solid ${theme.colors.accentGreen};
 
+  .fire {
+    display: none;
+    width: 345px;
+    height: 200px;
+  }
 
+
+  &:hover .fire{
+  display: block;
+  background-image: url("${Gif}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -43px;
+  z-index: 6;
+}
 
   &::before {
     content: "";
