@@ -32,7 +32,6 @@ export const MainSection = ( ) => {
                 <Signature>
                   Currently working on
                   <SignatureAccent>Portfolio</SignatureAccent>
-                  <DecorBox></DecorBox>
                 </Signature>
               </SignatureBox>
             </FlexWrapper>
@@ -134,25 +133,6 @@ const SignatureAccent = styled.span`
   color: ${theme.colors.accentWhite};
 `
 
-const DecorBox = styled.div`
-  width: 184px;
-  height: 84px;
-  background-color: ${theme.colors.accentGreen};
-  position: relative;
-  z-index: 10;
 
-  &:hover {
-  content: "";
-  width: 184px;
-  height: 84px;
-  background-image: url("${photoP1}");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 12;
-}
-`
 
 
