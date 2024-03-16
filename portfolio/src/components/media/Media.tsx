@@ -80,4 +80,11 @@ const MediaList = styled.ul`
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
+  }
   `

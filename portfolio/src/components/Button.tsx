@@ -20,7 +20,8 @@ export const Button = styled.button`
   }
 
   &:active {
-      background-color: #00f32d90;
+      color: ${theme.colors.accentGreen};
+      background-color: #00f32d2c;
     }
 `
 
