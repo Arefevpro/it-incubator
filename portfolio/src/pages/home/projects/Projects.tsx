@@ -46,9 +46,7 @@ export const Projects = () => {
           {porjectsArr.map((project, index) => (
             <ProjectOne project={project} cashed={index === 0} />
           ))}
-
-          {/* <ProjectTwo />
-        <ProjectThre /> */}
+        <ProjectThre />
         </ProjectWrapper>
       </ProjectsWrapper>
     </Container>
@@ -98,7 +96,10 @@ display: inline-block;
 
 &:hover {
     color: ${theme.colors.accentWhite};
-    font-weight: 600;
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
   }
 `
 

@@ -19,7 +19,7 @@ export const ProjectThre = () => {
         <DescriptionTitle>Kahoot Answers Viewer</DescriptionTitle>
         <DescriptionText>Get answers to your kahoot quiz</DescriptionText>
         <ButtonWrapper>
-        <Button>Live</Button>
+        <Button>Live &lt;~&gt; </Button>
         </ButtonWrapper>
       </Description>
     </ProjectWrapper>
