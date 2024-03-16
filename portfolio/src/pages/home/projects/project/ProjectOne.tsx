@@ -42,7 +42,12 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   width: 330px;
   height: 100%;
-  border: 1px solid ${theme.colors.colorGray};
+  outline: 1px solid ${theme.colors.colorGray};
+  
+  &:hover {
+    outline: 3px solid ${theme.colors.accentGreen};
+
+  }
 `;
 
 const ImgWrapper = styled.div`
@@ -50,6 +55,7 @@ const ImgWrapper = styled.div`
   width: 100%;
   height: 200px;
   border-bottom: 1px solid ${theme.colors.colorGray};
+  
 `;
 
 const Img = styled.img`

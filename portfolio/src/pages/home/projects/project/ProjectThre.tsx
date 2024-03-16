@@ -32,7 +32,12 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   width: 330px;
   height: 100%;
-  border: 1px solid ${theme.colors.colorGray};
+  outline: 1px solid ${theme.colors.colorGray};
+
+  &:hover {
+    outline: 3px solid ${theme.colors.accentGreen};
+
+  }
 `;
 
 const ImgWrapper = styled.div`
