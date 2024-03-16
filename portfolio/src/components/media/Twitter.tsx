@@ -19,11 +19,16 @@ const LogoWrapper = styled.div`
 
   &:hover {
     cursor: pointer;
+    color: ${theme.colors.accentWhite};
   }
 `
 
 const LogoName = styled.span`
   display: inline-block;
   color: ${theme.colors.accentWhite};
+
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
 `;
 
