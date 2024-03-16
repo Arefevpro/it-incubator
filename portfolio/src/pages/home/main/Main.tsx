@@ -6,6 +6,7 @@ import { FlexWrapper } from "../../../components/flex/FlexWrapper";
 import { theme } from "../../../styles/Theme";
 import { Container } from "../../../components/slider/Container";
 import { Button } from "../../../components/Button";
+import Katana from "../../../assets/images/katana.png";
 
 export const MainSection = ( ) => {
   return (
@@ -27,13 +28,17 @@ export const MainSection = ( ) => {
             <FlexWrapper direction="column">
               <PhotoWrapper>
                 <Photo />
-                <div className="metch"></div>
+                <div className="katana"></div>
+                <div className="fire"></div>
               </PhotoWrapper>
               <SignatureBox>
+             
                 <Signature>
+                
                   Currently working on
                   <SignatureAccent>Portfolio</SignatureAccent>
                 </Signature>
+               
               </SignatureBox>
             </FlexWrapper>
           </FlexWrapper>
@@ -52,22 +57,40 @@ const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
 
-  .metch {
+
+  .fire {
     display: none;
-    width: 403px;
+    width: 402px;
     height: 200px;
   }
 
 
-  &:hover .metch{
-    display: block;
+  &:hover .fire{
+  display: block;
   background-image: url("${Gif}");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  right: 54px;
-  bottom: -53px;
-  z-index: 12;
+  right: 55px;
+  bottom: -19px;
+  z-index: 6;
+}
+  .katana {
+    display: none;
+    width: 300px;
+    height: 300px;
+  }
+
+
+  &:hover .katana {
+  display: block;
+  background-image: url("${Katana}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 66px;
+  bottom: -4px;
+  z-index: -6;
 }
 
   &::after{
@@ -128,6 +151,8 @@ const SignatureBox = styled.div`
   width: 402px;
   height: 37px;
   border: 1px solid ${theme.colors.colorGray};
+  position: relative;
+  z-index: 0;
 
 `
 
