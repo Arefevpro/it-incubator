@@ -70,6 +70,14 @@ const MediaList = styled.ul`
   display: flex;
   align-items: center;
   gap: 5px;
+
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
+  }
   `
 
   const ContactName = styled.p`

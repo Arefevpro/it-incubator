@@ -42,8 +42,7 @@ const Link = styled.a`
   }
 
   &:active {
-    color: ${theme.colors.accentWhite};
-    font-weight: 500;
+    color: ${theme.colors.accentGreen};
   }
   
 `
