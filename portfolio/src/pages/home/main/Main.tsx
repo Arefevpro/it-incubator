@@ -27,6 +27,7 @@ export const MainSection = ( ) => {
             <FlexWrapper direction="column">
               <PhotoWrapper>
                 <Photo />
+                <div className="metch"></div>
               </PhotoWrapper>
               <SignatureBox>
                 <Signature>
@@ -51,6 +52,23 @@ const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
 
+  .metch {
+    display: none;
+    width: 403px;
+    height: 200px;
+  }
+
+
+  &:hover .metch{
+    display: block;
+  background-image: url("${Gif}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 54px;
+  bottom: -53px;
+  z-index: 12;
+}
 
   &::after{
     content: "";
