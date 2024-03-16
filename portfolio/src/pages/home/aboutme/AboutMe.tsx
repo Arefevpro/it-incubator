@@ -98,6 +98,7 @@ const ImgWrapper = styled.div`
   border-bottom: 1px solid ${theme.colors.accentGreen};
 
 
+
   &::before {
     content: "";
     width: 84px;

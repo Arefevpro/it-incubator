@@ -11,10 +11,9 @@ export const AllMedia = () => {
       <AllMediaWrapper>
         <SectionTitle title={"all-media"} />
         <TwitterWrapper>
-        <Twitter />
-        <Twitter />
+          <Twitter />
+          <Twitter />
         </TwitterWrapper>
-        
       </AllMediaWrapper>
     </Container>
   );
@@ -22,17 +21,12 @@ export const AllMedia = () => {
 
 
 const AllMediaWrapper = styled.div`
-  max-width: 1064px;
-  width: 100%;
-  min-height: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-  /* outline: 1px solid ${theme.colors.accentGreen}; */
+margin-bottom: 84px;
 `;
 
 
 const TwitterWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 22px;
+  padding-top: 22px;
 `
