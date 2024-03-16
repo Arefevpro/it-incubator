@@ -84,5 +84,13 @@ const MediaList = styled.ul`
   display: inline-block;
   font-weight: 600;
   color: ${theme.colors.colorGray};
+
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
+  }
   `
 

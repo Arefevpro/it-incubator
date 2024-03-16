@@ -20,6 +20,10 @@ const LogoWrapper = styled.div`
   &:hover {
     cursor: pointer;
     color: ${theme.colors.accentWhite};
+
+    &:active {
+    color: ${theme.colors.accentGreen};
+  }
   }
 `
 
@@ -29,6 +33,10 @@ const LogoName = styled.span`
 
   &:hover {
     color: ${theme.colors.accentWhite};
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
   }
 `;
 

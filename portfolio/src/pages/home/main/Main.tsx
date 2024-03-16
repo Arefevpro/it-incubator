@@ -32,13 +32,10 @@ export const MainSection = ( ) => {
                 <div className="fire"></div>
               </PhotoWrapper>
               <SignatureBox>
-             
                 <Signature>
-                
                   Currently working on
                   <SignatureAccent>Portfolio</SignatureAccent>
                 </Signature>
-               
               </SignatureBox>
             </FlexWrapper>
           </FlexWrapper>

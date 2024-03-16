@@ -32,6 +32,10 @@ const CardWrapperMain = styled.div<{width: number}>`
   align-self: flex-start;
   outline: 1px solid ${theme.colors.colorGray};
   width: ${(props) => `${props.width}px`};
+
+  &:hover {
+    outline: 3px solid ${theme.colors.accentGreen};
+  }
 `;
 
 const TechnologyList = styled.span`
@@ -47,6 +51,8 @@ const CardWrapper = styled.div`
   width: 100%;
   border-top: 1px solid ${theme.colors.colorGray};
   padding: 16px;
+
+
 `;
 
 const CardTitle = styled.h3`

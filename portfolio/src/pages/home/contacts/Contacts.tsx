@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import { Container } from '../../../components/slider/Container';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
-import { Hashtag } from '../../../components/hashtag/Hashtag';
-import { Icon } from '../../../components/icon/Icon';
-
+import { MediaBox } from '../../../components/media/MediaBox';
 
 
 
@@ -23,6 +21,7 @@ export const Contacts = () => {
             other request or question, don’t hesitate to contact me
           </Message>
         </MessageWrapper>
+        <MediaBox />
       </SectionWrapper>
     </Container>
   );

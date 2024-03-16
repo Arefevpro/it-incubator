@@ -69,5 +69,4 @@ const SupportTitle = styled.p`
 `;
 
 const Card = styled.p`
-
   `

@@ -138,6 +138,14 @@ const MediaList = styled.ul`
   const MedialLink = styled.a`
   display: flex;
 
+
+  &:hover {
+    color: ${theme.colors.accentWhite};
+  }
+
+  &:active {
+    color: ${theme.colors.accentGreen};
+  }
   `
 
   const Copyright = styled.p`
