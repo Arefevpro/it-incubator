@@ -5,11 +5,12 @@ import { theme } from '../../../../styles/Theme';
 import { ProjectType } from '../Projects';
 type PropsType = {
   project: ProjectType,
-  cashed: boolean
+  cashed: boolean,
 }
-export const ProjectOne = ({project, cashed}: PropsType) => { // orops: PropsType => props.project
+export const ProjectOne = ({ project, cashed }: PropsType) => {
+  // props: PropsType => props.project
   const skillsLength = project.skills.length;
-  const isShowSecondSkillWrapper = skillsLength>4;
+  const isShowSecondSkillWrapper = skillsLength > 4;
 
   return (
     <ProjectWrapper>
@@ -17,20 +18,26 @@ export const ProjectOne = ({project, cashed}: PropsType) => { // orops: PropsTyp
         <Img src={project.img} />
       </ImgWrapper>
       <SkillsWrapper>
-        {project.skills.slice(0,3).map((skill)=><SkillName>{skill}</SkillName>)}
+        {project.skills.slice(0, 3).map((skill) => (
+          <SkillName>{skill}</SkillName>
+        ))}
       </SkillsWrapper>
-      {isShowSecondSkillWrapper && 
+      {isShowSecondSkillWrapper && (
         <SkillsWrapper>
-        {project.skills.slice(3).map((skill)=><SkillName>{skill}</SkillName>)}
-      </SkillsWrapper>
-      }
+          {project.skills.slice(3).map((skill) => (
+            <SkillName>{skill}</SkillName>
+          ))}
+        </SkillsWrapper>
+      )}
       <Description>
         <DescriptionTitle>{project.title}</DescriptionTitle>
         <DescriptionText>{project.description}</DescriptionText>
         <ButtonWrapper>
-          {project.buttons.map(button=> <Button>{button} &lt;~&gt;</Button>)}
-        
-       {cashed && <Button>Cached &gt;=</Button>}
+          {project.buttons.map((button) => (
+            <Button>Live &lt;~&gt;</Button>
+          ))}
+
+          {cashed && <Button>Cached &gt;=</Button>}
         </ButtonWrapper>
       </Description>
     </ProjectWrapper>

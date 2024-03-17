@@ -22,19 +22,20 @@ const porjectsArr:ProjectType[] = [
     buttons:['Cashed']
   },
   {
+    img:img3,
+    skills: ['CSS', 'Express', 'Node,js'] ,
+    title:'Kahoot Answers Viewer',
+    description: 'Get answers to your kahoot quiz',
+    buttons:['GitHub']
+  },
+  {
     img:img2,
     skills: ['React', 'Express', 'Discord.js', 'Node,js', 'HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'Protect X',
     description: 'Discord anti-crash bot',
     buttons:['Cashed']
   },
-  {
-    img:img3,
-    skills: ['CSS', 'Express', 'Node,js'] ,
-    title:'Kahoot Answers Viewer',
-    description: 'Get answers to your kahoot quiz',
-    buttons:['Cashed']
-  },
+  
 
   {
     img:img4,
@@ -49,7 +50,7 @@ const porjectsArr:ProjectType[] = [
     skills: ['Vue', 'TS', 'Less'] ,
     title:'Portfolio',
     description: 'You’re using it rn',
-    buttons:['Cashed']
+    buttons:['gitHub']
   }
 
 ]
@@ -59,9 +60,10 @@ export const CompletApps = () => {
     <Container>
       <SectionTitle title="complete-apps" />
       <SectionWrapper>
-      {porjectsArr.map((project, index) => (
-            <ProjectOne project={project} cashed={index === 0} />
-          ))}
+        {porjectsArr.map((project, index) => (
+          <ProjectOne project={project} cashed={index === 0} 
+          />
+        ))}
       </SectionWrapper>
     </Container>
   );
