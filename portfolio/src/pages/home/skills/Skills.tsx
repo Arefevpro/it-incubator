@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
-import { Hashtag } from '../../../components/hashtag/Hashtag';
 import { theme } from '../../../styles/Theme';
 import { Container } from '../../../components/slider/Container';
 import { SkillCardHome } from './SkillCardHome';
