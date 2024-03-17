@@ -99,6 +99,7 @@ const DecorWrapper = styled.div`
     z-index: 12;
   }
 
+
   &::after {
     content: "";
     width: 113px;
@@ -114,34 +115,53 @@ const DecorWrapper = styled.div`
 `;
 
 const CubeDecorOne = styled.div`
-width: 86px;
-height: 86px;
-border: 1px solid ${theme.colors.colorGray};
-position: absolute;
-top: 0;
-right: 36px;
-
-&::after {
-  content: "";
-  width: 63px;
-  height: 63px;
-  background-image: url("./Dots63svg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 86px;
+  height: 86px;
+  border: 1px solid ${theme.colors.colorGray};
   position: absolute;
-  top: 155px;
-  right: 73px;
-}
+  top: 0;
+  right: 36px;
+
+  &:hover {
+    width: 86px;
+    height: 86px;
+    border: 1px solid ${theme.colors.accentGreen};
+    position: absolute;
+    top: 0;
+    right: 36px;
+  }
+
+  &::after {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-image: url("./Dots63svg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 155px;
+    right: 73px;
+  }
 `;
 
 
 const CubeDecorTwo = styled.div`
-width: 52px;
-height: 52px;
-border: 1px solid ${theme.colors.colorGray};
-position: absolute;
-right: 0;
-bottom: 37px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid ${theme.colors.colorGray};
+  position: absolute;
+  right: 0;
+  bottom: 37px;
+
+  &:hover {
+    content: "";
+    width: 52px;
+    height: 52px;
+    border: 1px solid ${theme.colors.accentGreen};
+    position: absolute;
+    right: 0;
+    bottom: 37px;
+  }
 `;
 
 
