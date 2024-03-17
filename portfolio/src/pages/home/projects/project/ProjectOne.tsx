@@ -28,7 +28,8 @@ export const ProjectOne = ({project, cashed}: PropsType) => { // orops: PropsTyp
         <DescriptionTitle>{project.title}</DescriptionTitle>
         <DescriptionText>{project.description}</DescriptionText>
         <ButtonWrapper>
-        <Button>Live &lt;~&gt;</Button>
+          {project.buttons.map(button=> <Button>{button} &lt;~&gt;</Button>)}
+        
        {cashed && <Button>Cached &gt;=</Button>}
         </ButtonWrapper>
       </Description>

@@ -8,47 +8,48 @@ import img2 from '../assets/images/Banner2.webp'
 import img3 from '../assets/images/Banner3.webp'
 import img4 from '../assets/images/BotCat.webp'
 import img5 from '../assets/images/Banner5.webp'
+import { ProjectType } from '../pages/home/projects/Projects';
 
 
 
-export type ProjectType = {
-  img: string,
-  skills: string[],
-  title: string,
-  description: string,
-}
+
 const porjectsArr:ProjectType[] = [
   {
     img:img1,
     skills: ['HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'ChertNodes',
-    description: 'Lorem ipsum dolor sit amet'
+    description: 'Lorem ipsum dolor sit amet',
+    buttons:['Cashed']
   },
   {
     img:img2,
     skills: ['React', 'Express', 'Discord.js', 'Node,js', 'HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'Protect X',
-    description: 'Discord anti-crash bot'
+    description: 'Discord anti-crash bot',
+    buttons:['Cashed']
   },
   {
     img:img3,
     skills: ['CSS', 'Express', 'Node,js'] ,
     title:'Kahoot Answers Viewer',
-    description: 'Get answers to your kahoot quiz'
+    description: 'Get answers to your kahoot quiz',
+    buttons:['Cashed']
   },
 
   {
     img:img4,
     skills: ['HTML', 'SCSS', 'JS'] ,
     title:'Kotik Bot',
-    description: 'Multi-functional discord bot'
+    description: 'Multi-functional discord bot',
+    buttons:['Cashed']
   },
 
   {
     img:img5,
     skills: ['Vue', 'TS', 'Less'] ,
     title:'Portfolio',
-    description: 'You’re using it rn'
+    description: 'You’re using it rn',
+    buttons:['Cashed']
   }
 
 ]

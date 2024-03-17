@@ -14,28 +14,33 @@ export type ProjectType = {
   skills: string[],
   title: string,
   description: string,
+  buttons: string[]
 }
 const porjectsArr:ProjectType[] = [
   {
     img:img1,
     skills: ['HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'ChertNodes',
-    description: 'Lorem ipsum dolor sit amet'
+    description: 'Lorem ipsum dolor sit amet',
+    buttons:['Cashed']
   },
   {
     img:img2,
     skills: ['React', 'Express', 'Discord.js', 'Node,js', 'HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'Protect X',
-    description: 'Discord anti-crash bot'
+    description: 'Discord anti-crash bot',
+    buttons:['Cashed']
   },
   {
     img:img3,
     skills: ['CSS', 'Express', 'Node,js'] ,
     title:'Kahoot Answers Viewer',
-    description: 'Get answers to your kahoot quiz'
+    description: 'Get answers to your kahoot quiz',
+    buttons:['Cashed']
   }
 
 ]
+
 export const Projects = () => {
   return (
     <Container>
@@ -63,7 +68,6 @@ const ProjectsWrapper = styled.div`
   flex-direction: column;
   gap: 48px;
   height: 100%;
-  
 `;
 
 const TitleBox = styled.div`
