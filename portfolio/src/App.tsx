@@ -34,6 +34,7 @@ function App() {
         <ProjectsPage>
           <Header />
           <PageTitle name="projects" description="List of my projects" />
+          <SmallProjects />
           <CompletApps />
           <Media />
           <SmallProjects />
