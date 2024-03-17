@@ -58,7 +58,6 @@ export const CompletApps = () => {
 
 const SectionWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 48px;
