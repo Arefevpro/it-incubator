@@ -3,13 +3,10 @@ import styled from 'styled-components';
 import { SectionTitle } from './textComponents/SectionTitle';
 import { Container } from './slider/Container';
 import { ProjectOne } from '../pages/home/projects/project/ProjectOne';
-import { ProjectThre } from '../pages/home/projects/project/ProjectThre';
-import { ProjectTwo } from '../pages/home/projects/project/ProjectTwo';
-import { ProjectTest } from '../pages/home/projects/project/ProjectTest';
 import img1 from '../assets/images/Banner1.webp'
 import img2 from '../assets/images/Banner2.webp'
 import img3 from '../assets/images/Banner3.webp'
-import img4 from '../assets/images/Banner4.webp'
+import img4 from '../assets/images/BotCat.webp'
 import img5 from '../assets/images/Banner5.webp'
 
 
@@ -38,6 +35,20 @@ const porjectsArr:ProjectType[] = [
     skills: ['CSS', 'Express', 'Node,js'] ,
     title:'Kahoot Answers Viewer',
     description: 'Get answers to your kahoot quiz'
+  },
+
+  {
+    img:img4,
+    skills: ['HTML', 'SCSS', 'JS'] ,
+    title:'Kotik Bot',
+    description: 'Multi-functional discord bot'
+  },
+
+  {
+    img:img5,
+    skills: ['Vue', 'TS', 'Less'] ,
+    title:'Portfolio',
+    description: 'You’re using it rn'
   }
 
 ]
@@ -58,9 +69,8 @@ export const CompletApps = () => {
 
 const SectionWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 81px;
   `
