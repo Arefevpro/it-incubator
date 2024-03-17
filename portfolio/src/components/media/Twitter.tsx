@@ -29,7 +29,7 @@ const LogoWrapper = styled.div`
 
 const LogoName = styled.span`
   display: inline-block;
-  color: ${theme.colors.accentWhite};
+  color: ${theme.colors.colorGray};
 
   &:hover {
     color: ${theme.colors.accentWhite};

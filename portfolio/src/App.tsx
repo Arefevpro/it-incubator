@@ -10,7 +10,6 @@ import { AboutMe } from './pages/home/aboutme/AboutMe';
 import { Contacts } from './pages/home/contacts/Contacts';
 import { Footer } from './components/footer/Footer';
 import { SmallProjects } from './pages/projects/SmallProjects'
-import { theme } from './styles/Theme';
 import { PageTitle } from './components/pageTitle/PageTitle';
 import { SkillsAboutPage } from './pages/projects/SkillsAboutPage';
 import { MyFunFacts } from './pages/about/MyFunFacts';

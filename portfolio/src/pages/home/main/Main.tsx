@@ -85,8 +85,8 @@ const PhotoWrapper = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  right: 66px;
-  bottom: -4px;
+  right: 106px;
+  bottom: -14px;
   z-index: -6;
 }
 
