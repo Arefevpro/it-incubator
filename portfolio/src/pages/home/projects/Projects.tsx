@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProjectOne } from './project/ProjectOne';
-import { ProjectTwo } from './project/ProjectTwo';
-import { ProjectThre } from './project/ProjectThre';
 import { Container } from '../../../components/slider/Container';
 import { SectionTitle } from '../../../components/textComponents/SectionTitle';
-import { Hashtag } from '../../../components/hashtag/Hashtag';
 import img1 from '../../../assets/images/Banner1.webp'
 import img2 from '../../../assets/images/Banner2.webp'
 import img3 from '../../../assets/images/Banner3.webp'
@@ -30,7 +27,14 @@ const porjectsArr:ProjectType[] = [
     skills: ['React', 'Express', 'Discord.js', 'Node,js', 'HTML', 'SCSS', 'Python', 'Flask'] ,
     title:'Protect X',
     description: 'Discord anti-crash bot'
+  },
+  {
+    img:img3,
+    skills: ['CSS', 'Express', 'Node,js'] ,
+    title:'Kahoot Answers Viewer',
+    description: 'Get answers to your kahoot quiz'
   }
+
 ]
 export const Projects = () => {
   return (
@@ -46,7 +50,7 @@ export const Projects = () => {
           {porjectsArr.map((project, index) => (
             <ProjectOne project={project} cashed={index === 0} />
           ))}
-        <ProjectThre />
+       
         </ProjectWrapper>
       </ProjectsWrapper>
     </Container>

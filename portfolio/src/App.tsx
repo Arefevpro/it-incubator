@@ -14,6 +14,7 @@ import { PageTitle } from './components/pageTitle/PageTitle';
 import { SkillsAboutPage } from './pages/projects/SkillsAboutPage';
 import { MyFunFacts } from './pages/about/MyFunFacts';
 import { ContactsPage } from './pages/contacts/ContactsPage';
+import { CompletApps } from './components/CompletApps';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <ProjectsPage>
           <Header />
           <PageTitle name="projects" description="List of my projects" />
+          <CompletApps />
           <Media />
           <SmallProjects />
           <Footer />
