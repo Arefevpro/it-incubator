@@ -90,7 +90,7 @@ const ImgWrapper = styled.div`
   width: 343px;
   height: 508px;
   background-image: url(${imgPreview2});
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
