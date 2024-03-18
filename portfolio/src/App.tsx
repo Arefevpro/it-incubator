@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        <HomePage>
+        {/* <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -30,14 +30,14 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage>
+        </HomePage> */}
         {/* <ProjectsPage> */}
-          {/* <Header />
+        {/* <Header />
           <PageTitle name="projects" description="List of my projects" /> */}
-          {/* <CompletApps />
+        {/* <CompletApps />
           <Media /> */}
-          {/* <SmallProjects /> */}
-          {/* <Footer /> */}
+        {/* <SmallProjects /> */}
+        {/* <Footer /> */}
         {/* </ProjectsPage> */}
         {/* <AboutPage>
           <Header />
@@ -49,9 +49,22 @@ function App() {
           <Footer />
         </AboutPage>
         <ContactsPage /> */}
+        <div className="grid-container">
+          <div className="grid-item">1</div>
+          <div className="grid-item">2</div>
+          <div className="grid-item">3</div>
+          <div className="grid-item">4</div>
+          <div className="grid-item">5</div>
+          <div className="grid-item">6</div>
+          <div className="grid-item">7</div>
+          <div className="grid-item">8</div>
+        </div>
       </div>
     );
 }
+
+
+
 
 
 
