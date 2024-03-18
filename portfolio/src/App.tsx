@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        {/* <HomePage>
+        <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -30,15 +30,15 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage> */}
-        <ProjectsPage>
+        </HomePage>
+        {/* <ProjectsPage> */}
           {/* <Header />
           <PageTitle name="projects" description="List of my projects" /> */}
           {/* <CompletApps />
           <Media /> */}
-          <SmallProjects />
+          {/* <SmallProjects /> */}
           {/* <Footer /> */}
-        </ProjectsPage>
+        {/* </ProjectsPage> */}
         {/* <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
