@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        <HomePage>
+        {/* <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -30,17 +30,16 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage>
+        </HomePage> */}
         <ProjectsPage>
-          <Header />
-          <PageTitle name="projects" description="List of my projects" />
+          {/* <Header />
+          <PageTitle name="projects" description="List of my projects" /> */}
+          {/* <CompletApps />
+          <Media /> */}
           <SmallProjects />
-          <CompletApps />
-          <Media />
-          <SmallProjects />
-          <Footer />
+          {/* <Footer /> */}
         </ProjectsPage>
-        <AboutPage>
+        {/* <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
           <AboutMe isShowTitle={false} button={false}/>
@@ -49,7 +48,7 @@ function App() {
           <MyFunFacts />
           <Footer />
         </AboutPage>
-        <ContactsPage />
+        <ContactsPage /> */}
       </div>
     );
 }
