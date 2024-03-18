@@ -121,6 +121,7 @@ const Photo = styled.div`
   height: 386px;
   background-image: url("${photoP1}");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: -130px -80px;
   background-size: 650px;
 `;
