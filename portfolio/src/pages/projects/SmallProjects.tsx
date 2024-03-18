@@ -68,14 +68,19 @@ const SmallProjectsWrapper = styled.div`
   gap: 16px;
   padding-top: 48px;
   padding-bottom: 40px;
+
+  @media (max-width: 1076px) {
+    justify-content: center;
+    
+  }
 `;
 
 const SectionTitleWrapper = styled.div`
   display: flex;
   align-items: center;
-
-  span {
-    font-size: 32px;
-  }
   
+  @media (max-width: 1076px) {
+    justify-content: center;
+    
+  }
 `
