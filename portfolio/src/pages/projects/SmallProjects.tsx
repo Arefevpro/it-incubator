@@ -62,12 +62,13 @@ export const SmallProjects = () => {
 
 
 const SmallProjectsWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   padding-top: 48px;
   padding-bottom: 40px;
-  `
+`;
 
 const SectionTitleWrapper = styled.div`
   display: flex;
