@@ -22,6 +22,7 @@ body {
   color: ${theme.colors.colorGray};
   font-size: 16px;
   background-color: ${theme.colors.bgColorDark};
+  min-width: 360px;
 }
 
 
