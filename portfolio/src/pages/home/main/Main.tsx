@@ -71,6 +71,7 @@ const PhotoWrapper = styled.div`
   right: 55px;
   bottom: -19px;
   z-index: 6;
+  transition: background-color 3s, transform 2.5s;
 }
   .katana {
     display: none;
@@ -86,7 +87,7 @@ const PhotoWrapper = styled.div`
   background-repeat: no-repeat;
   position: absolute;
   right: 106px;
-  bottom: -14px;
+  bottom: -7px;
   z-index: -6;
 }
 
