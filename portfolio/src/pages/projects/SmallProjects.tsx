@@ -69,7 +69,7 @@ const SmallProjectsWrapper = styled.div`
   padding-top: 48px;
   padding-bottom: 40px;
 
-  @media (max-width: 1076px) {
+  @media screen and (max-width: 1076px) {
     justify-content: center;
     
   }
@@ -78,8 +78,8 @@ const SmallProjectsWrapper = styled.div`
 const SectionTitleWrapper = styled.div`
   display: flex;
   align-items: center;
-  
-  @media (max-width: 1076px) {
+
+  @media screen and (max-width: 1076px) {
     justify-content: center;
     
   }
