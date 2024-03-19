@@ -91,11 +91,11 @@ const GridItem = styled.div`
   }
 
   &:nth-child(4) {
-    grid-area: 1/4/2/5;
+    grid-area: 1/4/2/4;
   }
   
   &:nth-child(5) {
-    grid-area: 2/1/5/3;
+    grid-area: 2/1/4/3;
   }
 
   &:nth-child(6) {
@@ -103,11 +103,11 @@ const GridItem = styled.div`
   }
 
   &:nth-child(7) {
-    grid-area: 3/3/5/4;
+    grid-area: 3/3/4/4;
   }
 
   &:last-child {
-    grid-area: 2/4/5/5;
+    grid-area: 2/4/4/4;
   }
 `;
 

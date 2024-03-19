@@ -20,7 +20,7 @@ const GridContainer = styled.div`
   "five five six eigth"
   "five five seven eigth"
 `;
-
+Расположение элементов пример №1
 
 const GridItem = styled.div`
   background-color: rgba(14, 74, 226, 0.8);
@@ -58,6 +58,7 @@ const GridItem = styled.div`
   }
 `;
 
+Расположение элементов пример №2
 ----------------------------------------------------------------
 grid-area row-start / column-start / row-end / column-end
 
@@ -65,44 +66,36 @@ grid-area row-start / column-start / row-end / column-end
 const GridItem = styled.div`
   background-color: rgba(14, 74, 226, 0.8);
 
-  &:first-child {
-    grid-column: 1/1;
-    grid-row: 1/2;
+ &:first-child {
+    grid-area: 1/1/2/2;
   }
 
   &:nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-area: 1/2/2/3;
   }
 
   &:nth-child(3) {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    grid-area: 1/3/2/4;
   }
 
   &:nth-child(4) {
-    grid-column: 4/5;
-    grid-row: 1/2;
+    grid-area: 1/4/2/4;
   }
   
   &:nth-child(5) {
-    grid-column: 1/3;
-    grid-row: 2/5;
+    grid-area: 2/1/4/3;
   }
 
   &:nth-child(6) {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-area: 2/3/3/4;
   }
 
   &:nth-child(7) {
-    grid-column: 3/4;
-    grid-row: 3/5;
+    grid-area: 3/3/4/4;
   }
 
   &:last-child {
-    grid-column: 4/5;
-    grid-row: 2/5;
+    grid-area: 2/4/4/4;
   }
 `;
 
