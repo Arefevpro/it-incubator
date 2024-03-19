@@ -56,8 +56,6 @@ function App() {
           <GridItem>4</GridItem>
           <GridItem>5</GridItem>
           <GridItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit enim odio eum molestiae dicta obcaecati rerum illum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit enim odio eum molestiae dicta obcaecati rerum illum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit enim odio eum molestiae dicta obcaecati rerum illum.
           
           </GridItem>
           <GridItem>7</GridItem>
@@ -69,14 +67,9 @@ function App() {
 }
 
 const GridContainer = styled.div`
-  /* height: 100vh; */
   display: grid;
-  /* grid-template-columns: repeat(4, 265px);
-  grid-auto-rows: minmax(150px, auto); */
-  grid-auto-flow: column;
-  grid-template-rows: repeat(3, minmax(150px, auto));
-  grid-auto-columns: 200px;
-  /* grid-template-rows: repeat(3, 200px); */
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: repeat(4, 265px);
   gap: 16px;
 `;
 
