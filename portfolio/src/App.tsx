@@ -65,12 +65,24 @@ function App() {
 
 const GridContainer = styled.div`
   display: grid;
+  grid-template-columns: 265px 265px 265px 265px;
 `;
 
 
 const GridItem = styled.div`
   background-color: rgba(14, 74, 226, 0.8);
 `;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
