@@ -64,12 +64,14 @@ function App() {
 }
 
 const GridContainer = styled.div`
+height: 100vh;
   display: grid;
-  grid-auto-rows: minmax(200px, auto);
-  grid-template-columns: repeat(4, 265px);
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-columns: repeat(4, 165px);
   gap: 16px;
   justify-items: center;
   align-items: center;
+  justify-content: center;
 `;
 
 
