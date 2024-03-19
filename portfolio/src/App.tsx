@@ -49,22 +49,28 @@ function App() {
           <Footer />
         </AboutPage>
         <ContactsPage /> */}
-        <div className="grid-container">
-          <div className="grid-item">1</div>
-          <div className="grid-item">2</div>
-          <div className="grid-item">3</div>
-          <div className="grid-item">4</div>
-          <div className="grid-item">5</div>
-          <div className="grid-item">6</div>
-          <div className="grid-item">7</div>
-          <div className="grid-item">8</div>
-        </div>
+        <GridContainer>
+          <GridItem>1</GridItem>
+          <GridItem>2</GridItem>
+          <GridItem>3</GridItem>
+          <GridItem>4</GridItem>
+          <GridItem>5</GridItem>
+          <GridItem>6</GridItem>
+          <GridItem>7</GridItem>
+          <GridItem>8</GridItem>
+        </GridContainer>
       </div>
     );
 }
 
+const GridContainer = styled.div`
+  display: grid;
+`;
 
 
+const GridItem = styled.div`
+  background-color: rgba(14, 74, 226, 0.8);
+`;
 
 
 
