@@ -5,10 +5,7 @@ grid-template-columns: repeat(4, 1fr); fr - столбцы будут тянут
 grid-template-rows: repeat(3, 1fr); fr - строки будут по размеру контента (если не указана высота контейнера)
 ```
 
-
-
-
-`<img src=" " alt=" " />`
+[![2024-03-19-11-49-05.png](https://i.postimg.cc/90BktpBQ/2024-03-19-11-49-05.png)](https://postimg.cc/q6zQp2YP)
 
 ```javascript
 const GridContainer = styled.div`
@@ -58,6 +55,54 @@ const GridItem = styled.div`
 
   &:last-child {
     grid-area: eigth;
+  }
+`;
+
+----------------------------------------------------------------
+grid-area row-start / column-start / row-end / column-end
+
+
+const GridItem = styled.div`
+  background-color: rgba(14, 74, 226, 0.8);
+
+  &:first-child {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  &:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  &:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  &:nth-child(4) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  
+  &:nth-child(5) {
+    grid-column: 1/3;
+    grid-row: 2/5;
+  }
+
+  &:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  &:nth-child(7) {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+
+  &:last-child {
+    grid-column: 4/5;
+    grid-row: 2/5;
   }
 `;
 
