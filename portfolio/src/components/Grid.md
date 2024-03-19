@@ -66,34 +66,24 @@ grid-area row-start / column-start / row-end / column-end
 const GridItem = styled.div`
   background-color: rgba(14, 74, 226, 0.8);
 
- &:first-child {
-    grid-area: 1/1/2/2;
-  }
-
-  &:nth-child(2) {
-    grid-area: 1/2/2/3;
-  }
-
-  &:nth-child(3) {
-    grid-area: 1/3/2/4;
-  }
-
-  &:nth-child(4) {
-    grid-area: 1/4/2/4;
-  }
   
   &:nth-child(5) {
+    color: #13bf25;
+    font-weight: 700;
+    font-size: 60px;
     grid-area: 2/1/4/3;              // через span можно указать сколько ячеек будет 
     // grid-area: 2/1/span 2/span 2; // занимать элемент
   }
 
-  &:nth-child(6) {
-    grid-area: 2/3/3/4;
+ &:nth-child(6) {
+    grid-area: 2/2/3/4;
+    color: #bf1397;
+    font-weight: 500;
+    font-size: 30px;
+    background-color: rgba(14, 74, 226, 0.309);
+    z-index: -5;
   }
 
-  &:nth-child(7) {
-    grid-area: 3/3/4/4;
-  }
 
   &:last-child {
     grid-area: 2/4/4/4;

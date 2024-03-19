@@ -55,7 +55,7 @@ function App() {
           <GridItem>3</GridItem>
           <GridItem>4</GridItem>
           <GridItem>5</GridItem>
-          <GridItem>6</GridItem>
+          <GridItem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit enim odio eum molestiae dicta obcaecati rerum illum.</GridItem>
           <GridItem>7</GridItem>
           <GridItem>8</GridItem>
         </GridContainer>
@@ -64,12 +64,12 @@ function App() {
 }
 
 const GridContainer = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(4, 265px);
-  grid-template-rows: repeat(3, 200px);
+  /* grid-template-rows: repeat(3, 200px); */
   gap: 16px;
-
+  
 `;
 
 
@@ -78,18 +78,25 @@ const GridItem = styled.div`
 
   /* grid-area row-start / column-start / row-end / column-end */
 
-  
-  &:nth-child(5) {
+  /* &:nth-child(5) {
     grid-area: 2/1/4/3;
+    color: #13bf25;
+    font-weight: 700;
+    font-size: 60px;
   }
 
   &:nth-child(6) {
-    grid-area: 2/3/3/4;
+    grid-area: 2/2/3/4;
+    color: #bf1397;
+    font-weight: 500;
+    font-size: 30px;
+    background-color: rgba(14, 74, 226, 0.309);
+    z-index: -5;
   }
 
   &:last-child {
     grid-area: 2/4/4/4;
-  }
+  } */
 `;
 
 
