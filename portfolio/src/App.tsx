@@ -78,21 +78,6 @@ const GridItem = styled.div`
 
   /* grid-area row-start / column-start / row-end / column-end */
 
-  &:first-child {
-    grid-area: 1/1/2/2;
-  }
-
-  &:nth-child(2) {
-    grid-area: 1/2/2/3;
-  }
-
-  &:nth-child(3) {
-    grid-area: 1/3/2/4;
-  }
-
-  &:nth-child(4) {
-    grid-area: 1/4/2/4;
-  }
   
   &:nth-child(5) {
     grid-area: 2/1/4/3;
@@ -100,10 +85,6 @@ const GridItem = styled.div`
 
   &:nth-child(6) {
     grid-area: 2/3/3/4;
-  }
-
-  &:nth-child(7) {
-    grid-area: 3/3/4/4;
   }
 
   &:last-child {
