@@ -64,13 +64,53 @@ function App() {
 }
 
 const GridContainer = styled.div`
+height: 100vh;
   display: grid;
-  grid-template-columns: 265px 265px 265px 265px;
+  grid-template-columns: repeat(4, 265px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 16px;
+
+  grid-template-areas: 
+  "one two three four"
+  "five five six eigth"
+  "five five seven eigth"
 `;
 
 
 const GridItem = styled.div`
   background-color: rgba(14, 74, 226, 0.8);
+
+  &:first-child {
+    grid-area: one;
+  }
+
+  &:nth-child(2) {
+    grid-area: two;
+  }
+
+  &:nth-child(2) {
+    grid-area: fhree;
+  }
+
+  &:nth-child(2) {
+    grid-area: four;
+  }
+  
+  &:nth-child(2) {
+    grid-area: five;
+  }
+
+  &:nth-child(2) {
+    grid-area: six;
+  }
+
+  &:nth-child(2) {
+    grid-area: seven;
+  }
+
+  &:last-child {
+    grid-area: eigth;
+  }
 `;
 
 
