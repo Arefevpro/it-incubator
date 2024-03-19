@@ -69,9 +69,8 @@ height: 100vh;
   grid-auto-rows: minmax(150px, auto);
   grid-template-columns: repeat(4, 165px);
   gap: 16px;
-  justify-items: center;
-  align-items: center;
   justify-content: center;
+  align-content: center;
 `;
 
 
@@ -80,18 +79,13 @@ const GridItem = styled.div`
 
   /* grid-area row-start / column-start / row-end / column-end */
 
-  &:nth-child(3) {
-    justify-self: end;
-    align-self: start;
-  }
+ 
 
   &:nth-child(5) {
     grid-area: 2/1/4/3;
   }
 
-  &:nth-child(6) {
-    grid-area: 2/2/3/4;
-  }
+ 
 
   &:last-child {
     grid-area: 2/4/4/4;
