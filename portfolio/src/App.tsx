@@ -78,6 +78,11 @@ const GridItem = styled.div`
 
   /* grid-area row-start / column-start / row-end / column-end */
 
+  &:nth-child(3) {
+    justify-self: end;
+    align-self: start;
+  }
+
   &:nth-child(5) {
     grid-area: 2/1/4/3;
   }
