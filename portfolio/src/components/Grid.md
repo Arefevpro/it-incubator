@@ -83,7 +83,8 @@ const GridItem = styled.div`
   }
   
   &:nth-child(5) {
-    grid-area: 2/1/4/3;
+    grid-area: 2/1/4/3;              // через span можно указать сколько ячеек будет 
+    // grid-area: 2/1/span 2/span 2; // занимать элемент
   }
 
   &:nth-child(6) {
