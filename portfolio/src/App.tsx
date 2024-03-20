@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        {/* <HomePage>
+        <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -48,17 +48,7 @@ function App() {
           <MyFunFacts />
           <Footer />
         </AboutPage>
-        <ContactsPage /> */}
-        <GridContainer className='grid'>
-          <GridItem>1</GridItem>
-          <GridItem>2</GridItem>
-          <GridItem>3</GridItem>
-          {/* <GridItem>4</GridItem>
-          <GridItem>5</GridItem>
-          <GridItem>6</GridItem>
-          <GridItem>7</GridItem>
-          <GridItem>8</GridItem> */}
-        </GridContainer>
+        <ContactsPage />
       </div>
     );
 }
@@ -66,67 +56,6 @@ function App() {
 
 
 
-const GridContainer = styled.div`
-  display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, auto)); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 30px;
-  /* grid-auto-rows: minmax(150px, auto);
-  grid-template-columns: repeat(4, 165px);
-  gap: 16px;
-  justify-content: center;
-  align-content: center;
-
-
-  @media screen and (max-width: 860px) {
-  & {
-    grid-template-columns: repeat(4, 1fr);
-   
-  }
-}
-
-@media screen and (max-width: 576px) {
-  & {
-    grid-template-columns: repeat(2, 1fr);
-    align-content: start;
-  }
-
-  &:nth-child(5) {
-    grid-area: 3/1/5/3;
-  }
-
-} */
-`;
-
-
-const GridItem = styled.div`
-  background-color: rgba(14, 74, 226, 0.8);
-
-  /* grid-area row-start / column-start / row-end / column-end */
-
-
-  /* &:nth-child(5) {
-    grid-area: 2/1/4/3;
-  }
-
- 
-
-  &:last-child {
-    grid-area: 2/4/4/4;
-  }
-
-
-  @media screen and (max-width: 576px) {
-
-  &:nth-child(5) {
-    grid-area: 3/1/5/3;
-  }
-
-  &:last-child {
-    grid-area: 5/2/7/3;
-  }
-} */
-`;
 
 
 
