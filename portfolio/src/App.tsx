@@ -53,11 +53,11 @@ function App() {
           <GridItem>1</GridItem>
           <GridItem>2</GridItem>
           <GridItem>3</GridItem>
-          <GridItem>4</GridItem>
+          {/* <GridItem>4</GridItem>
           <GridItem>5</GridItem>
           <GridItem>6</GridItem>
           <GridItem>7</GridItem>
-          <GridItem>8</GridItem>
+          <GridItem>8</GridItem> */}
         </GridContainer>
       </div>
     );
@@ -67,13 +67,33 @@ function App() {
 
 
 const GridContainer = styled.div`
-height: 100vh;
   display: grid;
-  grid-auto-rows: minmax(150px, auto);
+  grid-template-columns: repeat(auto-fill, 200px);
+  /* grid-auto-rows: minmax(150px, auto);
   grid-template-columns: repeat(4, 165px);
   gap: 16px;
   justify-content: center;
   align-content: center;
+
+
+  @media screen and (max-width: 860px) {
+  & {
+    grid-template-columns: repeat(4, 1fr);
+   
+  }
+}
+
+@media screen and (max-width: 576px) {
+  & {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+  }
+
+  &:nth-child(5) {
+    grid-area: 3/1/5/3;
+  }
+
+} */
 `;
 
 
@@ -83,7 +103,7 @@ const GridItem = styled.div`
   /* grid-area row-start / column-start / row-end / column-end */
 
 
-  &:nth-child(5) {
+  /* &:nth-child(5) {
     grid-area: 2/1/4/3;
   }
 
@@ -94,12 +114,16 @@ const GridItem = styled.div`
   }
 
 
-@media screen and (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+  @media screen and (max-width: 576px) {
 
+  &:nth-child(5) {
+    grid-area: 3/1/5/3;
+  }
+
+  &:last-child {
+    grid-area: 5/2/7/3;
+  }
+} */
 `;
 
 
