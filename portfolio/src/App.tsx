@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        {/* <HomePage>
+        <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -30,16 +30,16 @@ function App() {
           <AboutMe />
           <Contacts />
           <Footer />
-        </HomePage> */}
-        {/* <ProjectsPage> */}
-        {/* <Header />
-          <PageTitle name="projects" description="List of my projects" /> */}
-        {/* <CompletApps />
-          <Media /> */}
-        {/* <SmallProjects /> */}
-        {/* <Footer /> */}
-        {/* </ProjectsPage> */}
-        {/* <AboutPage>
+        </HomePage>
+        <ProjectsPage>
+        <Header />
+          <PageTitle name="projects" description="List of my projects" />
+        <CompletApps />
+          <Media />
+        <SmallProjects />
+        <Footer />
+        </ProjectsPage>
+        <AboutPage>
           <Header />
           <PageTitle name="about-me" description="Who am i?" />
           <AboutMe isShowTitle={false} button={false}/>
@@ -48,8 +48,8 @@ function App() {
           <MyFunFacts />
           <Footer />
         </AboutPage>
-        <ContactsPage /> */}
-        <GridContainer>
+        <ContactsPage />
+        {/* <GridContainer>
           <GridItem>1</GridItem>
           <GridItem>2</GridItem>
           <GridItem>3</GridItem>
@@ -58,29 +58,32 @@ function App() {
           <GridItem>6</GridItem>
           <GridItem>7</GridItem>
           <GridItem>8</GridItem>
-        </GridContainer>
+        </GridContainer> */}
       </div>
     );
 }
 
-const GridContainer = styled.div`
-height: 100vh;
-  display: grid;
-  grid-auto-rows: minmax(150px, auto);
-  grid-template-columns: repeat(4, 165px);
-  gap: 16px;
-  justify-content: center;
-  align-content: center;
-`;
 
 
-const GridItem = styled.div`
-  background-color: rgba(14, 74, 226, 0.8);
+
+// const GridContainer = styled.div`
+// height: 100vh;
+//   display: grid;
+//   grid-auto-rows: minmax(150px, auto);
+//   grid-template-columns: repeat(4, 165px);
+//   gap: 16px;
+//   justify-content: center;
+//   align-content: center;
+// `;
+
+
+// const GridItem = styled.div`
+//   background-color: rgba(14, 74, 226, 0.8);
 
   /* grid-area row-start / column-start / row-end / column-end */
 
  
-
+/* 
   &:nth-child(5) {
     grid-area: 2/1/4/3;
   }
@@ -91,6 +94,13 @@ const GridItem = styled.div`
     grid-area: 2/4/4/4;
   }
 `;
+
+
+ */
+
+
+
+
 
 
 

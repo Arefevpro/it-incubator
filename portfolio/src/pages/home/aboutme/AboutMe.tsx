@@ -53,8 +53,6 @@ const AboutMeWrapper = styled.div`
   gap: 165px;
   height: 100%;
   padding-bottom: 112px;
-
-  
 `;
 
 const TitleWrapper = styled.div`
