@@ -52,12 +52,30 @@ function App() {
 
 
 <Appo>
-<Header>Header</Header>
+<Headerr>Header</Headerr>
 <Aside>Aside</Aside>
 <Main>
 <Wrapper>
   <Box>Box</Box>
+  <Box>Box</Box>
+  <Box>Box</Box>
+  <Box>Box</Box>
 </Wrapper>
+<Content>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+</Content>
+<Content>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+</Content>
+<Content>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
+</Content>
 <Content>
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem fugiat nisi quaerat soluta tenetur blanditiis, nemo ducimus commodi consequuntur animi aliquam aliquid mollitia odit perferendis cupiditate pariatur maxime molestias tempora.
@@ -83,60 +101,46 @@ const Appo = styled.div`
 
 `
 
-const Header = styled.header`
-  
-  
+const Headerr = styled.header`
+  background-color: aliceblue;
+  grid-area: header;
+  border: 2px solid;
+
 `
 
 const Aside = styled.aside`
   grid-area: aside;
   background-color: #000;
-  color: #fff;
+  border: 2px solid;
 `
 
 
 const Main = styled.main`
   grid-area: main;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #702b2b;
+  border: 2px solid;
 `
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid;
 ` 
 
 const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  background-color: #fff;
-  color: #000;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 200px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
+  background-color: #196225;
+  border: 2px solid;
+  min-width: 250px;
+  min-height: 70px;
 `
 
+const Content = styled.p`
+  padding: 10px;
+  background-color: #19252f;
+
+`
 
 
 
