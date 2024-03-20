@@ -23,8 +23,28 @@
 img {
   max-width: 500px;
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
+  aspect-ratio: 16 / 9;
+  // object-position: center;
 }
+
+Контейнер в котором лежат изображения 
+
+.wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr))
+  grid-auto-rows: 250px;
+  gap; 10px;
+}
+
+
+Для разных устройств
+
+<picture>
+<source media="(min-width: 800px)" srcset="webp"> от 800
+<source media="(max-width: 799px)" srcset="webp"> до 799
+<img src="jpeg" alt=" " >
+</picture>
 ```
