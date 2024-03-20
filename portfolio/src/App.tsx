@@ -68,7 +68,9 @@ function App() {
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, auto)); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 30px;
   /* grid-auto-rows: minmax(150px, auto);
   grid-template-columns: repeat(4, 165px);
   gap: 16px;
