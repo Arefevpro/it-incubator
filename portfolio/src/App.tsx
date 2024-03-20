@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        <HomePage>
+        {/* <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -48,8 +48,8 @@ function App() {
           <MyFunFacts />
           <Footer />
         </AboutPage>
-        <ContactsPage />
-        {/* <GridContainer>
+        <ContactsPage /> */}
+        <GridContainer className='grid'>
           <GridItem>1</GridItem>
           <GridItem>2</GridItem>
           <GridItem>3</GridItem>
@@ -58,7 +58,7 @@ function App() {
           <GridItem>6</GridItem>
           <GridItem>7</GridItem>
           <GridItem>8</GridItem>
-        </GridContainer> */}
+        </GridContainer>
       </div>
     );
 }
@@ -66,24 +66,23 @@ function App() {
 
 
 
-// const GridContainer = styled.div`
-// height: 100vh;
-//   display: grid;
-//   grid-auto-rows: minmax(150px, auto);
-//   grid-template-columns: repeat(4, 165px);
-//   gap: 16px;
-//   justify-content: center;
-//   align-content: center;
-// `;
+const GridContainer = styled.div`
+height: 100vh;
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-columns: repeat(4, 165px);
+  gap: 16px;
+  justify-content: center;
+  align-content: center;
+`;
 
 
-// const GridItem = styled.div`
-//   background-color: rgba(14, 74, 226, 0.8);
+const GridItem = styled.div`
+  background-color: rgba(14, 74, 226, 0.8);
 
   /* grid-area row-start / column-start / row-end / column-end */
 
- 
-/* 
+
   &:nth-child(5) {
     grid-area: 2/1/4/3;
   }
@@ -93,10 +92,15 @@ function App() {
   &:last-child {
     grid-area: 2/4/4/4;
   }
+
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 `;
-
-
- */
 
 
 
