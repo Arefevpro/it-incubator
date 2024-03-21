@@ -6,9 +6,10 @@ import { theme} from "../../../styles/Theme";
 export const MobileMenu = (props:  {menuItems: Array<string>} ) => {
   return (
     <StyledMobileMenu>
-      <BurgerButton>
+      <BurgerButton isOpen={true}>
         <span></span>
       </BurgerButton>
+      <MobileMenuPopup isOpen={true}>
       <ul>
         {props.menuItems.map((item: string, index: number) => {
           return (
@@ -26,24 +27,46 @@ export const MobileMenu = (props:  {menuItems: Array<string>} ) => {
           );
         })}
       </ul>
+      </MobileMenuPopup>
+     
     </StyledMobileMenu>
   );
 };
 
 
-const StyledMobileMenu = styled.nav`
+const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(31, 31, 32, 0.9);
+  display: none;
+
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `}
+
   ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+`;
+
+const StyledMobileMenu = styled.nav`
 
   @media ${theme.media.tablet} {
     display: none;
   }
 `
 
-const BurgerButton = styled.button`
+const BurgerButton = styled.button<{isOpen: boolean}>`
   position: fixed;
   top: -100px;
   right: -100px;
@@ -56,6 +79,44 @@ const BurgerButton = styled.button`
     height: 2px;
     background-color: ${theme.colors.font};
     /* transition: all 0.3s ease-in-out; */
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 2px;
+      background-color: ${theme.colors.font};
+      /* transition: all 0.3s ease-in-out; */
+      position: absolute;
+      transform: rotate(-45deg) translateY(0);
+
+
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
+      color: #ffffff0;
+    `}
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: ${theme.colors.font};
+      /* transition: all 0.3s ease-in-out; */
+      position: absolute;
+      transform: translateY(10px);
+
+
+      ${props => props.isOpen && css<{ isOpen: boolean }>`
+      transform: rotate(45deg) translateY(0);
+      width: 36px;
+    `}
+    }
   }
 `;
 
