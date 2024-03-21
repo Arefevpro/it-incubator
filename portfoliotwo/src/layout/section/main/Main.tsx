@@ -10,7 +10,7 @@ export const Main = () => {
   return (
     <Styledmain>
       <Container>
-        <FlexWrapper alignItems="center" justifyContent="space-between">
+        <FlexWrapper alignItems="center" justifyContent="space-between" wrap='wrap'>
           <div>
             <SmallText>Hi There</SmallText>
             <Name>
@@ -55,6 +55,13 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+
+
+  @media ${theme.media.mobile} {
+    width: 310px;
+    height: 380px;
+    
+  }
 `
 
 const MainTitle = styled.h1`
