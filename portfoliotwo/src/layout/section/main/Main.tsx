@@ -11,7 +11,7 @@ export const Main = () => {
   return (
     <Styledmain>
       <Container>
-        <FlexWrapper alignItems="center" justifyContent="space-between" wrap='wrap'>
+        <FlexWrapper alignItems="center" justifyContent="space-around" wrap='wrap'>
           <div>
             <SmallText>Hi There</SmallText>
             <Name>
@@ -54,6 +54,8 @@ const PotoWrapper = styled.div`
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
   }
 `
@@ -62,6 +64,7 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  margin-right: 20px;
 
 
   @media ${theme.media.mobile} {
