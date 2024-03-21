@@ -4,6 +4,7 @@ import photo from "../../../assets/images/photo.webp"
 import { FlexWrapper } from "../../../components/Flexwrapper"
 import { Container } from '../../../components/slider/Container';
 import { theme } from '../../../styles/Theme';
+import { font } from './Common';
 
 
 export const Main = () => {
@@ -48,6 +49,11 @@ const PotoWrapper = styled.div`
     border: 5px solid ${theme.colors.accent};
     height: 470px;
     width: 360px;
+
+    @media ${theme.media.mobile} {
+      width: 314px;
+      height: 414px;
+    }
   }
 `
 
@@ -60,19 +66,14 @@ const Photo = styled.img`
   @media ${theme.media.mobile} {
     width: 310px;
     height: 380px;
-    
   }
 `
 
 const MainTitle = styled.h1`
-font-size: 27px;
-font-weight: 400;
-line-height: 41px;
+${font({weigth: 400, Fmax: 27, Fmin: 20})};
 `
 const Name = styled.h2`
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
+${font({family: "'Josefin Sans', sans-serif", weigth: 700, Fmax: 50, Fmin: 36})};
   letter-spacing: 0.05em;
   margin: 10px 0;
 
