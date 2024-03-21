@@ -38,6 +38,7 @@ display: flex;
 const PotoWrapper = styled.div`
   position: relative;
   z-index: 1;
+  margin-top: 65px;
 
   &::before {
     content: "";
@@ -80,6 +81,7 @@ ${font({family: "'Josefin Sans', sans-serif", weigth: 700, Fmax: 50, Fmin: 36})}
   span {
 position: relative;
 z-index: 1;
+white-space: nowrap;
 
     &::before {
       content: "";
@@ -91,6 +93,10 @@ z-index: 1;
       bottom: 0;
       z-index: -1;
     }
+  }
+
+  @media ${theme.media.mobile} {
+    margin: 15px 0 22px;
   }
 `
 
