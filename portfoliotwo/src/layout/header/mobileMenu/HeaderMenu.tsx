@@ -3,12 +3,9 @@ import styled from "styled-components"
 import { theme} from "../../../styles/Theme";
 
 
-export const MobileMenu = (props:  {menuItems: Array<string>} ) => {
+export const HeaderMenu = (props:  {menuItems: Array<string>} ) => {
   return (
-    <StyledMobileMenu>
-      <BurgerButton>
-        <span></span>
-      </BurgerButton>
+    <StyledHeaderMenu>
       <ul>
         {props.menuItems.map((item: string, index: number) => {
           return (
@@ -26,12 +23,12 @@ export const MobileMenu = (props:  {menuItems: Array<string>} ) => {
           );
         })}
       </ul>
-    </StyledMobileMenu>
+    </StyledHeaderMenu>
   );
 };
 
 
-const StyledMobileMenu = styled.nav`
+const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
@@ -43,21 +40,6 @@ const StyledMobileMenu = styled.nav`
   }
 `
 
-const BurgerButton = styled.button`
-  position: fixed;
-  top: -100px;
-  right: -100px;
-  width: 200px;
-  height: 200px;
-
-  span {
-    display: block;
-    width: 36px;
-    height: 2px;
-    background-color: ${theme.colors.font};
-    /* transition: all 0.3s ease-in-out; */
-  }
-`;
 
 const Link = styled.a`
   font-family: 'Josefin Sans', sans-serif;
