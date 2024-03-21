@@ -86,6 +86,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
     bottom: 50px;
 
 
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
+   background-color: rgba(255, 255, 255, 0);
+  `}
+
 
     &::before {
       content: "";
@@ -97,10 +101,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       position: absolute;
       transform: rotate(-45deg) translateY(0);
 
-
       ${props => props.isOpen && css<{ isOpen: boolean }>`
-      color: #ffffff0;
+      transform: rotate(-45deg) translateY(0);
     `}
+  
     }
 
     &::after {
