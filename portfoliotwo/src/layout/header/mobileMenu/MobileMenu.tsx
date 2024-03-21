@@ -60,9 +60,10 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 `;
 
 const StyledMobileMenu = styled.nav`
+  display: none;
 
   @media ${theme.media.tablet} {
-    display: none;
+    display: block;
   }
 `
 
