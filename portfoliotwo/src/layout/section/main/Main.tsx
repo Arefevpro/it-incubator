@@ -4,7 +4,7 @@ import photo from "../../../assets/images/photo.webp"
 import { FlexWrapper } from "../../../components/Flexwrapper"
 import { Container } from '../../../components/slider/Container';
 import { theme } from '../../../styles/Theme';
-import { font } from './Common';
+import { font } from '../../../styles/Common';
 
 
 export const Main = () => {
