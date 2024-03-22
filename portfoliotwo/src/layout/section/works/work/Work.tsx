@@ -32,7 +32,8 @@ export const Work = ( props: WorkPropstype ) => {
 
 const StyledWork = styled.div`
 max-width: 540px;
-width: 100%;
+width: 330px;
+flex-grow: 1;
 background-color: ${theme.colors.secondaryBg};
 
 ${Link} {
