@@ -9,8 +9,8 @@ import { Container } from "../../../components/slider/Container";
 
 export const Testimony = () => {
   return (
-    <Container>
-      <StyledTestimony>
+    <StyledTestimony>
+      <Container>
         <SectionTitle>Testimony</SectionTitle>
         <FlexWrapper direction={"column"} alignItems={"center"}>
           <IconWrapper>
@@ -18,8 +18,8 @@ export const Testimony = () => {
           </IconWrapper>
           <Slider />
         </FlexWrapper>
-      </StyledTestimony>
-    </Container>
+      </Container>
+    </StyledTestimony>
   );
 };
 
