@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Icon } from '../../../src/components/icon/Icon';
 import { FlexWrapper } from '../../../src/components/Flexwrapper';
 import { theme } from '../../../src/styles/Theme';
+import { font } from '../../../src/styles/Common';
 
 
 export const Footer = () => {
@@ -86,11 +87,9 @@ color: ${theme.colors.accent};
 `
 
 const Name = styled.span`
-
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+${font({family: "'Josefin Sans', sans-serif", weigth: 700, Fmax: 22, Fmin: 16})}
   letter-spacing: 3px;
+
 `;
 
 const Copyright = styled.small`
