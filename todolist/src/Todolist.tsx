@@ -19,25 +19,37 @@ export const Todolist = ({ title, tasks, date }: PropsType) => {
     <h3>{title}</h3>
     <div>
         <input/>
-        <button>+</button>
+        <Button title={'+'} />
     </div>
-    <ul>
-        {tasks.map(task => {
-          return (
-            <li key={task.id}>
-              <input type="checkbox" checked={task.isDone} />
-              <span>{task.title}</span>
-            </li>
-          )
-        })}
-      </ul>
+    {tasks.length === 0 ? (
+        <p>Тасок нет</p>
+      ) : (
+        <ul>
+          {tasks.map(task => {
+            return (
+              <li key={task.id}>
+                <input type="checkbox" checked={task.isDone} />
+                <span>{task.title}</span>
+              </li>
+            )
+          })}
+        </ul>
+      )}
     <div>
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
+    <Button title={'All'} />
+        <Button title={'Active'} />
+        <Button title={'Completed'} />
     </div>
     <div>{date}</div>
 </div>
   );
 };
 
+
+type ButtonPropsType = {
+  title: string
+}
+ 
+export const Button = ({ title }: ButtonPropsType) => {
+  return <button>{title}</button>
+}
