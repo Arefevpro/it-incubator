@@ -20,7 +20,7 @@ import { CompletApps } from './components/CompletApps';
 function App() {
     return (
       <div className="App">
-        {/* <HomePage>
+        <HomePage>
           <Header />
           <Media />
           <MainSection />
@@ -48,7 +48,7 @@ function App() {
           <MyFunFacts />
           <Footer />
         </AboutPage>
-        <ContactsPage /> */}
+        <ContactsPage />
 
 
 
