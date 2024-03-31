@@ -1,11 +1,40 @@
 
+type TodolistPropsType = {
+    title: string
+    tasks: Array<TaskType>
+  }
 
 
+  export  type TaskType = {
+    id: number
+    title: string
+    isDone: boolean
+  }   
  
-export const Todolist = () => {
+export const Todolist = ({
+  title,
+   tasks
+  } : TodolistPropsType) => {
+  // 1.
+  // const title = props.title
+  // const tasks = props.tasks
+// 2.
+// const {title, tasks} = props
+
+const taskslist: Array<JSX.Element> = tasks.map(task => {
   return (
-    <div>
-      <h3>What to learn</h3>
+    <li>
+      <input type="checkbox" checked={task.isDone} /> <span>{task.title}</span>
+    </li>
+  )
+})
+
+
+
+
+  return (
+    <div >
+      <h3>{title}</h3>
       <div>
         <input />
         <button>+</button>
