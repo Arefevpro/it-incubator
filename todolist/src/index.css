@@ -22,13 +22,22 @@ code {
 
   &:nth-child(2) {
     background-color: rgb(40, 20, 170);
+
+    &:hover {
+      outline: 4px solid rgb(40, 20, 170);
+    }
   }
 
   &:nth-child(3) {
     background-color: rgb(16, 195, 66);
+
+    &:hover {
+      outline: 4px solid rgb(16, 195, 66);
+    }
   }
 
   &:hover {
     background-color: rgb(196, 11, 212);
+    outline: 4px solid rgb(192, 43, 23);
   }
 }
