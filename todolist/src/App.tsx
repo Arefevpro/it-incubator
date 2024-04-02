@@ -3,7 +3,7 @@ import { TaskType } from "./Types";
 import { Todolist } from "./Todolist";
 
 function App() {
-  const titleNameOne = "My todolistName";
+  const titleNameOne = "Red todolistName";
   const titleNameTwo = "Blue todolistName";
   const titleNameThree = "Green todolistName";
   const tasks_1: Array<TaskType> = [
@@ -41,11 +41,28 @@ function App() {
     },
   ];
 
+  const tasks_3: Array<TaskType> = [
+    {
+      id: 1,
+      title: "Dog",
+      isDone: true,
+    },
+    {
+      id: 2,
+      title: "Cat",
+      isDone: true,
+    },
+    {
+      id: 3,
+      title: "Fish",
+      isDone: false,
+    },
+  ];
   return (
     <div className="App">
       <Todolist title={titleNameOne} tasks={tasks_1} />
-      <Todolist title={titleNameTwo} tasks={tasks_1} />
-      <Todolist title={titleNameThree} tasks={tasks_1} />
+      <Todolist title={titleNameTwo} tasks={tasks_2} />
+      <Todolist title={titleNameThree} tasks={tasks_3} />
       {/* <Todolist title={titleName}/>  */}
     </div>
   );

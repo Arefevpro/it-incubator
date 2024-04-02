@@ -15,10 +15,18 @@ code {
 }
 
 .todolist {
-  background-color: rgb(126, 48, 140);
+  background-color: rgb(192, 43, 23);
   padding: 20px;
   border: 2px solid rgb(196, 11, 212);
   border-radius: 10px;
+
+  &:nth-child(2) {
+    background-color: rgb(40, 20, 170);
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(16, 195, 66);
+  }
 
   &:hover {
     background-color: rgb(196, 11, 212);
