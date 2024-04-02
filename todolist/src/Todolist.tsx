@@ -1,13 +1,4 @@
-type PropsType  = {
-  title: string
-}
-
-export type TaskType = {
-  id: number
-  title: string
-  isDone: boolean
-}
-
+import { PropsType } from "./Types";
 
 export const Todolist = ({ title}: PropsType) => {
     return (
