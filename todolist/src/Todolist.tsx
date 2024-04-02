@@ -1,13 +1,15 @@
 type PropsType  = {
   title: string
-  subTitle: string
-  description: string
-  tasks: Task[]
+}
+
+export type TaskType = {
+  id: number
+  title: string
+  isDone: boolean
 }
 
 
-
-export const Todolist = ({ title, subTitle, description, tasks }: PropsType) => {
+export const Todolist = ({ title}: PropsType) => {
     return (
       <div className="todolist">
       <h3>{title}</h3>
