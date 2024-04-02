@@ -27,7 +27,7 @@ function App() {
     {
       id: 1,
       title: "Apple",
-      isDone: true,
+      isDone: false,
     },
     {
       id: 2,
@@ -37,6 +37,11 @@ function App() {
     {
       id: 3,
       title: "Pear",
+      isDone: false,
+    },
+    {
+      id: 3,
+      title: "Pineapple",
       isDone: false,
     },
   ];
