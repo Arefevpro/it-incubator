@@ -19,4 +19,8 @@ code {
   padding: 20px;
   border: 2px solid rgb(196, 11, 212);
   border-radius: 10px;
+
+  &:hover {
+    background-color: rgb(196, 11, 212);
+  }
 }
