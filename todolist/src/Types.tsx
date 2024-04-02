@@ -1,5 +1,6 @@
 export type PropsType  = {
   title: string
+  tasks: Array<TaskType>
 }
 
 export type TaskType = {

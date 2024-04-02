@@ -1,6 +1,6 @@
 import { PropsType } from "./Types";
 
-export const Todolist = ({ title}: PropsType) => {
+export const Todolist = ({ title, tasks }: PropsType) => {
     return (
       <div className="todolist">
       <h3>{title}</h3>
