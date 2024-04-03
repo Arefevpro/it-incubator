@@ -1,6 +1,6 @@
 export type PropsType  = {
   title: string
-  date: string
+  date?: string
   tasks: Array<TaskType>
 }
 

@@ -67,7 +67,7 @@ function App() {
     <div className="App">
       <Todolist title="Red todolistName" tasks={tasks_1} />
       <Todolist title="Blue todolistName" tasks={tasks_2} />
-      <Todolist title="Green todolistName" tasks={tasks_3} />
+      <Todolist title="Green todolistName" tasks={tasks_3} date="01.01.2022"/>
     </div>
   );
 }
