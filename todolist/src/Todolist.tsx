@@ -1,6 +1,6 @@
 import { PropsType } from "./Types";
 
-export const Todolist = ({ title, tasks }: PropsType) => {
+export const Todolist = ({ title, tasks, date }: PropsType) => {
 
 const tasksList = tasks.map((task) => {
   return ( 
@@ -24,6 +24,7 @@ const tasksList = tasks.map((task) => {
         <button>All</button>
         <button>Active</button>
         <button>Completed</button>
+        <div>{date}</div>
       </div>
     </div>
     )
