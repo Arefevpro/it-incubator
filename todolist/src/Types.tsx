@@ -12,5 +12,5 @@ export type TaskType = {
 
 
 export type ButtonPropsType = {
-  name: string
+  title: string
 }
