@@ -9,3 +9,8 @@ export type TaskType = {
   title: string
   isDone: boolean
 }
+
+
+export type ButtonPropsType = {
+  name: string
+}
