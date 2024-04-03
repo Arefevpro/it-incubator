@@ -41,3 +41,9 @@ code {
     outline: 4px solid rgb(192, 43, 23);
   }
 }
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
