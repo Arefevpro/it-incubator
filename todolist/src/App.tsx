@@ -47,21 +47,6 @@ function App() {
   ];
 
   const tasks_3: Array<TaskType> = [
-    {
-      id: 1,
-      title: "Dog",
-      isDone: true,
-    },
-    {
-      id: 2,
-      title: "Cat",
-      isDone: true,
-    },
-    {
-      id: 3,
-      title: "Fish",
-      isDone: false,
-    },
   ];
   return (
     <div className="App">

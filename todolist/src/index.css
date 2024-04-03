@@ -47,3 +47,12 @@ code {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.no-tasks {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}

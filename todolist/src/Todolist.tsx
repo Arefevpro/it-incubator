@@ -18,7 +18,7 @@ const tasksList = tasks.map((task) => {
         <button>+</button>
       </div>
       {tasks.length === 0 ? (
-        <p>Тасок нет</p>
+        <p className="no-tasks">Тасок нет</p>
       ) : (
       <ul>
         {tasksList}
