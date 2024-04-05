@@ -36,7 +36,7 @@ const cercleArea2 = calculateCercleArea(16.2);
 
 
 
-function createHTMLElement(tag: string, id: string, text: string) {
+function createHTMLElement(tag: string, id: string, text: string) { // нужно сохранять порядок записи параметров
   const element = document.createElement(tag);
   element.id =id;
   element.innerHTML = text;
@@ -44,7 +44,7 @@ function createHTMLElement(tag: string, id: string, text: string) {
   return element;
 }
 
-const h1element = createHTMLElement('h1', 'header1', 'просто текст');
-// console.log(h1element)
+const h1element = createHTMLElement('h1', 'header1', 'просто текст'); // аргументы идут в такомже порядке как и параметры
+// console.log(h1element)                                            
 
 document.body.append(h1element)
