@@ -54,7 +54,14 @@ const h1element = createHTMLElement('h1', 'просто текст'); // арг�
 // document.body.append(element)
 
 function logArgsToControle() {
-console.log(arguments);
+// console.log(arguments);
+if (!arguments.length) { //1. если аргументов нет 
+  return;                // то досрочно возвращаем завршение функции
+}
+for (let argument of arguments) {
+  console.log(arguments);
+}
+console.log('Больше аргументов нет');
 }
 
-logArgsToControle(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+logArgsToControle(); // 1. если аргументов нет то возвращаем undefined
