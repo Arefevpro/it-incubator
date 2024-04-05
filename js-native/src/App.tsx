@@ -52,3 +52,9 @@ const h1element = createHTMLElement('h1', 'просто текст'); // арг�
 
 // const element = createHTMLElement();
 // document.body.append(element)
+
+function logArgsToControle() {
+console.log(arguments);
+}
+
+logArgsToControle(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
