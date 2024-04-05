@@ -85,16 +85,15 @@ sayBye();
 
 
 
-const brocenLinks = [vk, youtybe, instagram, facebook];
+const brokenLinks = ['vk', 'youtybe', 'instagram', 'facebook'];
 // https://vk.com
 
-const fixLinksArray = (linksArray) => {  
+const fixLinksArray = (linksArray: string[]) => {  
   const correctLinks = [];                 // коллбэк функция - это функция переданная в другую функцию в качестве аргумента
   linksArray.forEach(function(brokenLink) {
-    const fixedLink = 'https://' + brokenLink + '.com';
-    correctLinks.push(fixedLink);
+    correctLinks.push('https://' + brokenLink + '.com');
   })
   return correctLinks;  
 }
 
-console.log(fixLinksArray(brocenLinks));
+console.log(fixLinksArray(brokenLinks));
