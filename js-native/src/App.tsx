@@ -24,10 +24,10 @@ console.log(result);
 console.log(result1);
 
 function calculateCercleArea(cercleRadius: number) { // initialValue - параметр функции типа number
-return 3.14 * cercleRadius ** 2;
+return 3.14 * cercleRadius ** 2;                     // параметр - это переменная
 }
 
-const cercleArea1 = calculateCercleArea(6);
+const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (значение переменной, которе мы передаем в функцию)
 console.log(cercleArea1);
 
 const cercleArea2 = calculateCercleArea(16.2);
