@@ -33,14 +33,3 @@ const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (з
 const cercleArea2 = calculateCercleArea(16.2);
 // console.log(cercleArea2);
 
-
-function createHTMLElement(tag: string, text: string, id: string) {
-  const element = document.createElement('tag');
-  element.id ='id';
-  element.innerHTML = 'text';
-  
-  return element;
-}
-
-const h1element = createHTMLElement('h1', 'header', 'просто текст');
-console.log(h1element)
