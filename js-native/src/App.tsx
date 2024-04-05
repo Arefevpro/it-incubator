@@ -10,6 +10,8 @@ function App () {
 
 export default App;
 
+// Function declaration
+
 function calculateNumber(initialValue: number) { // initialValue - параметр функции типа number
   let x = initialValue;
   x = x + 100;
@@ -61,7 +63,21 @@ if (!arguments.length) { //1. если аргументов нет
 for (let argument of arguments) {
   console.log(arguments);
 }
-console.log('Больше аргументов нет');
+console.log('Больше аргументов нет'); // когда аргументы закончились выводим это сообщение
 }
 
 logArgsToControle(); // 1. если аргументов нет то возвращаем undefined
+
+
+// Function expression
+
+// const sayHello = function() {
+//   console.log('Hello');
+// }
+// sayHello();
+ 
+const sayBye = () => {
+  console.log('Bye');
+}
+
+sayBye();
