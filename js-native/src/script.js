@@ -157,6 +157,6 @@ const arr = ['a', 'b', 'c', 'd', 'e',];
 // }
 
 //  в обратном порядке сначала i = 5, потом i = 4 и так далее
-for (let i = arr.length; i > 0; i++) {
-  console.log(arr[i]);
-}
+// for (let i = arr.length; i > 0; i++) {
+//   console.log(arr[i]);
+// }
