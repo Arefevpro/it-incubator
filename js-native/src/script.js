@@ -1,7 +1,7 @@
-
 // Function declaration
 
-function calculateNumber(initialValue) { // initialValue - параметр функции типа number
+function calculateNumber(initialValue) {
+  // initialValue - параметр функции типа number
   let x = initialValue;
   x = x + 100;
   x = x / 5;
@@ -14,9 +14,10 @@ const result1 = calculateNumber(5335);
 // console.log(result);
 // console.log(result1);
 
-function calculateCercleArea(cercleRadius) { // initialValue - параметр функции типа number
-return 3.14 * cercleRadius ** 2;                     // параметр - это переменная
-}                                                    // функция может принимать сколько угодно параметров
+function calculateCercleArea(cercleRadius) {
+  // initialValue - параметр функции типа number
+  return 3.14 * cercleRadius ** 2; // параметр - это переменная
+} // функция может принимать сколько угодно параметров
 
 const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (значение переменной, которе мы передаем в функцию)
 // console.log(cercleArea1);
@@ -24,20 +25,19 @@ const cercleArea1 = calculateCercleArea(6); // (6) - это аргумент (з
 const cercleArea2 = calculateCercleArea(16.2);
 // console.log(cercleArea2);
 
-
-
-
-function createHTMLElement(tag = 'button',text = 'отправить', id = null) { // нужно сохранять порядок записи параметров
+function createHTMLElement(tag = "button", text = "отправить", id = null) {
+  // нужно сохранять порядок записи параметров
   const element = document.createElement(tag);
-  if (id) {   // если id не null или undefined то присваиваем элементу id
-    element.id = id; 
+  if (id) {
+    // если id не null или undefined то присваиваем элементу id
+    element.id = id;
   }
   element.innerHTML = text;
-  
+
   return element;
 }
 
-const h1element = createHTMLElement('h1', 'просто текст'); // аргументы идут в такомже порядке как и параметры
+const h1element = createHTMLElement("h1", "просто текст"); // аргументы идут в такомже порядке как и параметры
 // console.log(h1element)                                  // если мы не хотим передавать аргументы, то мы можем использовать null
 // document.body.append(h1element)
 
@@ -45,20 +45,20 @@ const h1element = createHTMLElement('h1', 'просто текст'); // арг�
 // document.body.append(element)
 
 function logArgsToControle() {
-// console.log(arguments);
-if (!arguments.length) { //1. если аргументов нет 
-  return;                // то досрочно возвращаем завршение функции
-}
-for (let argument of arguments) {
-  console.log(arguments);
-}
-console.log('Больше аргументов нет'); // когда аргументы закончились выводим это сообщение
+  // console.log(arguments);
+  if (!arguments.length) {
+    //1. если аргументов нет
+    return; // то досрочно возвращаем завршение функции
+  }
+  for (let argument of arguments) {
+    console.log(arguments);
+  }
+  console.log("Больше аргументов нет"); // когда аргументы закончились выводим это сообщение
 }
 
 logArgsToControle(); // 1. если аргументов нет то возвращаем undefined
 
-
-// Function expression 
+// Function expression
 
 // sayHello(); - нельзя получить доступ к переменной до т ого как она была инициализированна
 
@@ -66,24 +66,45 @@ logArgsToControle(); // 1. если аргументов нет то возвр�
 //   console.log('Hello');
 // }
 // sayHello();
- 
-const sayBye = () => {   // у стрелонной функции нет параметра аргументов
+
+const sayBye = () => {
+  // у стрелонной функции нет параметра аргументов
   // console.log('Bye');
-}
+};
 sayBye();
 
-
-
-const brokenLinks = ['vk', 'youtybe', 'instagram', 'facebook'];
+const brokenLinks = ["vk", "youtybe", "instagram", "facebook"];
 // https://vk.com
 
 // коллбэк функция - это функция переданная в другую функцию в качестве аргумента
-const fixLinksArray = (linksArray) => {  
-  const correctLinks = [];                                     
-  linksArray.forEach((brokenLink) => correctLinks.push('https://' + brokenLink + '.com'),
-);  
-    
-  return correctLinks;  
-}
+const fixLinksArray = (linksArray) => {
+  const correctLinks = [];
+  linksArray.forEach((brokenLink) =>
+    correctLinks.push("https://" + brokenLink + ".com")
+  );
 
-console.log(fixLinksArray(brokenLinks));
+  return correctLinks;
+};
+
+// console.log(fixLinksArray(brokenLinks));
+
+const people = [
+  { name: "Олег", age: 15, budget: 20000 },
+  { name: "Алексей", age: 15, budget: 3400 },
+  { name: "Михаил", age: 15, budget: 5600 },
+  { name: "Екатерина", age: 15, budget: 7000 },
+  { name: "Вадим", age: 15, budget: 4500 },
+  { name: "Елена", age: 15, budget: 8200 }
+];
+
+// ForEach
+
+// Map
+
+// Filter
+
+// Reduce
+
+// Find
+
+// FindIndex
