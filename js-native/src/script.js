@@ -88,7 +88,6 @@ const fixLinksArray = (linksArray) => {
 
 // console.log(fixLinksArray(brokenLinks));
 
-
 // методы массивов
 
 const people = [
@@ -97,7 +96,7 @@ const people = [
   { name: "Михаил", age: 15, budget: 5600 },
   { name: "Екатерина", age: 15, budget: 7000 },
   { name: "Вадим", age: 15, budget: 4500 },
-  { name: "Елена", age: 15, budget: 8200 }
+  { name: "Елена", age: 15, budget: 8200 },
 ];
 
 // ForEach
@@ -111,7 +110,6 @@ const people = [
 // Find
 
 // FindIndex
-
 
 // Циклы FOR
 
@@ -133,7 +131,6 @@ const people = [
 // for (1.начальное значение;2. условие; 4.) {
 // 3.  console.log(1);
 
-
 // создаем переменную - счётчик i и приравниваем ее к 0
 // проверяем меньше ли i чем 5? получаем true
 // выполняем console.log(1)
@@ -145,8 +142,7 @@ for (let i = 0; i < 5; i++) {
   // console.log(1);   // для проверки можем выводить i в место 1
 }
 
-
-const arr = ['a', 'b', 'c', 'd', 'e',];
+const arr = ["a", "b", "c", "d", "e"];
 // console.log(arr[0]);
 // console.log(arr[1]);
 // console.log(arr[2]);
@@ -162,7 +158,7 @@ for (let i = arr.length; i > 0; i--) {
   // console.log(arr[i - 1]);
 }
 
-// Циклы WHILE 
+// Циклы WHILE
 
 let x = 0;
 
@@ -183,6 +179,12 @@ let x = 0;
 // }
 
 do {
-x++;
-console.log(x);
+  console.log(x);
+  x++;
 } while (x < 5);
+
+let y = 5;
+while (y < 5) {
+  console.log(y);
+  y++;
+}
