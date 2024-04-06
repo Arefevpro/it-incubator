@@ -113,7 +113,8 @@ const people = [
 // FindIndex
 
 
-// Циклы FOR, WHILE в JS
+// Циклы FOR
+
 // Цикл - это что-то замкнутое и повторяющееся действие из раза в раз
 
 // console.log(1);
@@ -158,5 +159,13 @@ const arr = ['a', 'b', 'c', 'd', 'e',];
 
 //  в обратном порядке сначала i = 5, потом i = 4 и так далее
 for (let i = arr.length; i > 0; i--) {
-  console.log(arr[i]);
+  // console.log(arr[i - 1]);
+}
+
+// Циклы WHILE 
+
+const x = 0;
+
+while (x < 5) {
+
 }
