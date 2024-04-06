@@ -164,9 +164,17 @@ for (let i = arr.length; i > 0; i--) {
 
 // Циклы WHILE 
 
-const x = 0;
+let x = 0;
 
-while (x < 5) {
-console.log(x);
-x++;
+// while (x < 5) {
+// console.log(x);
+// x++;
+// break; // останавливает цикл
+// }
+
+let word = '';
+while (word.length < 5) {
+const value = prompt("введите букву");
+  word = word + value;
+  console.log(word);
 }
