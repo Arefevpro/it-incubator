@@ -178,12 +178,18 @@ let x = 0;
 //   console.log(word);
 // }
 
-do {
-  console.log(x);
-  x++;
-} while (x < 5);
 
-let y = 5;
+// сначала делаем, а потом проверяем
+
+let h = 0;
+do {
+  console.log(h);
+  h++;
+} while (h < 5);
+
+// сначала проверяем, а потом делаем
+
+let y = 0;
 while (y < 5) {
   console.log(y);
   y++;
