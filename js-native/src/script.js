@@ -174,7 +174,10 @@ let x = 0;
 
 let word = '';
 while (word.length < 5) {
-const value = prompt("введите букву");
+const value = prompt('введите букву');
+  if (value.length === 0) { // если пользователь ничего не ввел то выходим  из цикла
+    break;
+  }
   word = word + value;
   console.log(word);
 }
