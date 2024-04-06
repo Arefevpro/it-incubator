@@ -172,12 +172,17 @@ let x = 0;
 // break; // останавливает цикл
 // }
 
-let word = '';
-while (word.length < 5) {
-const value = prompt('введите букву');
-  if (value.length === 0) { // если пользователь ничего не ввел то выходим  из цикла
-    break;
-  }
-  word = word + value;
-  console.log(word);
-}
+// let word = '';
+// while (word.length < 5) {
+// const value = prompt('введите букву');
+//   if (value.length === 0) { // если пользователь ничего не ввел то выходим  из цикла
+//     break;
+//   }
+//   word = word + value;
+//   console.log(word);
+// }
+
+do {
+x++;
+console.log(x);
+} while (x < 5);
