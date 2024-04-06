@@ -145,13 +145,18 @@ for (let i = 0; i < 5; i++) {
 }
 
 
-const arr = ['a', 'b', 'c', 'd', 'e'];
+const arr = ['a', 'b', 'c', 'd', 'e',];
 // console.log(arr[0]);
 // console.log(arr[1]);
 // console.log(arr[2]);
 // console.log(arr[3]);
 // console.log(arr[4]);
 
-for (let i = 0; i < arr.length; i++) {
-  // console.log(arr[i]);
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+//  в обратном порядке сначала i = 5, потом i = 4 и так далее
+for (let i = arr.length; i > 0; i++) {
+  console.log(arr[i]);
 }
