@@ -141,5 +141,17 @@ const people = [
 // и так далее до тех пор пока i будет равна 5 и получим false тогда тело цикла не будет выполненно
 
 for (let i = 0; i < 5; i++) {
-  console.log(1);
+  // console.log(1);   // для проверки можем выводить i в место 1
+}
+
+
+const arr = ['a', 'b', 'c', 'd', 'e'];
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log(arr[3]);
+// console.log(arr[4]);
+
+for (let i = 0; i < arr.length; i++) {
+  // console.log(arr[i]);
 }
