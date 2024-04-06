@@ -167,5 +167,6 @@ for (let i = arr.length; i > 0; i--) {
 const x = 0;
 
 while (x < 5) {
-
+console.log(x);
+x++;
 }
