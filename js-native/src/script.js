@@ -153,10 +153,21 @@ const arr = ["a", "b", "c", "d", "e"];
 //   console.log(arr[i]);
 // }
 
-//  в обратном порядке сначала i = 5, потом i = 4 и так далее
-for (let i = arr.length; i > 0; i--) {
-  // console.log(arr[i - 1]);
+// модификация записи цикла FOR
+
+// в letter находится следующий элемент массива a b c d e
+// переменную letter можно назвать как угодно, например - eretete
+for (let letter of arr) {
+  console.log(letter);
 }
+  
+
+
+
+//  в обратном порядке сначала i = 5, потом i = 4 и так далее
+// for (let i = arr.length; i > 0; i--) {
+  // console.log(arr[i - 1]);
+// }
 
 // Циклы WHILE
 
@@ -181,16 +192,17 @@ let x = 0;
 
 // сначала делаем, а потом проверяем
 
-let h = 0;
-do {
-  console.log(h);
-  h++;
-} while (h < 5);
+// let h = 0;
+// do {
+//   console.log(h);
+//   h++;
+// } while (h < 5);
 
-// сначала проверяем, а потом делаем
+// // сначала проверяем, а потом делаем
 
-let y = 0;
-while (y < 5) {
-  console.log(y);
-  y++;
-}
+// let y = 0;
+// while (y < 5) {
+//   console.log(y);
+//   y++;
+// }
+
