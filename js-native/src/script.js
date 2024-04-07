@@ -169,7 +169,13 @@ const user = {
 
 for (let key in user) {
   // console.log(key); // получаем доступ к каждому ключу в объекте
-  console.log(key, user[key]); 
+  // console.log(key, user[key]);  // получаем свойство объекта
+  // пишем [key] в квадратных скобках потомучто значение [key] динамическое 
+  if (key === 'age') {
+    break; // останавливает цикл
+  }
+  console.log(user[key]);
+
 }
 
 
