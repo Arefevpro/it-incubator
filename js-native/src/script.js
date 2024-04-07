@@ -9,6 +9,7 @@ function calculateNumber(initialValue) {
   return x;
 }
 
+
 const result = calculateNumber(5334535);
 const result1 = calculateNumber(5335);
 // console.log(result);
@@ -51,7 +52,7 @@ function logArgsToControle() {
     return; // то досрочно возвращаем завршение функции
   }
   for (let argument of arguments) {
-    console.log(arguments);
+    // console.log(arguments);
   }
   console.log("Больше аргументов нет"); // когда аргументы закончились выводим это сообщение
 }
