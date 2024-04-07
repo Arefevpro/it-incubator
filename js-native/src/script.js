@@ -168,7 +168,8 @@ const user = {
 };
 
 for (let key in user) {
-  console.log(key);
+  // console.log(key); // получаем доступ к каждому ключу в объекте
+  console.log(key, user[key]); 
 }
 
 
