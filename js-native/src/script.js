@@ -158,9 +158,20 @@ const arr = ["a", "b", "c", "d", "e"];
 // в letter находится следующий элемент массива a b c d e
 // переменную letter можно назвать как угодно, например - eretete
 for (let letter of arr) {
-  console.log(letter);
+  // console.log(letter);
 }
-  
+
+const user = {
+  name: 'Олег',
+  age: '15',
+  isMaried: true,
+};
+
+for (let key in user) {
+  console.log(key);
+}
+
+
 
 
 
