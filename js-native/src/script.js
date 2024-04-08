@@ -1,3 +1,17 @@
+
+function evenOrOdd(number) {
+  let x = number;
+  x = x + 2;
+  return x;
+}
+const result4 = evenOrOdd(5);
+console.log(result4);
+
+
+// Создайте функцию, которая принимает целое число в 
+// качестве аргумента и возвращает "Четное" для четных чисел или "Нечетное" 
+// для нечетных чисел.
+
 // Function declaration
 
 function calculateNumber(initialValue) {
@@ -8,7 +22,6 @@ function calculateNumber(initialValue) {
 
   return x;
 }
-
 
 const result = calculateNumber(5334535);
 const result1 = calculateNumber(5335);
@@ -175,7 +188,7 @@ for (let key in user) {
   if (key === 'age') {
     break; // останавливает цикл
   }
-  console.log(user[key]);
+  // console.log(user[key]);
 
 }
 
@@ -224,4 +237,5 @@ let x = 0;
 //   console.log(y);
 //   y++;
 // }
+
 
