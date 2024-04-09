@@ -3,7 +3,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="app-wrapper">
-      <header>
+      <header className="header">
         <img
           src="https://e7.pngegg.com/pngimages/41/701/png-clipart-logo-graphic-design-graphy-grapher-logo-graphy-angle-text.png"
           alt="logo"
@@ -11,17 +11,17 @@ const App = () => {
           height="100px"
         />
       </header>
-      <nav>
+      <nav className="nav">
         <ul>
           <li>Profile</li>
           <li>Messages</li>
           <li>Photo</li>
         </ul>
       </nav>
-      <main>
+      <main className="content">
         Main content
       </main>
-      <footer></footer>
+      <footer className="footer">Footer</footer>
     </div>
   );
 };
