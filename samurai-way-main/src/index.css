@@ -6,9 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(92, 88, 88);
+  background-color: #3a3838;
   color: white;
-  height: 100vh;
 }
 
 code {
@@ -18,4 +17,5 @@ code {
 
 ul {
   list-style: none;
+  padding: 0;
 }
