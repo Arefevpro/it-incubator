@@ -1,18 +1,14 @@
 import "./App.css";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Nav } from "./components/Nav";
+
+
 const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      <nav className="nav">
-        <ul>
-          <li><a href="#c">Profile</a></li>
-          <li><a href="#c">Messages</a></li>
-          <li><a href="#c">Photo</a></li>
-          <li><a href="#c">Music</a></li>
-          <li><a href="#c">Settings</a></li>  
-        </ul>
-      </nav>
+     <Nav />
       <main className="content">
         <div><img src="https://rd-prod.twic.pics/2023-09-06/PHdX6azeavPRGpPDFxXDB3e5TSoPGFOUZiEuqJLB.webp?twic=v1/resize=828/quality=73/focus=auto" alt="" /></div>
         <div>
@@ -27,7 +23,7 @@ const App = () => {
           <button>sedd</button>
         </div>
       </main>
-      <footer className="footer">Footer</footer>
+      <Footer />
     </div>
   );
 };
