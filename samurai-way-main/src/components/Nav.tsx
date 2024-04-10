@@ -2,7 +2,6 @@
 
 export const Nav = () => {
   return (
-    <div>
        <nav className="nav">
         <ul>
           <li><a href="#c">Profile</a></li>
@@ -12,6 +11,5 @@ export const Nav = () => {
           <li><a href="#c">Settings</a></li>  
         </ul>
       </nav>
-    </div>
   );
 };
