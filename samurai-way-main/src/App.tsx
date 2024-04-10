@@ -13,9 +13,9 @@ const App = () => {
       </header>
       <nav className="nav">
         <ul>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>Photo</li>
+          <li><a href="#c">Profile</a></li>
+          <li><a href="#c">Messages</a></li>
+          <li><a href="#c">Photo</a></li>
         </ul>
       </nav>
       <main className="content">
