@@ -1,16 +1,9 @@
 import "./App.css";
-
+import { Header } from "./components/Header";
 const App = () => {
   return (
     <div className="app-wrapper">
-      <header className="header">
-        <img
-          src="https://e7.pngegg.com/pngimages/41/701/png-clipart-logo-graphic-design-graphy-grapher-logo-graphy-angle-text.png"
-          alt="logo"
-          width="100px"
-          height="100px"
-        />
-      </header>
+      <Header />
       <nav className="nav">
         <ul>
           <li><a href="#c">Profile</a></li>
