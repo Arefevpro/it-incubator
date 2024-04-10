@@ -4,28 +4,28 @@
     "header header"
     "nav content"
     "footer footer";
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(60px, 1fr); 
+    grid-template-rows: repeat(2fr, 10fr);
     grid-gap: 5px;
 }
 
 .header {
-  border: 1px solid rgb(4, 244, 136);
+  border: 1px solid rgb(223, 231, 6);
   grid-area: header;
 }
 
 .nav {
-  border: 1px solid rgb(4, 244, 136);
+  border: 1px solid rgb(223, 231, 6);
   grid-area: nav;
 }
 
 .content {
-  border: 1px solid rgb(4, 244, 136);
+  border: 1px solid rgb(223, 231, 6);
   grid-area: content;
   overflow-y: auto;
 }
 
 .footer {
-  border: 1px solid rgb(4, 244, 136);
+  border: 1px solid rgb(223, 231, 6);
   grid-area: footer;
 }
