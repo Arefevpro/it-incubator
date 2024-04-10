@@ -4,22 +4,28 @@
     "header header"
     "nav content"
     "footer footer";
-  grid-template-rows: 50px 1fr 50px;
-  grid-template-columns: 2fr 10fr;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
 }
 
 .header {
+  border: 1px solid rgb(4, 244, 136);
   grid-area: header;
 }
 
 .nav {
+  border: 1px solid rgb(4, 244, 136);
   grid-area: nav;
 }
 
 .content {
+  border: 1px solid rgb(4, 244, 136);
   grid-area: content;
+  overflow-y: auto;
 }
 
 .footer {
+  border: 1px solid rgb(4, 244, 136);
   grid-area: footer;
 }
