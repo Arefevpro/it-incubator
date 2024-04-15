@@ -7,7 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 
+<<<<<<< HEAD:social-network/src/index.css
   background-color: rgb(62, 60, 60);
+=======
+  background-color: #3a3838;
+>>>>>>> a8f8038651cad49e5a10fdef0a337e6078276a80:samurai-way-main/src/index.css
   color: white;
 }
 
@@ -15,3 +19,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD:social-network/src/index.css
+=======
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+>>>>>>> a8f8038651cad49e5a10fdef0a337e6078276a80:samurai-way-main/src/index.css
