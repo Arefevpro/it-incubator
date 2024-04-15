@@ -1,13 +1,4 @@
 
-function evenOrOdd(number) {
-  let x = number;
-  x = x + 2;
-  return x;
-}
-const result4 = evenOrOdd(5);
-console.log(result4);
-
-
 // Создайте функцию, которая принимает целое число в 
 // качестве аргумента и возвращает "Четное" для четных чисел или "Нечетное" 
 // для нечетных чисел.
@@ -132,8 +123,9 @@ const people = [
 // console.log(1);
 // console.log(1);
 // console.log(1);
+// console.log(1);  
 // console.log(1);
-// console.log(1);
+
 
 //     or
 
@@ -152,8 +144,8 @@ const people = [
 // снова проверяем меньше ли i чем 5? получаем true
 // и так далее до тех пор пока i будет равна 5 и получим false тогда тело цикла не будет выполненно
 
-for (let i = 0; i < 5; i++) {
-  // console.log(1);   // для проверки можем выводить i в место 1
+for (let i = 0; i < 10; i++) {
+  console.log(i);   // для проверки можем выводить i в место 1
 }
 
 const arr = ["a", "b", "c", "d", "e"];
@@ -237,5 +229,4 @@ let x = 0;
 //   console.log(y);
 //   y++;
 // }
-
 
