@@ -10,18 +10,34 @@ type StydentType = {
 };
 
 export const NewComponent = (props: NewComponentType) => {
-  return (
-    <ul>
-      {props.students.map(
-        (objectFromStudentsArray: StydentType, index: number) => {
-          return (
-            <li key={objectFromStudentsArray.id}>
-              <span>{objectFromStudentsArray.name}</span>
-              <span> age: {objectFromStudentsArray.age}</span>
-            </li>
-          );
-        }
-      )}
-    </ul>
-  );
+  
+  
+  const topCars = [
+    {manufacturer:'BMW', model:'m5cs'},
+    {manufacturer:'Mercedes', model:'e63s'},
+    {manufacturer:'Audi', model:'rs6'}
+  ]
+
+return (
+  
+  
+)
+
+
+
+
+  // return (
+  //   <ul>
+  //     {props.students.map(
+  //       (objectFromStudentsArray: StydentType, index: number) => {
+  //         return (
+  //           <li key={objectFromStudentsArray.id}>
+  //             <span>{objectFromStudentsArray.name}</span>
+  //             <span> age: {objectFromStudentsArray.age}</span>
+  //           </li>
+  //         );
+  //       }
+  //     )}
+  //   </ul>
+  // );
 };
