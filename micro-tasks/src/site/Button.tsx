@@ -1,3 +1,5 @@
+// import React, {MouseEvent} from 'react'
+
 export const Button = () => {
   const myFirstSybscriber = (event: React.MouseEvent<HTMLButtonElement>) => {
     console.log("Hello im Oleg");
@@ -7,10 +9,14 @@ export const Button = () => {
     console.log("Hello im Ivan");
   };
 
+const onClickHandler = (name: string) => {
+  console.log(name)
+}
+
   return (
     <div>
-      <button onClick={myFirstSybscriber}>MyYoutobeChanelk-1</button>
-      <button onClick={myTwoSybscriber}>MyYoutobeChanelk-2</button>
+      <button onClick = {(event: React.MouseEvent<HTMLButtonElement>) => onClickHandler('Oleg')}>MyYoutobeChanelk-1</button>
+      <button onClick = {(event: React.MouseEvent<HTMLButtonElement>) =>onClickHandler('Ivan')}>MyYoutobeChanelk-2</button>
     </div>
   );
 };
